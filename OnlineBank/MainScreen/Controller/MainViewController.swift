@@ -1,0 +1,27 @@
+//
+//  MainViewController.swift
+//  OnlineBank
+//
+//  Created by Иван Тарасенко on 28.12.2022.
+//
+
+import UIKit
+
+final class MainViewController<ContentView: MainContentViewProtocol>: UIViewController {
+
+    private let contentView: ContentView
+
+    init(contentView: ContentView) {
+        self.contentView = contentView
+        super .init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    override func loadView() {
+        view = contentView as? UIView
+        title = "Главная"
+    }
+}
