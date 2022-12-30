@@ -1,5 +1,5 @@
 //
-//  MainViewController.swift
+//  ViewController.swift
 //  OnlineBank
 //
 //  Created by Иван Тарасенко on 28.12.2022.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class MainViewController<ContentView: MainContentViewProtocol>: UIViewController {
+final class ViewController<ContentView: ContentViewProtocol>: UIViewController {
 
     private let contentView: ContentView
 
