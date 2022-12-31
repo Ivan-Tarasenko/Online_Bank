@@ -13,8 +13,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Creating a Navigation Controller and connecting to a ViewController
-//        let viewController = ViewController(contentView: MainContentView())
-//        let navigationController = NavigationController(rootViewController: viewController)
 
         let tabBarViewController = TabBarViewController()
 

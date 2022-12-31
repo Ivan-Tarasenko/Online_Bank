@@ -8,4 +8,9 @@
 
 // Title Navigation Controller
 "Main" = "Main";
+"Translations" = "Translations";
+"Withdrawal" = "Withdrawal";
+"History" = "History";
 
+// Main screen
+"addProductButton" = "Add a product";

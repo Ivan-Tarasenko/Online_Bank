@@ -18,6 +18,7 @@ final class TabBarViewController: UITabBarController {
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        setTabBar()
         configureAppearance()
     }
     
@@ -25,16 +26,23 @@ final class TabBarViewController: UITabBarController {
         fatalError("init(coder:) has not been implemented")
     }
 
-    private func configureAppearance() {
+    func setTabBar() {
         tabBar.backgroundColor = .white
+        tabBar.layer.borderColor = R.Colors.separator.cgColor
+        tabBar.layer.borderWidth = 0.6
+        tabBar.layer.masksToBounds = true
+    }
+
+    private func configureAppearance() {
 
         let controllers: [NavigationController] = Tabs.allCases.map { tab in
             let controller = NavigationController(rootViewController: getController(for: tab))
             controller.tabBarItem = UITabBarItem(
-                title: "Test",
-                image: UIImage(systemName: "rectangle.portrait.and.arrow.right"),
+                title: R.TabBar.title(for: tab),
+                image: UIImage(systemName: R.TabBar.icon(for: tab)),
                 tag: tab.rawValue
             )
+
             return controller
         }
 

@@ -10,6 +10,7 @@ import UIKit
 final class ViewController<ContentView: ContentViewProtocol>: UIViewController {
 
     private let contentView: ContentView
+    private let viewModel: MainViewModelProtocol = MainViewModel()
 
     init(contentView: ContentView) {
         self.contentView = contentView
@@ -22,6 +23,6 @@ final class ViewController<ContentView: ContentViewProtocol>: UIViewController {
 
     override func loadView() {
         view = contentView as? UIView
-        title = "Главная"
+        viewModel.setTitle(for: self)
     }
 }
