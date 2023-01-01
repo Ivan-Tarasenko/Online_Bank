@@ -38,6 +38,14 @@ enum R {
             static let addProductTitle = NSLocalizedString("addProductButton", comment: "")
             static let titileBalance = NSLocalizedString("titleBalance", comment: "")
         }
+
+        enum TranslationScreen {
+            static let titleMethodOfReplenishment = NSLocalizedString("titleMethodOfReplenishment", comment: "")
+            static let fromCardToCard = NSLocalizedString("fromCardToCard", comment: "")
+            static let betweenAccounts = NSLocalizedString("betweenAccounts", comment: "")
+            static let byPhoneNumber = NSLocalizedString("byPhoneNumber", comment: "")
+            static let topUpPhoneNumder = NSLocalizedString("topUpPhoneNumder", comment: "")
+        }
     }
 
     enum Fonts {

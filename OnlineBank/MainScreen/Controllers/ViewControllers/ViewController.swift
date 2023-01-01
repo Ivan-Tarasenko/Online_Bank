@@ -23,6 +23,7 @@ final class ViewController<ContentView: ContentViewProtocol>: UIViewController {
 
     override func loadView() {
         view = contentView as? UIView
+        view.backgroundColor = R.Colors.background
         viewModel.setTitle(for: self)
     }
 }
