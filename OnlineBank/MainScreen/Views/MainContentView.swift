@@ -9,22 +9,24 @@ import UIKit
 
 final class MainContentView: UIView, ContentViewProtocol {
 
+    let card = Card()
+
+    let titleBalance: UILabel = {
+        let label = UILabel()
+        label.tintColor = .darkText
+        label.font = UIFont.systemFont(ofSize: 33, weight: .bold)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = R.Titles.MainScreen.titileBalance
+        return label
+    }()
+    
     let depositBalance: UILabel = {
         let label = UILabel()
         label.tintColor = .darkText
-        label.font = UIFont.systemFont(ofSize: 40, weight: .bold)
+        label.font = UIFont.systemFont(ofSize: 37, weight: .bold)
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "₽ 347293472.34"
+        label.text = "347293472.34 ₽"
         return label
-    }()
-
-    let card: UIView = {
-        let view = UIView()
-        view.setShadow(for: view)
-        view.layer.cornerRadius = 15
-        view.backgroundColor = .systemGreen
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
     }()
 
     let addProduct: UIButton = {
@@ -34,7 +36,7 @@ final class MainContentView: UIView, ContentViewProtocol {
         button.backgroundColor = .systemBlue
         button.setTitleColor(.white, for: .normal)
         button.setTitle(R.Titles.MainScreen.addProductTitle, for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .bold)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .bold)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -50,6 +52,7 @@ final class MainContentView: UIView, ContentViewProtocol {
     }
 
    func setContent() {
+       addSubview(titleBalance)
        addSubview(depositBalance)
        addSubview(card)
        addSubview(addProduct)
@@ -58,8 +61,13 @@ final class MainContentView: UIView, ContentViewProtocol {
 
     func makeConstraints() {
         NSLayoutConstraint.activate([
+            titleBalance.heightAnchor.constraint(equalToConstant: 42),
+            titleBalance.topAnchor.constraint(equalTo: self.topAnchor, constant: 20),
+            titleBalance.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
+            titleBalance.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
+
             depositBalance.heightAnchor.constraint(equalToConstant: 35),
-            depositBalance.topAnchor.constraint(equalTo: self.topAnchor, constant: 50),
+            depositBalance.topAnchor.constraint(equalTo: titleBalance.topAnchor, constant: 50),
             depositBalance.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
             depositBalance.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
 
@@ -68,10 +76,10 @@ final class MainContentView: UIView, ContentViewProtocol {
             card.topAnchor.constraint(equalTo: depositBalance.topAnchor, constant: 80),
             card.centerXAnchor.constraint(equalTo: self.centerXAnchor),
 
-            addProduct.widthAnchor.constraint(equalToConstant: 250),
-            addProduct.heightAnchor.constraint(equalToConstant: 70),
+            addProduct.widthAnchor.constraint(equalToConstant: 200),
+            addProduct.heightAnchor.constraint(equalToConstant: 50),
             addProduct.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-            addProduct.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -100)
+            addProduct.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -120)
         ])
     }
 }

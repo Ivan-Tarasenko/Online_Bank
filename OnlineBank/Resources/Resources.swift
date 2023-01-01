@@ -36,6 +36,17 @@ enum R {
     enum Titles {
         enum MainScreen {
             static let addProductTitle = NSLocalizedString("addProductButton", comment: "")
+            static let titileBalance = NSLocalizedString("titleBalance", comment: "")
+        }
+    }
+
+    enum Fonts {
+        static func ocrARegular(with size: CGFloat) -> UIFont {
+            UIFont(name: "OCR-A-Regular", size: size) ?? UIFont()
+        }
+
+        static func ocrBRegular(with size: CGFloat) -> UIFont {
+            UIFont(name: "OCR-B 10 BT", size: size) ?? UIFont()
         }
     }
 }
