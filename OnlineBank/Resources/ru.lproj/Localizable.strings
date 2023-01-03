@@ -22,3 +22,8 @@
 "betweenAccounts" = "Mежду счетами";
 "byPhoneNumber" = "По номеру телефона";
 "topUpPhoneNumder" = "Пополнить баланс телефона";
+
+// Withdrawal screen
+"titleWithdrawal" = "Способы вывода наличных";
+"cash" = "Снять наличные";
+"request" = "Запросить деньги";

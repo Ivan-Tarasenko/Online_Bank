@@ -8,8 +8,8 @@
 import UIKit
 
 final class Card: UIView {
-
-    let numderOnCard: UILabel = {
+    
+    let numderOnCardLabel: UILabel = {
         let label = UILabel()
         label.font = R.Fonts.ocrARegular(with: 20)
         label.textColor = .systemGray6
@@ -18,8 +18,8 @@ final class Card: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
-
-    let nameOnCard: UILabel = {
+    
+    let nameOnCardLabel: UILabel = {
         let label = UILabel()
         label.font = R.Fonts.ocrBRegular(with: 16)
         label.textColor = .systemGray6
@@ -27,7 +27,7 @@ final class Card: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
-
+    
     let imageView: UIImageView = {
         let view = UIImageView()
         view.image = UIImage(named: "card")
@@ -36,44 +36,44 @@ final class Card: UIView {
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
-
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setCard()
         addSubview(imageView)
-        addSubview(nameOnCard)
-        addSubview(numderOnCard)
+        addSubview(nameOnCardLabel)
+        addSubview(numderOnCardLabel)
         makeConstraints()
     }
-
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-
+        
     }
-
-    func setCard() {
+    
+    private func setCard() {
         setShadow(for: self)
         layer.cornerRadius = 15
         backgroundColor = .systemBlue
         translatesAutoresizingMaskIntoConstraints = false
     }
-
-    func makeConstraints() {
+    
+    private func makeConstraints() {
         NSLayoutConstraint.activate([
             imageView.topAnchor.constraint(equalTo: self.topAnchor),
             imageView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
             imageView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
             imageView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
-
-            nameOnCard.widthAnchor.constraint(equalToConstant: 200),
-            nameOnCard.heightAnchor.constraint(equalToConstant: 30),
-            nameOnCard.leadingAnchor.constraint(equalTo: imageView.leadingAnchor, constant: 20),
-            nameOnCard.bottomAnchor.constraint(equalTo: imageView.bottomAnchor, constant: -10),
-
-            numderOnCard.widthAnchor.constraint(equalToConstant: 300),
-            numderOnCard.heightAnchor.constraint(equalToConstant: 30),
-            numderOnCard.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-            numderOnCard.centerYAnchor.constraint(equalTo: self.centerYAnchor)
+            
+            nameOnCardLabel.widthAnchor.constraint(equalToConstant: 200),
+            nameOnCardLabel.heightAnchor.constraint(equalToConstant: 30),
+            nameOnCardLabel.leadingAnchor.constraint(equalTo: imageView.leadingAnchor, constant: 20),
+            nameOnCardLabel.bottomAnchor.constraint(equalTo: imageView.bottomAnchor, constant: -10),
+            
+            numderOnCardLabel.widthAnchor.constraint(equalToConstant: 300),
+            numderOnCardLabel.heightAnchor.constraint(equalToConstant: 30),
+            numderOnCardLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+            numderOnCardLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor)
         ])
     }
 }
