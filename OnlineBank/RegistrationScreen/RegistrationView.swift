@@ -18,21 +18,26 @@ final class RegistrarionView: UIView {
     let title: CustomLabel = {
         let label = CustomLabel()
         label.text = R.Titles.RegisterScreen.title
+        label.textColor = .white
+        label.textAlignment = .center
         return label
     }()
 
     let nameTextField: CustomTextField = {
         let field = CustomTextField()
+        field.placeholder = R.Titles.RegisterScreen.placeholderName
         return field
     }()
 
     let surNameTextField: CustomTextField = {
         let field = CustomTextField()
+        field.placeholder = R.Titles.RegisterScreen.placeholderSurName
         return field
     }()
 
     let numberCardTextField: CustomTextField = {
         let field = CustomTextField()
+        field.placeholder = R.Titles.RegisterScreen.placeholderNumberCard
         return field
     }()
 
@@ -40,6 +45,7 @@ final class RegistrarionView: UIView {
         let button = CustomButtom()
         button.backgroundColor = .white
         button.setTitle(R.Titles.RegisterScreen.registerButton, for: .normal)
+        button.setTitleColor(.systemBlue, for: .normal)
         return button
     }()
 
@@ -60,6 +66,7 @@ final class RegistrarionView: UIView {
     func setRegisterView() {
         backgroundColor = .systemBlue
         addSubview(closeButton)
+        addSubview(title)
         addSubview(stackView)
     }
 
@@ -69,7 +76,7 @@ final class RegistrarionView: UIView {
     }
 
     private func setStackView() {
-        stackView.addArrangedSubview(title)
+//        stackView.addArrangedSubview(title)
         stackView.addArrangedSubview(nameTextField)
         stackView.addArrangedSubview(surNameTextField)
         stackView.addArrangedSubview(numberCardTextField)
@@ -78,8 +85,8 @@ final class RegistrarionView: UIView {
         stackView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             stackView.widthAnchor.constraint(equalToConstant: 290),
-            stackView.heightAnchor.constraint(equalToConstant: 350),
-            stackView.topAnchor.constraint(equalTo: self.topAnchor, constant: 150),
+            stackView.heightAnchor.constraint(equalToConstant: 290),
+            stackView.topAnchor.constraint(equalTo: title.topAnchor, constant: 120),
             stackView.centerXAnchor.constraint(equalTo: self.centerXAnchor)
             
         ])
@@ -87,11 +94,17 @@ final class RegistrarionView: UIView {
 
     private func makeConstraints() {
         closeButton.translatesAutoresizingMaskIntoConstraints = false
+        title.translatesAutoresizingMaskIntoConstraints = false
+
         NSLayoutConstraint.activate([
             closeButton.widthAnchor.constraint(equalToConstant: 100),
             closeButton.heightAnchor.constraint(equalToConstant: 50),
             closeButton.topAnchor.constraint(equalTo: self.topAnchor, constant: 40),
-            closeButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20)
+            closeButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -40),
+
+            title.topAnchor.constraint(equalTo: self.topAnchor, constant: 150),
+            title.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -25),
+            title.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 25)
         ])
     }
 

@@ -37,6 +37,9 @@ enum R {
         enum RegisterScreen {
             static let title = NSLocalizedString("title", comment: "")
             static let registerButton = NSLocalizedString("registerButton", comment: "")
+            static let placeholderName = NSLocalizedString("name", comment: "")
+            static let placeholderSurName = NSLocalizedString("surname", comment: "")
+            static let placeholderNumberCard = NSLocalizedString("numberCard", comment: "")
         }
 
         enum MainScreen {
