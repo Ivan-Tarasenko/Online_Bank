@@ -9,9 +9,9 @@
 // Register screen
 "title" = "Please register";
 "registerButton" = "Register";
-"name" = "  Enter a name";
-"surname" = "  Enter your last name";
-"numberCard" = "  Enter your card number";
+"name" = " Enter a name";
+"surname" = " Enter your last name";
+"numberCard" = " Enter your card number";
 
 
 

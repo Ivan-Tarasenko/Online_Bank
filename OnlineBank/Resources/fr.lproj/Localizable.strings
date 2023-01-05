@@ -9,9 +9,9 @@
 // Register screen
 "title" = "Veuillez vous inscrire";
 "registerButton" = "Inscrire";
-"name" = "  Entrez un nom";
-"surname" = "  Entrez votre nom de famille";
-"numberCard" = "  Entrez votre numéro de carte";
+"name" = " Entrez un nom";
+"surname" = " Entrez votre nom de famille";
+"numberCard" = " Entrez votre numéro de carte";
 
 
 // Title Navigation Controller

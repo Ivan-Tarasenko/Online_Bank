@@ -36,6 +36,29 @@
 		1A4F39992962BFA1002E5563 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4F39982962BFA1002E5563 /* CustomTableViewCell.swift */; };
 		1A4F399C2962D6FB002E5563 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4F399B2962D6FB002E5563 /* RegistrationView.swift */; };
 		1A4F399E2962DFA9002E5563 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4F399D2962DFA9002E5563 /* CustomTextField.swift */; };
+		1A8D67DA29657F6200B45E63 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D67D929657F6200B45E63 /* MainInteractor.swift */; };
+		1A8D67DC29657FC500B45E63 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D67DB29657FC500B45E63 /* MainPresenter.swift */; };
+		1A8D67DE29657FDD00B45E63 /* MainEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D67DD29657FDD00B45E63 /* MainEntity.swift */; };
+		1A8D67E029657FE800B45E63 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D67DF29657FE800B45E63 /* MainRouter.swift */; };
+		1A8D67E22965800400B45E63 /* MainAssambly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D67E12965800400B45E63 /* MainAssambly.swift */; };
+		1A8D67E4296580E600B45E63 /* TranslationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D67E3296580E600B45E63 /* TranslationView.swift */; };
+		1A8D67E62965810200B45E63 /* TranslationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D67E52965810200B45E63 /* TranslationInteractor.swift */; };
+		1A8D67E82965811400B45E63 /* TranslationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D67E72965811400B45E63 /* TranslationPresenter.swift */; };
+		1A8D67EA2965812E00B45E63 /* TranslationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D67E92965812E00B45E63 /* TranslationEntity.swift */; };
+		1A8D67EC2965814500B45E63 /* TranslationAssambly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D67EB2965814500B45E63 /* TranslationAssambly.swift */; };
+		1A8D67EE2965816800B45E63 /* WithdrawalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D67ED2965816800B45E63 /* WithdrawalView.swift */; };
+		1A8D67F02965817B00B45E63 /* WithdrawalInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D67EF2965817B00B45E63 /* WithdrawalInteractor.swift */; };
+		1A8D67F22965818A00B45E63 /* WithdrawalPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D67F12965818A00B45E63 /* WithdrawalPresenter.swift */; };
+		1A8D67F42965819700B45E63 /* WithdrawalEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D67F32965819700B45E63 /* WithdrawalEntity.swift */; };
+		1A8D67F6296581B300B45E63 /* WithdrawalRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D67F5296581B300B45E63 /* WithdrawalRouter.swift */; };
+		1A8D67F8296581C500B45E63 /* WithdrawalAssambly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D67F7296581C500B45E63 /* WithdrawalAssambly.swift */; };
+		1A8D67FA296581D600B45E63 /* TranslationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D67F9296581D600B45E63 /* TranslationRouter.swift */; };
+		1A8D67FC2965822500B45E63 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D67FB2965822500B45E63 /* HistoryView.swift */; };
+		1A8D67FE2965823500B45E63 /* HistoryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D67FD2965823500B45E63 /* HistoryInteractor.swift */; };
+		1A8D68002965823F00B45E63 /* HistoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D67FF2965823F00B45E63 /* HistoryPresenter.swift */; };
+		1A8D68022965825700B45E63 /* HistoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D68012965825700B45E63 /* HistoryEntity.swift */; };
+		1A8D68042965826300B45E63 /* HistoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D68032965826300B45E63 /* HistoryRouter.swift */; };
+		1A8D68062965827200B45E63 /* HistoryAssambly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D68052965827200B45E63 /* HistoryAssambly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +97,29 @@
 		1A4F39982962BFA1002E5563 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		1A4F399B2962D6FB002E5563 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		1A4F399D2962DFA9002E5563 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		1A8D67D929657F6200B45E63 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		1A8D67DB29657FC500B45E63 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		1A8D67DD29657FDD00B45E63 /* MainEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainEntity.swift; sourceTree = "<group>"; };
+		1A8D67DF29657FE800B45E63 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		1A8D67E12965800400B45E63 /* MainAssambly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssambly.swift; sourceTree = "<group>"; };
+		1A8D67E3296580E600B45E63 /* TranslationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationView.swift; sourceTree = "<group>"; };
+		1A8D67E52965810200B45E63 /* TranslationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationInteractor.swift; sourceTree = "<group>"; };
+		1A8D67E72965811400B45E63 /* TranslationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationPresenter.swift; sourceTree = "<group>"; };
+		1A8D67E92965812E00B45E63 /* TranslationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationEntity.swift; sourceTree = "<group>"; };
+		1A8D67EB2965814500B45E63 /* TranslationAssambly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationAssambly.swift; sourceTree = "<group>"; };
+		1A8D67ED2965816800B45E63 /* WithdrawalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawalView.swift; sourceTree = "<group>"; };
+		1A8D67EF2965817B00B45E63 /* WithdrawalInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawalInteractor.swift; sourceTree = "<group>"; };
+		1A8D67F12965818A00B45E63 /* WithdrawalPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawalPresenter.swift; sourceTree = "<group>"; };
+		1A8D67F32965819700B45E63 /* WithdrawalEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawalEntity.swift; sourceTree = "<group>"; };
+		1A8D67F5296581B300B45E63 /* WithdrawalRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawalRouter.swift; sourceTree = "<group>"; };
+		1A8D67F7296581C500B45E63 /* WithdrawalAssambly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawalAssambly.swift; sourceTree = "<group>"; };
+		1A8D67F9296581D600B45E63 /* TranslationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationRouter.swift; sourceTree = "<group>"; };
+		1A8D67FB2965822500B45E63 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		1A8D67FD2965823500B45E63 /* HistoryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryInteractor.swift; sourceTree = "<group>"; };
+		1A8D67FF2965823F00B45E63 /* HistoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPresenter.swift; sourceTree = "<group>"; };
+		1A8D68012965825700B45E63 /* HistoryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryEntity.swift; sourceTree = "<group>"; };
+		1A8D68032965826300B45E63 /* HistoryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRouter.swift; sourceTree = "<group>"; };
+		1A8D68052965827200B45E63 /* HistoryAssambly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryAssambly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,11 +245,13 @@
 		1A4877C4295C33520029A1BC /* OnlineBank */ = {
 			isa = PBXGroup;
 			children = (
+				1A4F399F2965700D002E5563 /* Modules */,
 				1A4F399A2962D6A9002E5563 /* RegistrationScreen */,
 				1A4877DA295C35060029A1BC /* MainScreen */,
 				1A43CFDE29601F3400716EFE /* TranslationScreen */,
 				1A43CFDF29601F6400716EFE /* WithdrawalScreen */,
 				1A43CFE029601F7000716EFE /* HistoryScreen */,
+				1A4F39A52965764D002E5563 /* Application */,
 				1A4877DD295C35440029A1BC /* Resources */,
 				1A4877DC295C35360029A1BC /* SupportingFiles */,
 			);
@@ -215,7 +263,6 @@
 			children = (
 				1A4877E0295C366A0029A1BC /* Models */,
 				1A4877DF295C36650029A1BC /* Views */,
-				1A4877DE295C36550029A1BC /* Controllers */,
 			);
 			path = MainScreen;
 			sourceTree = "<group>";
@@ -226,8 +273,6 @@
 				1A4F39902962178E002E5563 /* CustomViews */,
 				1A43CFDB295EF2F800716EFE /* Extensions */,
 				1A43CFD8295EEC7F00716EFE /* Protocols */,
-				1A4877C7295C33520029A1BC /* SceneDelegate.swift */,
-				1A4877C5295C33520029A1BC /* AppDelegate.swift */,
 				1A4877D0295C33530029A1BC /* LaunchScreen.storyboard */,
 				1A4877D3295C33530029A1BC /* Info.plist */,
 			);
@@ -245,20 +290,9 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		1A4877DE295C36550029A1BC /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				1A43CFC9295EE50E00716EFE /* NavigationControllers */,
-				1A43CFC8295EE4FA00716EFE /* ViewControllers */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
 		1A4877DF295C36650029A1BC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1A4877E5295C36BF0029A1BC /* MainContentView.swift */,
-				1A43CFE72961B40F00716EFE /* Card.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -274,6 +308,7 @@
 		1A4F39902962178E002E5563 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				1A43CFE72961B40F00716EFE /* Card.swift */,
 				1A4F398E296209A3002E5563 /* StackView.swift */,
 				1A43CFF52961F4FA00716EFE /* CustomButtom.swift */,
 				1A4F39912962193C002E5563 /* CustomLabel.swift */,
@@ -298,6 +333,88 @@
 				1A4F399B2962D6FB002E5563 /* RegistrationView.swift */,
 			);
 			path = RegistrationScreen;
+			sourceTree = "<group>";
+		};
+		1A4F399F2965700D002E5563 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				1A8D68092966B4E800B45E63 /* InitialController */,
+				1A4F39A129657053002E5563 /* Main */,
+				1A4F39A22965706F002E5563 /* Translation */,
+				1A4F39A329657082002E5563 /* Withdrawal */,
+				1A4F39A429657091002E5563 /* History */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		1A4F39A129657053002E5563 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1A4877E5295C36BF0029A1BC /* MainContentView.swift */,
+				1A8D67D929657F6200B45E63 /* MainInteractor.swift */,
+				1A8D67DB29657FC500B45E63 /* MainPresenter.swift */,
+				1A8D67DD29657FDD00B45E63 /* MainEntity.swift */,
+				1A8D67DF29657FE800B45E63 /* MainRouter.swift */,
+				1A8D67E12965800400B45E63 /* MainAssambly.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		1A4F39A22965706F002E5563 /* Translation */ = {
+			isa = PBXGroup;
+			children = (
+				1A8D67E3296580E600B45E63 /* TranslationView.swift */,
+				1A8D67E52965810200B45E63 /* TranslationInteractor.swift */,
+				1A8D67E72965811400B45E63 /* TranslationPresenter.swift */,
+				1A8D67E92965812E00B45E63 /* TranslationEntity.swift */,
+				1A8D67F9296581D600B45E63 /* TranslationRouter.swift */,
+				1A8D67EB2965814500B45E63 /* TranslationAssambly.swift */,
+			);
+			path = Translation;
+			sourceTree = "<group>";
+		};
+		1A4F39A329657082002E5563 /* Withdrawal */ = {
+			isa = PBXGroup;
+			children = (
+				1A8D67ED2965816800B45E63 /* WithdrawalView.swift */,
+				1A8D67EF2965817B00B45E63 /* WithdrawalInteractor.swift */,
+				1A8D67F12965818A00B45E63 /* WithdrawalPresenter.swift */,
+				1A8D67F32965819700B45E63 /* WithdrawalEntity.swift */,
+				1A8D67F5296581B300B45E63 /* WithdrawalRouter.swift */,
+				1A8D67F7296581C500B45E63 /* WithdrawalAssambly.swift */,
+			);
+			path = Withdrawal;
+			sourceTree = "<group>";
+		};
+		1A4F39A429657091002E5563 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				1A8D67FB2965822500B45E63 /* HistoryView.swift */,
+				1A8D67FD2965823500B45E63 /* HistoryInteractor.swift */,
+				1A8D67FF2965823F00B45E63 /* HistoryPresenter.swift */,
+				1A8D68012965825700B45E63 /* HistoryEntity.swift */,
+				1A8D68032965826300B45E63 /* HistoryRouter.swift */,
+				1A8D68052965827200B45E63 /* HistoryAssambly.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		1A4F39A52965764D002E5563 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1A4877C7295C33520029A1BC /* SceneDelegate.swift */,
+				1A4877C5295C33520029A1BC /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		1A8D68092966B4E800B45E63 /* InitialController */ = {
+			isa = PBXGroup;
+			children = (
+				1A43CFC9295EE50E00716EFE /* NavigationControllers */,
+				1A43CFC8295EE4FA00716EFE /* ViewControllers */,
+			);
+			path = InitialController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,28 +515,51 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A8D68022965825700B45E63 /* HistoryEntity.swift in Sources */,
 				1A4877F3295C49250029A1BC /* WithdrawalContentView.swift in Sources */,
+				1A8D67E029657FE800B45E63 /* MainRouter.swift in Sources */,
 				1A43CFE6296042C700716EFE /* UIView+Shadow.swift in Sources */,
 				1A4F39992962BFA1002E5563 /* CustomTableViewCell.swift in Sources */,
 				1A4F39922962193C002E5563 /* CustomLabel.swift in Sources */,
+				1A8D67F42965819700B45E63 /* WithdrawalEntity.swift in Sources */,
 				1A4877CA295C33520029A1BC /* ViewController.swift in Sources */,
+				1A8D67FC2965822500B45E63 /* HistoryView.swift in Sources */,
 				1A4877C6295C33520029A1BC /* AppDelegate.swift in Sources */,
+				1A8D67F02965817B00B45E63 /* WithdrawalInteractor.swift in Sources */,
 				1A43CFDA295EECA100716EFE /* ContentProtocol.swift in Sources */,
+				1A8D68002965823F00B45E63 /* HistoryPresenter.swift in Sources */,
 				1A4F39952962BF75002E5563 /* TableViewDataSource.swift in Sources */,
+				1A8D67DA29657F6200B45E63 /* MainInteractor.swift in Sources */,
+				1A8D67EE2965816800B45E63 /* WithdrawalView.swift in Sources */,
 				1A4F39972962BF84002E5563 /* TableViewDelegate.swift in Sources */,
+				1A8D67FA296581D600B45E63 /* TranslationRouter.swift in Sources */,
+				1A8D67F8296581C500B45E63 /* WithdrawalAssambly.swift in Sources */,
+				1A8D67F22965818A00B45E63 /* WithdrawalPresenter.swift in Sources */,
+				1A8D67E62965810200B45E63 /* TranslationInteractor.swift in Sources */,
 				1A4F398F296209A3002E5563 /* StackView.swift in Sources */,
+				1A8D67E4296580E600B45E63 /* TranslationView.swift in Sources */,
 				1A4F399C2962D6FB002E5563 /* RegistrationView.swift in Sources */,
 				1A4877F7295C4E450029A1BC /* Resources.swift in Sources */,
 				1A43CFF62961F4FA00716EFE /* CustomButtom.swift in Sources */,
+				1A8D67EC2965814500B45E63 /* TranslationAssambly.swift in Sources */,
 				1A43CFE22960201200716EFE /* MainViewModel.swift in Sources */,
+				1A8D68062965827200B45E63 /* HistoryAssambly.swift in Sources */,
 				1A4877E8295C379E0029A1BC /* NavigationController.swift in Sources */,
+				1A8D67F6296581B300B45E63 /* WithdrawalRouter.swift in Sources */,
 				1A43CFE429602EB000716EFE /* UIColor+Hex.swift in Sources */,
+				1A8D67DE29657FDD00B45E63 /* MainEntity.swift in Sources */,
+				1A8D67FE2965823500B45E63 /* HistoryInteractor.swift in Sources */,
 				1A4877C8295C33520029A1BC /* SceneDelegate.swift in Sources */,
 				1A4877EA295C407D0029A1BC /* TabBarViewController.swift in Sources */,
+				1A8D67DC29657FC500B45E63 /* MainPresenter.swift in Sources */,
+				1A8D67E22965800400B45E63 /* MainAssambly.swift in Sources */,
 				1A43CFDD295EF31600716EFE /* UIView+Border.swift in Sources */,
 				1A4877E6295C36BF0029A1BC /* MainContentView.swift in Sources */,
+				1A8D67EA2965812E00B45E63 /* TranslationEntity.swift in Sources */,
 				1A4F399E2962DFA9002E5563 /* CustomTextField.swift in Sources */,
+				1A8D67E82965811400B45E63 /* TranslationPresenter.swift in Sources */,
 				1A4877F1295C48500029A1BC /* TranslationsContentView.swift in Sources */,
+				1A8D68042965826300B45E63 /* HistoryRouter.swift in Sources */,
 				1A4877F5295C49960029A1BC /* HistoryContentView.swift in Sources */,
 				1A43CFE82961B40F00716EFE /* Card.swift in Sources */,
 			);

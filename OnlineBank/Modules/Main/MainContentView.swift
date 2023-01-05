@@ -7,7 +7,13 @@
 
 import UIKit
 
-final class MainContentView: UIView, ContentViewProtocol {
+protocol MainContentViewProtocol: AnyObject {
+//    func settingCardView()
+}
+
+final class MainContentView: UIView, MainContentViewProtocol, ContentViewProtocol {
+
+    var presenter: MainPresenterProtocol!
     
     let cardView = Card()
     
