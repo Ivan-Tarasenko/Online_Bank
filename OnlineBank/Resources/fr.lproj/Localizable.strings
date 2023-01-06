@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  OnlineBank
+
+  Created by Иван Тарасенко on 28.12.2022.
+  
+*/
+
+// Title Navigation Controller
+"Main" = "Principal";
+"Translations" = "Traduction";
+"Withdrawal" = "Retrait";
+"History" = "Histoire";
+
+// Main screen
+"addProductButton" = "Ajouter un produit";
+"titleBalance" = "Votre équilibre:";
