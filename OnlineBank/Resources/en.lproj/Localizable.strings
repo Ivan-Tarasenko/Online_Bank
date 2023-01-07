@@ -15,3 +15,11 @@
 // Main screen
 "addProductButton" = "Add a product";
 "titleBalance" = "Your balance:";
+
+// Translations screen
+"titleMethodOfReplenishment" = "Select the transfer methods";
+"fromCardToCard" = "From card to card";
+"betweenAccounts" = "Between accounts";
+"byPhoneNumber" = "By phone number";
+"topUpPhoneNumder" = "Top up your phone balance";
+

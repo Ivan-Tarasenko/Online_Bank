@@ -15,3 +15,10 @@
 // Main screen
 "addProductButton" = "Добавить продукт";
 "titleBalance" = "Ваш баланс:";
+
+// Translations screen
+"titleMethodOfReplenishment" = "Выберите способы перевода";
+"fromCardToCard" = "С карты на карту";
+"betweenAccounts" = "Mежду счетами";
+"byPhoneNumber" = "По номеру телефона";
+"topUpPhoneNumder" = "Пополнить баланс телефона";

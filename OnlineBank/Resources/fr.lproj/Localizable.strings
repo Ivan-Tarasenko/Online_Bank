@@ -15,3 +15,11 @@
 // Main screen
 "addProductButton" = "Ajouter un produit";
 "titleBalance" = "Votre équilibre:";
+
+// Translations screen
+"titleMethodOfReplenishment" = "Sélectionnez les méthodes de traduction";
+"fromCardToCard" = "De Carte en Carte";
+"betweenAccounts" = "Between accounts";
+"byPhoneNumber" = "Par numéro de téléphone";
+"topUpPhoneNumder" = "Recharger le solde du téléphone";
+
