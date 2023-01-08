@@ -23,3 +23,7 @@
 "byPhoneNumber" = "Par numéro de téléphone";
 "topUpPhoneNumder" = "Recharger le solde du téléphone";
 
+// Withdrawal screen
+"titleWithdrawal" = "Méthodes de retrait d'argent";
+"cash" = "Retirer de l'argent";
+"request" = "Demander de l'argent";

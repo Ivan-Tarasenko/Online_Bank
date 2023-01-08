@@ -34,6 +34,11 @@ enum R {
     }
 
     enum Titles {
+        enum RegisterScreen {
+            static let title = NSLocalizedString("title", comment: "")
+            static let registerButton = NSLocalizedString("registerButton", comment: "")
+        }
+
         enum MainScreen {
             static let addProductTitle = NSLocalizedString("addProductButton", comment: "")
             static let titileBalance = NSLocalizedString("titleBalance", comment: "")
@@ -45,6 +50,12 @@ enum R {
             static let betweenAccounts = NSLocalizedString("betweenAccounts", comment: "")
             static let byPhoneNumber = NSLocalizedString("byPhoneNumber", comment: "")
             static let topUpPhoneNumder = NSLocalizedString("topUpPhoneNumder", comment: "")
+        }
+
+        enum WithdrawalScreen {
+            static let titleWithdrawal = NSLocalizedString("titleWithdrawal", comment: "")
+            static let cash = NSLocalizedString("cash", comment: "")
+            static let request = NSLocalizedString("request", comment: "")
         }
     }
 

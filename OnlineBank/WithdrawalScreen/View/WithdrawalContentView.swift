@@ -9,12 +9,56 @@ import UIKit
 
 final class WithdrawalContentView: UIView, ContentViewProtocol {
 
+    let titleWithdrawalLabel: CustomLabel = {
+        let label = CustomLabel()
+        label.text = R.Titles.WithdrawalScreen.titleWithdrawal
+        return label
+    }()
+
+    let cashButton: CustomButtom = {
+        let button = CustomButtom()
+        button.setTitle(R.Titles.WithdrawalScreen.cash, for: .normal)
+        return button
+    }()
+
+    let requestButton: CustomButtom = {
+        let button = CustomButtom()
+        button.setTitle(R.Titles.WithdrawalScreen.request, for: .normal)
+        return button
+    }()
+
+    let stackView = StackView()
+
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = .systemBlue
+        addSubview(titleWithdrawalLabel)
+        addSubview(stackView)
+        makeConstraionts()
+        setStackView()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+
+   private func setStackView() {
+       stackView.axis = .horizontal
+       stackView.addArrangedSubview(cashButton)
+       stackView.addArrangedSubview(requestButton)
+
+       NSLayoutConstraint.activate([
+        stackView.widthAnchor.constraint(equalToConstant: 290),
+        stackView.heightAnchor.constraint(equalToConstant: 130),
+        stackView.topAnchor.constraint(equalTo: titleWithdrawalLabel.topAnchor, constant: 120),
+        stackView.centerXAnchor.constraint(equalTo: self.centerXAnchor)
+       ])
+    }
+
+   private func makeConstraionts() {
+        NSLayoutConstraint.activate([
+            titleWithdrawalLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 20),
+            titleWithdrawalLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
+            titleWithdrawalLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 16)
+        ])
     }
 }
