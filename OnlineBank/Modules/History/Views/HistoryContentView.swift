@@ -1,20 +1,27 @@
 //
 //  HistoryContentView.swift
-//  OnlineBank
+//  Super easy dev
 //
-//  Created by Иван Тарасенко on 28.12.2022.
+//  Created by Иван Тарасенко on 08.01.2023
 //
 
 import UIKit
 
-final class HistoryContentView: UIView, ContentViewProtocol {
+protocol HistoryContentViewProtocol: AnyObject {}
+
+final class HistoryContentView: UIView {
+
+    var presenter: HistoryPresenterProtocol!
+    var entity: HistoryEntityProtocol = HistoryEntity()
+    var assambly: HistoryAssamblyProtocol = HistoryAssambly()
 
     let tableView = UITableView()
-    weak var delegate: TableViewDelegate!
+    weak var delegate: TableViewDelegate?
     private var dataSource = TableViewDataSource()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+        assambly.initialView(view: self)
         addSubview(tableView)
         bind()
         makeConstraints()
@@ -24,17 +31,20 @@ final class HistoryContentView: UIView, ContentViewProtocol {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+}
 
-    private func bind() {
+// MARK: - Private functions
+private extension HistoryContentView {
+    func bind() {
         tableView.dataSource = dataSource
         tableView.delegate = delegate
     }
 
-    private func registerCell() {
+    func registerCell() {
         tableView.register(CustomTableViewCell.self, forCellReuseIdentifier: CustomTableViewCell.identifier)
     }
 
-    private func makeConstraints() {
+    func makeConstraints() {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: self.topAnchor),
@@ -43,4 +53,8 @@ final class HistoryContentView: UIView, ContentViewProtocol {
             tableView.bottomAnchor.constraint(equalTo: self.bottomAnchor)
         ])
     }
+}
+
+// MARK: - HistoryContentViewProtocol
+extension HistoryContentView: HistoryContentViewProtocol {
 }

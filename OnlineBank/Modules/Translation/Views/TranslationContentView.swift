@@ -1,13 +1,19 @@
 //
-//  TranslationsContentView.swift
-//  OnlineBank
+//  TranslationContentView.swift
+//  Super easy dev
 //
-//  Created by Иван Тарасенко on 28.12.2022.
+//  Created by Иван Тарасенко on 08.01.2023
 //
 
 import UIKit
 
-final class TranslationsContentView: UIView, ContentViewProtocol {
+protocol TranslationContentViewProtocol: AnyObject {}
+
+final class TranslationContentView: UIView {
+
+    var presenter: TranslationPresenterProtocol!
+    var entity: TranslationEntityProtocol = TranslationEntity()
+    var assambly: TranslationAssamblyProtocol = TranslationAssambly()
 
     let titleMethodOfReplenishmentLabel: CustomLabel = {
         let label = CustomLabel()
@@ -47,8 +53,10 @@ final class TranslationsContentView: UIView, ContentViewProtocol {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+        assambly.initialView(view: self)
         addSubview(titleMethodOfReplenishmentLabel)
         addSubview(mainStackView)
+        backgroundColor = R.Colors.background
         setStackView()
         makeConstraints()
         addTargets()
@@ -57,15 +65,19 @@ final class TranslationsContentView: UIView, ContentViewProtocol {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+}
 
-    private func addTargets() {
+// MARK: - Private functions
+private extension TranslationContentView {
+
+    func addTargets() {
         fromCardToCardButton.addTarget(self, action: #selector(cardToCardPressed), for: .touchUpInside)
         betweenAccountsButton.addTarget(self, action: #selector(betweenAccountsPressed), for: .touchUpInside)
         byPhoneNumberButton.addTarget(self, action: #selector(byPhoneNumberPressed), for: .touchUpInside)
         topUpPhoneNumderButton.addTarget(self, action: #selector(topUpPhoneNumderPressed), for: .touchUpInside)
     }
 
-    private func setStackView() {
+    func setStackView() {
 
         mainStackView.axis = .horizontal
 
@@ -86,7 +98,7 @@ final class TranslationsContentView: UIView, ContentViewProtocol {
         ])
     }
 
-    private func makeConstraints() {
+    func makeConstraints() {
         NSLayoutConstraint.activate([
             titleMethodOfReplenishmentLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 20),
             titleMethodOfReplenishmentLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
@@ -94,10 +106,15 @@ final class TranslationsContentView: UIView, ContentViewProtocol {
         ])
     }
 
+}
+
+// MARK: - TranslationContentViewProtocol
+extension TranslationContentView: TranslationContentViewProtocol {
+    
     @objc func cardToCardPressed() {
         print("С карты на карту")
     }
-
+    
     @objc func betweenAccountsPressed() {
         print("Между счетами")
     }

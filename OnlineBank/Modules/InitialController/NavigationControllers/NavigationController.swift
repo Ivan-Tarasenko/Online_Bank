@@ -11,8 +11,8 @@ final class NavigationController: UINavigationController, UIViewControllerTransi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationBar.prefersLargeTitles = true
         view.backgroundColor = .white
+        navigationBar.prefersLargeTitles = true
         navigationBar.isTranslucent = false
     }
     

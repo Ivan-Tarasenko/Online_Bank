@@ -22,20 +22,16 @@ final class TabBarViewController: UITabBarController {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         setTabBar()
         configureAppearance()
+        view.addSubview(registerView)
+        registerView.frame = view.bounds
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        view.addSubview(registerView)
-        registerView.frame = view.bounds
-    }
-    
     private func setTabBar() {
-        tabBar.backgroundColor = .white
+        tabBar.backgroundColor = .green
         tabBar.layer.borderColor = R.Colors.separator.cgColor
         tabBar.layer.borderWidth = 0.6
         tabBar.layer.masksToBounds = true
@@ -50,20 +46,20 @@ final class TabBarViewController: UITabBarController {
                 image: UIImage(systemName: R.TabBar.icon(for: tab)),
                 tag: tab.rawValue
             )
-            
+
             return controller
         }
-        
+
         setViewControllers(controllers, animated: true)
     }
     
     private func getController(for tab: Tabs) -> UIViewController {
         
         switch tab {
-        case .main: return ViewController(contentView: MainContentView())
-        case .translations: return ViewController(contentView: TranslationsContentView())
-        case .withdrawal: return ViewController(contentView: WithdrawalContentView())
-        case .history: return ViewController(contentView: HistoryContentView())
+        case .main: return MainViewController(contentView: MainContentView())
+        case .translations: return  TranslationViewController(contentView: TranslationContentView())
+        case .withdrawal: return WithdrawalViewController(contentView: WithdrawalContentView())
+        case .history: return HistoryViewController(contentView: HistoryContentView())
         }
     }
 }

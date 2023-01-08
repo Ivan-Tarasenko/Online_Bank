@@ -1,13 +1,19 @@
 //
 //  WithdrawalContentView.swift
-//  OnlineBank
+//  Super easy dev
 //
-//  Created by Иван Тарасенко on 28.12.2022.
+//  Created by Иван Тарасенко on 08.01.2023
 //
 
 import UIKit
 
-final class WithdrawalContentView: UIView, ContentViewProtocol {
+protocol WithdrawalContentViewProtocol: AnyObject {}
+
+final class WithdrawalContentView: UIView {
+
+    var presenter: WithdrawalPresenterProtocol!
+    var entity: WithdrawalEntityProtocol = WithdrawalEntity()
+    var assambly: WithdrawalAssamblyProtocol = WithdrawalAssambly()
 
     let titleWithdrawalLabel: CustomLabel = {
         let label = CustomLabel()
@@ -31,34 +37,44 @@ final class WithdrawalContentView: UIView, ContentViewProtocol {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+        assambly.initialView(view: self)
         addSubview(titleWithdrawalLabel)
         addSubview(stackView)
+        backgroundColor = R.Colors.background
         makeConstraionts()
         setStackView()
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+}
 
-   private func setStackView() {
-       stackView.axis = .horizontal
-       stackView.addArrangedSubview(cashButton)
-       stackView.addArrangedSubview(requestButton)
+// MARK: - Private functions
+private extension WithdrawalContentView {
 
-       NSLayoutConstraint.activate([
-        stackView.widthAnchor.constraint(equalToConstant: 290),
-        stackView.heightAnchor.constraint(equalToConstant: 130),
-        stackView.topAnchor.constraint(equalTo: titleWithdrawalLabel.topAnchor, constant: 120),
-        stackView.centerXAnchor.constraint(equalTo: self.centerXAnchor)
-       ])
+    func setStackView() {
+        stackView.axis = .horizontal
+        stackView.addArrangedSubview(cashButton)
+        stackView.addArrangedSubview(requestButton)
+
+        NSLayoutConstraint.activate([
+            stackView.widthAnchor.constraint(equalToConstant: 290),
+            stackView.heightAnchor.constraint(equalToConstant: 130),
+            stackView.topAnchor.constraint(equalTo: titleWithdrawalLabel.topAnchor, constant: 120),
+            stackView.centerXAnchor.constraint(equalTo: self.centerXAnchor)
+        ])
     }
 
-   private func makeConstraionts() {
+    func makeConstraionts() {
         NSLayoutConstraint.activate([
             titleWithdrawalLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 20),
             titleWithdrawalLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
             titleWithdrawalLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 16)
         ])
     }
+}
+
+// MARK: - WithdrawalContentViewProtocol
+extension WithdrawalContentView: WithdrawalContentViewProtocol {
 }

@@ -8,15 +8,39 @@
 import Foundation
 
 protocol MainPresenterProtocol: AnyObject {
-    func configurView()
+    func configureView()
+    func pressedAddProduct()
+
+    init(_ view: MainContentViewProtocol)
+    init(_ controller: MainViewControllerProtocol)
+
 }
 
-final class MainPresenter: MainPresenterProtocol {
+final class MainPresenter {
 
+    weak var viewController: MainViewControllerProtocol?
     weak var view: MainContentViewProtocol?
     var interactor: MainInteractorProtocol!
-    
-    func configurView() {
-        print("Presenter")
+    var router: MainRouterProtocol!
+
+    required init(_ view: MainContentViewProtocol) {
+        self.view = view
+    }
+
+    required init(_ controller: MainViewControllerProtocol) {
+        self.viewController = controller
+    }
+
+    func configureView() {
+//        viewController?.configer(view: contentView!)
+    }
+
+}
+
+// MARK: - MainPresenterProtocol
+extension MainPresenter: MainPresenterProtocol {
+
+    func pressedAddProduct() {
+        router.transitionOnNewProduct()
     }
 }

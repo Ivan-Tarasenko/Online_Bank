@@ -8,15 +8,19 @@
 import UIKit
 
 protocol MainContentViewProtocol: AnyObject {
-//    func settingCardView()
+    var addProductAction: (() -> Void)? { get set }
 }
 
-final class MainContentView: UIView, MainContentViewProtocol, ContentViewProtocol {
+final class MainContentView: UIView, MainContentViewProtocol {
+
+    var addProductAction: (() -> Void)?
 
     var presenter: MainPresenterProtocol!
-    
-    let cardView = Card()
-    
+    var entity: MainEntityProtocol = MainEntity()
+    var assambly: MainAssamblyProtocol = MainAssambly()
+
+    var cardView = Card()
+
     let titleBalanceLabel: CustomLabel = {
         let label = CustomLabel()
         label.text = R.Titles.MainScreen.titileBalance
@@ -37,13 +41,14 @@ final class MainContentView: UIView, MainContentViewProtocol, ContentViewProtoco
         button.setTitle(R.Titles.MainScreen.addProductTitle, for: .normal)
         return button
     }()
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
+        assambly.initialView(view: self)
         setContent()
         addTargets()
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -57,6 +62,7 @@ final class MainContentView: UIView, MainContentViewProtocol, ContentViewProtoco
         addSubview(depositBalanceLabel)
         addSubview(cardView)
         addSubview(addProductButton)
+        backgroundColor = R.Colors.background
         makeConstraints()
     }
     
@@ -83,6 +89,11 @@ final class MainContentView: UIView, MainContentViewProtocol, ContentViewProtoco
     }
     
     @objc func addProductPressed() {
-        print("Добавить продукт")
+        addProductAction?()
     }
+}
+
+// MARK: - Private functions
+private extension MainContentView {
+
 }

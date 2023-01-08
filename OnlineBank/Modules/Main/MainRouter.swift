@@ -6,9 +6,29 @@
 //
 
 import Foundation
+import UIKit
 
-protocol MainRouterProtocol: AnyObject {}
+protocol MainRouterProtocol: AnyObject {
 
-final class MainRouter: MainRouterProtocol {
-    
+    func transitionOnNewProduct()
+
+    init(_ viewController: MainViewController)
+}
+
+final class MainRouter {
+
+    weak var viewController: MainViewController?
+
+    init(_ viewController: MainViewController) {
+        self.viewController = viewController
+    }
+}
+
+// MARK: - MainRouterProtocol
+extension MainRouter: MainRouterProtocol {
+    func transitionOnNewProduct() {
+        viewController?.present(NewProduct(), animated: true)
+        print("Transition MewProduct")
+    }
+
 }

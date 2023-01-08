@@ -11,8 +11,13 @@ protocol MainEntityProtocol {
     var imageCard: UIImage { get }
 }
 
-struct MainEntity: MainEntityProtocol {
+struct MainEntity {
 
     var imageCard: UIImage { return UIImage(imageLiteralResourceName: "card")}
+
+}
+
+// MARK: - MainEntityProtocol
+extension MainEntity: MainEntityProtocol {
 
 }

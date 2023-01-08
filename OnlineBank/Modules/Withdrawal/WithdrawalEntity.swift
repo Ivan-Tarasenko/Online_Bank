@@ -1,8 +1,21 @@
 //
 //  WithdrawalEntity.swift
-//  OnlineBank
+//  Super easy dev
 //
-//  Created by Иван Тарасенко on 04.01.2023.
+//  Created by Иван Тарасенко on 08.01.2023
 //
 
-import Foundation
+import UIKit
+
+protocol WithdrawalEntityProtocol {
+
+}
+
+struct WithdrawalEntity {
+
+}
+
+// MARK: - WithdrawalEntityProtocol
+extension WithdrawalEntity: WithdrawalEntityProtocol {
+
+}

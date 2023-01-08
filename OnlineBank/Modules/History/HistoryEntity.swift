@@ -1,8 +1,21 @@
 //
 //  HistoryEntity.swift
-//  OnlineBank
+//  Super easy dev
 //
-//  Created by Иван Тарасенко on 04.01.2023.
+//  Created by Иван Тарасенко on 08.01.2023
 //
 
-import Foundation
+import UIKit
+
+protocol HistoryEntityProtocol {
+
+}
+
+struct HistoryEntity {
+
+}
+
+// MARK: - HistoryEntityProtocol
+extension HistoryEntity: HistoryEntityProtocol {
+
+}

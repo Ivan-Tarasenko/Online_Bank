@@ -30,7 +30,7 @@ enum R {
 
     enum Colors {
         static let separator = UIColor(hexString: "#E8ECEF")
-        static let background = UIColor(hexString: "#F8F9F9")
+        static let background = UIColor(hexString: "#F8F8F8")
     }
 
     enum Titles {
