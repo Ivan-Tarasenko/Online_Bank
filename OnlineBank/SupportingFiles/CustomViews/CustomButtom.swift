@@ -9,6 +9,23 @@ import UIKit
 
 final class CustomButtom: UIButton {
 
+    override public var isHighlighted: Bool {
+             didSet {
+
+                 if isHighlighted {
+
+                     UIView.animate(withDuration: 0.1) {
+                         self.transform = CGAffineTransform(scaleX: 0.95, y: 0.95)
+                     }
+                 } else {
+
+                     UIView.animate(withDuration: 0.1) {
+                         self.transform = CGAffineTransform(scaleX: 1, y: 1)
+                     }
+                 }
+             }
+         }
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         setShadow(for: self)

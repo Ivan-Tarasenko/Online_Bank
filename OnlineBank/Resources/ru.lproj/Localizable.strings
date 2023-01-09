@@ -6,6 +6,14 @@
   
 */
 
+// Register screen
+"title" = "Пожалуйста, зарегистрируйтесь";
+"registerButton" = "Зарегистрироваться";
+"name" = " Введите имя";
+"surname" = " Введите свою фамилию";
+"numberCard" = " Введите номер своей карты";
+
+
 // Title Navigation Controller
 "Main" = "Главная";
 "Translations" = "Переводы";
