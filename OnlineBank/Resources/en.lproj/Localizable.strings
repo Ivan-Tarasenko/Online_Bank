@@ -12,8 +12,7 @@
 "name" = " Enter a name";
 "surname" = " Enter your last name";
 "numberCard" = " Enter your card number";
-
-
+"numberPhone" = " Enter your phone number";
 
 // Title Navigation Controller
 "Main" = "Main";

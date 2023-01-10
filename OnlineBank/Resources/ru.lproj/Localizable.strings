@@ -12,6 +12,7 @@
 "name" = " Введите имя";
 "surname" = " Введите свою фамилию";
 "numberCard" = " Введите номер своей карты";
+"numberPhone" = " Введите номер телефона";
 
 
 // Title Navigation Controller

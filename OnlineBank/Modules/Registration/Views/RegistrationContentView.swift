@@ -1,13 +1,28 @@
 //
-//  RegistrationView.swift
-//  OnlineBank
+//  RegistrationContentView.swift
+//  Super easy dev
 //
-//  Created by Иван Тарасенко on 02.01.2023.
+//  Created by Иван Тарасенко on 09.01.2023
 //
 
 import UIKit
+import RealmSwift
 
-final class RegistrarionView: UIView {
+protocol RegistrationContentViewProtocol: AnyObject {
+    var registrationAction: (() -> Void)? { get set }
+}
+
+final class RegistrationContentView: UIView {
+
+    var registrationAction: (() -> Void)?
+
+    var presenter: RegistrationPresenterProtocol!
+    var entity: RegistrationEntityProtocol = RegistrationEntity()
+    var assambly: RegistrationAssamblyProtocol = RegistrationAssambly()
+
+    let realm = RealmService()
+    var client = Client()
+    var card = ClientCard()
 
     let title: CustomLabel = {
         let label = CustomLabel()
@@ -23,7 +38,7 @@ final class RegistrarionView: UIView {
         return field
     }()
 
-    let surNameTextField: CustomTextField = {
+    let surnameTextField: CustomTextField = {
         let field = CustomTextField()
         field.placeholder = R.Titles.RegisterScreen.placeholderSurName
         return field
@@ -32,6 +47,12 @@ final class RegistrarionView: UIView {
     let numberCardTextField: CustomTextField = {
         let field = CustomTextField()
         field.placeholder = R.Titles.RegisterScreen.placeholderNumberCard
+        return field
+    }()
+
+    let numberPhoneTextField: CustomTextField = {
+        let field = CustomTextField()
+        field.placeholder = R.Titles.RegisterScreen.placeholderNumberPhone
         return field
     }()
 
@@ -45,8 +66,11 @@ final class RegistrarionView: UIView {
 
     let stackView = StackView()
 
+    var usefulConnections: Results<Client>!
+
     override init(frame: CGRect) {
         super.init(frame: frame)
+        assambly.initialView(view: self)
         setRegisterView()
         addTargets()
         setStackView()
@@ -56,6 +80,10 @@ final class RegistrarionView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+}
+
+// MARK: - Private functions
+private extension RegistrationContentView {
 
     func setRegisterView() {
         backgroundColor = .systemBlue
@@ -67,23 +95,24 @@ final class RegistrarionView: UIView {
         registerButton.addTarget(self, action: #selector(registerButtonPressed), for: .touchUpInside)
     }
 
-    private func setStackView() {
+    func setStackView() {
         stackView.addArrangedSubview(nameTextField)
-        stackView.addArrangedSubview(surNameTextField)
+        stackView.addArrangedSubview(surnameTextField)
         stackView.addArrangedSubview(numberCardTextField)
+        stackView.addArrangedSubview(numberPhoneTextField)
         stackView.addArrangedSubview(registerButton)
 
         stackView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             stackView.widthAnchor.constraint(equalToConstant: 290),
-            stackView.heightAnchor.constraint(equalToConstant: 290),
+            stackView.heightAnchor.constraint(equalToConstant: 350),
             stackView.topAnchor.constraint(equalTo: title.topAnchor, constant: 120),
             stackView.centerXAnchor.constraint(equalTo: self.centerXAnchor)
-            
+
         ])
     }
 
-    private func makeConstraints() {
+    func makeConstraints() {
         title.translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint.activate([
@@ -92,9 +121,30 @@ final class RegistrarionView: UIView {
             title.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 25)
         ])
     }
+    
+}
+
+// MARK: - RegistrationContentViewProtocol
+extension RegistrationContentView: RegistrationContentViewProtocol {
 
     @objc func registerButtonPressed() {
         print("register")
         self.isHidden = true
+
+        client.name = nameTextField.txt
+        client.surname = surnameTextField.txt
+        client.numberPhone = numberPhoneTextField.txt
+
+        card.numberCard = numberCardTextField.txt
+
+        realm.create(client)
+        realm.create(card)
+
+        let realm = RealmService.shared.realm
+            usefulConnections = realm.objects(Client.self)
+
+          print(Realm.Configuration.defaultConfiguration.fileURL)
+
+        registrationAction?()
     }
 }

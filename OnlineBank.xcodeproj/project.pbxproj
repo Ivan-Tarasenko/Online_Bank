@@ -30,7 +30,6 @@
 		1A4F39952962BF75002E5563 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4F39942962BF75002E5563 /* TableViewDataSource.swift */; };
 		1A4F39972962BF84002E5563 /* TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4F39962962BF84002E5563 /* TableViewDelegate.swift */; };
 		1A4F39992962BFA1002E5563 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4F39982962BFA1002E5563 /* CustomTableViewCell.swift */; };
-		1A4F399C2962D6FB002E5563 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4F399B2962D6FB002E5563 /* RegistrationView.swift */; };
 		1A4F399E2962DFA9002E5563 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4F399D2962DFA9002E5563 /* CustomTextField.swift */; };
 		1A8D67DA29657F6200B45E63 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D67D929657F6200B45E63 /* MainInteractor.swift */; };
 		1A8D67DC29657FC500B45E63 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D67DB29657FC500B45E63 /* MainPresenter.swift */; };
@@ -38,12 +37,7 @@
 		1A8D67E029657FE800B45E63 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D67DF29657FE800B45E63 /* MainRouter.swift */; };
 		1A8D67E22965800400B45E63 /* MainAssambly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D67E12965800400B45E63 /* MainAssambly.swift */; };
 		1A8D680C2966C35B00B45E63 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1A8D680B2966C35B00B45E63 /* RealmSwift */; };
-		1A8D680F2966CEB000B45E63 /* RegistrationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D680E2966CEB000B45E63 /* RegistrationInteractor.swift */; };
-		1A8D68112966CEBE00B45E63 /* RegistrationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D68102966CEBE00B45E63 /* RegistrationPresenter.swift */; };
-		1A8D68132966CED000B45E63 /* RegistrationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D68122966CED000B45E63 /* RegistrationEntity.swift */; };
-		1A8D68152966CEDE00B45E63 /* RegistrationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D68142966CEDE00B45E63 /* RegistrationRouter.swift */; };
-		1A8D68172966CEFA00B45E63 /* RegistrationAssambly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D68162966CEFA00B45E63 /* RegistrationAssambly.swift */; };
-		1A8D681A2966CF8D00B45E63 /* RealmeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D68192966CF8D00B45E63 /* RealmeService.swift */; };
+		1A8D681A2966CF8D00B45E63 /* RealmeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D68192966CF8D00B45E63 /* RealmeModel.swift */; };
 		1AD804D4296ABB0C00836874 /* TranslationContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD804CD296ABB0C00836874 /* TranslationContentView.swift */; };
 		1AD804D5296ABB0C00836874 /* TranslationAssambly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD804CE296ABB0C00836874 /* TranslationAssambly.swift */; };
 		1AD804D6296ABB0C00836874 /* TranslationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD804CF296ABB0C00836874 /* TranslationPresenter.swift */; };
@@ -65,6 +59,16 @@
 		1AD804F6296ABD5600836874 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD804EF296ABD5600836874 /* HistoryViewController.swift */; };
 		1AD804F7296ABD5600836874 /* HistoryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD804F0296ABD5600836874 /* HistoryInteractor.swift */; };
 		1AD804F8296ABD5600836874 /* HistoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD804F1296ABD5600836874 /* HistoryEntity.swift */; };
+		1AD80510296C0CFE00836874 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD8050F296C0CFE00836874 /* Network.swift */; };
+		1AD80522296C154000836874 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD80521296C154000836874 /* RealmService.swift */; };
+		1AD80524296C1B0300836874 /* UITextField+SaveText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD80523296C1B0300836874 /* UITextField+SaveText.swift */; };
+		1ADCDD1C296D705A00F23219 /* RegistrationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADCDD15296D705A00F23219 /* RegistrationInteractor.swift */; };
+		1ADCDD1D296D705A00F23219 /* RegistrationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADCDD16296D705A00F23219 /* RegistrationRouter.swift */; };
+		1ADCDD1E296D705A00F23219 /* RegistrationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADCDD17296D705A00F23219 /* RegistrationEntity.swift */; };
+		1ADCDD1F296D705A00F23219 /* RegistrationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADCDD18296D705A00F23219 /* RegistrationPresenter.swift */; };
+		1ADCDD20296D705A00F23219 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADCDD19296D705A00F23219 /* RegistrationViewController.swift */; };
+		1ADCDD21296D705A00F23219 /* RegistrationContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADCDD1A296D705A00F23219 /* RegistrationContentView.swift */; };
+		1ADCDD22296D705A00F23219 /* RegistrationAssambly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADCDD1B296D705A00F23219 /* RegistrationAssambly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,19 +101,13 @@
 		1A4F39942962BF75002E5563 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		1A4F39962962BF84002E5563 /* TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDelegate.swift; sourceTree = "<group>"; };
 		1A4F39982962BFA1002E5563 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
-		1A4F399B2962D6FB002E5563 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		1A4F399D2962DFA9002E5563 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		1A8D67D929657F6200B45E63 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
 		1A8D67DB29657FC500B45E63 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		1A8D67DD29657FDD00B45E63 /* MainEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainEntity.swift; sourceTree = "<group>"; };
 		1A8D67DF29657FE800B45E63 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		1A8D67E12965800400B45E63 /* MainAssambly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssambly.swift; sourceTree = "<group>"; };
-		1A8D680E2966CEB000B45E63 /* RegistrationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationInteractor.swift; sourceTree = "<group>"; };
-		1A8D68102966CEBE00B45E63 /* RegistrationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPresenter.swift; sourceTree = "<group>"; };
-		1A8D68122966CED000B45E63 /* RegistrationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationEntity.swift; sourceTree = "<group>"; };
-		1A8D68142966CEDE00B45E63 /* RegistrationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationRouter.swift; sourceTree = "<group>"; };
-		1A8D68162966CEFA00B45E63 /* RegistrationAssambly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationAssambly.swift; sourceTree = "<group>"; };
-		1A8D68192966CF8D00B45E63 /* RealmeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmeService.swift; sourceTree = "<group>"; };
+		1A8D68192966CF8D00B45E63 /* RealmeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmeModel.swift; sourceTree = "<group>"; };
 		1AD804CD296ABB0C00836874 /* TranslationContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationContentView.swift; sourceTree = "<group>"; };
 		1AD804CE296ABB0C00836874 /* TranslationAssambly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationAssambly.swift; sourceTree = "<group>"; };
 		1AD804CF296ABB0C00836874 /* TranslationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationPresenter.swift; sourceTree = "<group>"; };
@@ -131,6 +129,16 @@
 		1AD804EF296ABD5600836874 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		1AD804F0296ABD5600836874 /* HistoryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryInteractor.swift; sourceTree = "<group>"; };
 		1AD804F1296ABD5600836874 /* HistoryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryEntity.swift; sourceTree = "<group>"; };
+		1AD8050F296C0CFE00836874 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		1AD80521296C154000836874 /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
+		1AD80523296C1B0300836874 /* UITextField+SaveText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+SaveText.swift"; sourceTree = "<group>"; };
+		1ADCDD15296D705A00F23219 /* RegistrationInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationInteractor.swift; sourceTree = "<group>"; };
+		1ADCDD16296D705A00F23219 /* RegistrationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationRouter.swift; sourceTree = "<group>"; };
+		1ADCDD17296D705A00F23219 /* RegistrationEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationEntity.swift; sourceTree = "<group>"; };
+		1ADCDD18296D705A00F23219 /* RegistrationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationPresenter.swift; sourceTree = "<group>"; };
+		1ADCDD19296D705A00F23219 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		1ADCDD1A296D705A00F23219 /* RegistrationContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationContentView.swift; sourceTree = "<group>"; };
+		1ADCDD1B296D705A00F23219 /* RegistrationAssambly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationAssambly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +168,7 @@
 				1A43CFDC295EF31600716EFE /* UIView+Border.swift */,
 				1A43CFE329602EB000716EFE /* UIColor+Hex.swift */,
 				1A43CFE5296042C700716EFE /* UIView+Shadow.swift */,
+				1AD80523296C1B0300836874 /* UITextField+SaveText.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -246,14 +255,13 @@
 		1A4F399F2965700D002E5563 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				1AD80479296AB3CF00836874 /* New Group */,
-				1A8D68182966CF4D00B45E63 /* Services */,
-				1A8D68092966B4E800B45E63 /* InitialController */,
-				1A8D680D2966CE7200B45E63 /* Registration */,
+				1A43CFC9295EE50E00716EFE /* NavigationControllers */,
+				1ADCDD14296D705A00F23219 /* Registration */,
 				1A4F39A129657053002E5563 /* Main */,
 				1A4F39A22965706F002E5563 /* Translation */,
 				1A4F39A329657082002E5563 /* Withdrawal */,
 				1A4F39A429657091002E5563 /* History */,
+				1A8D68182966CF4D00B45E63 /* Services */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -319,31 +327,11 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		1A8D68092966B4E800B45E63 /* InitialController */ = {
-			isa = PBXGroup;
-			children = (
-				1A43CFC9295EE50E00716EFE /* NavigationControllers */,
-			);
-			path = InitialController;
-			sourceTree = "<group>";
-		};
-		1A8D680D2966CE7200B45E63 /* Registration */ = {
-			isa = PBXGroup;
-			children = (
-				1A4F399B2962D6FB002E5563 /* RegistrationView.swift */,
-				1A8D680E2966CEB000B45E63 /* RegistrationInteractor.swift */,
-				1A8D68102966CEBE00B45E63 /* RegistrationPresenter.swift */,
-				1A8D68122966CED000B45E63 /* RegistrationEntity.swift */,
-				1A8D68142966CEDE00B45E63 /* RegistrationRouter.swift */,
-				1A8D68162966CEFA00B45E63 /* RegistrationAssambly.swift */,
-			);
-			path = Registration;
-			sourceTree = "<group>";
-		};
 		1A8D68182966CF4D00B45E63 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				1A8D68192966CF8D00B45E63 /* RealmeService.swift */,
+				1AD8050E296C0C6000836874 /* NetworkService */,
+				1AD8050D296C0C4500836874 /* RealmService */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -356,13 +344,6 @@
 				1A35CF3229696F25003C0C47 /* NewProduct.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		1AD80479296AB3CF00836874 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		1AD804DB296ABB1100836874 /* Views */ = {
@@ -408,6 +389,45 @@
 				1A4F39982962BFA1002E5563 /* CustomTableViewCell.swift */,
 			);
 			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		1AD8050D296C0C4500836874 /* RealmService */ = {
+			isa = PBXGroup;
+			children = (
+				1A8D68192966CF8D00B45E63 /* RealmeModel.swift */,
+				1AD80521296C154000836874 /* RealmService.swift */,
+			);
+			path = RealmService;
+			sourceTree = "<group>";
+		};
+		1AD8050E296C0C6000836874 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				1AD8050F296C0CFE00836874 /* Network.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		1ADCDD14296D705A00F23219 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				1ADCDD23296D713500F23219 /* Views */,
+				1ADCDD15296D705A00F23219 /* RegistrationInteractor.swift */,
+				1ADCDD16296D705A00F23219 /* RegistrationRouter.swift */,
+				1ADCDD17296D705A00F23219 /* RegistrationEntity.swift */,
+				1ADCDD18296D705A00F23219 /* RegistrationPresenter.swift */,
+				1ADCDD1B296D705A00F23219 /* RegistrationAssambly.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		1ADCDD23296D713500F23219 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1ADCDD1A296D705A00F23219 /* RegistrationContentView.swift */,
+				1ADCDD19296D705A00F23219 /* RegistrationViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -515,38 +535,42 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A35CF3329696F25003C0C47 /* NewProduct.swift in Sources */,
-				1A8D68152966CEDE00B45E63 /* RegistrationRouter.swift in Sources */,
 				1A8D67E029657FE800B45E63 /* MainRouter.swift in Sources */,
+				1ADCDD1D296D705A00F23219 /* RegistrationRouter.swift in Sources */,
+				1AD80510296C0CFE00836874 /* Network.swift in Sources */,
+				1ADCDD22296D705A00F23219 /* RegistrationAssambly.swift in Sources */,
 				1A43CFE6296042C700716EFE /* UIView+Shadow.swift in Sources */,
 				1AD804D8296ABB0C00836874 /* TranslationViewController.swift in Sources */,
+				1ADCDD21296D705A00F23219 /* RegistrationContentView.swift in Sources */,
 				1A4F39992962BFA1002E5563 /* CustomTableViewCell.swift in Sources */,
 				1A4F39922962193C002E5563 /* CustomLabel.swift in Sources */,
 				1A4877CA295C33520029A1BC /* MainViewController.swift in Sources */,
 				1AD804D7296ABB0C00836874 /* TranslationRouter.swift in Sources */,
 				1A4877C6295C33520029A1BC /* AppDelegate.swift in Sources */,
 				1AD804E9296ABCA800836874 /* WithdrawalEntity.swift in Sources */,
+				1ADCDD20296D705A00F23219 /* RegistrationViewController.swift in Sources */,
+				1AD80524296C1B0300836874 /* UITextField+SaveText.swift in Sources */,
 				1AD804E8296ABCA800836874 /* WithdrawalInteractor.swift in Sources */,
 				1AD804D5296ABB0C00836874 /* TranslationAssambly.swift in Sources */,
 				1A4F39952962BF75002E5563 /* TableViewDataSource.swift in Sources */,
 				1A8D67DA29657F6200B45E63 /* MainInteractor.swift in Sources */,
 				1A4F39972962BF84002E5563 /* TableViewDelegate.swift in Sources */,
-				1A8D68132966CED000B45E63 /* RegistrationEntity.swift in Sources */,
-				1A8D68112966CEBE00B45E63 /* RegistrationPresenter.swift in Sources */,
 				1A4F398F296209A3002E5563 /* StackView.swift in Sources */,
 				1AD804F8296ABD5600836874 /* HistoryEntity.swift in Sources */,
-				1A4F399C2962D6FB002E5563 /* RegistrationView.swift in Sources */,
 				1A4877F7295C4E450029A1BC /* Resources.swift in Sources */,
 				1AD804F7296ABD5600836874 /* HistoryInteractor.swift in Sources */,
-				1A8D68172966CEFA00B45E63 /* RegistrationAssambly.swift in Sources */,
 				1AD804D9296ABB0C00836874 /* TranslationInteractor.swift in Sources */,
 				1A43CFF62961F4FA00716EFE /* CustomButtom.swift in Sources */,
 				1AD804F3296ABD5600836874 /* HistoryAssambly.swift in Sources */,
 				1A4877E8295C379E0029A1BC /* NavigationController.swift in Sources */,
 				1A43CFE429602EB000716EFE /* UIColor+Hex.swift in Sources */,
+				1ADCDD1E296D705A00F23219 /* RegistrationEntity.swift in Sources */,
 				1AD804E7296ABCA800836874 /* WithdrawalViewController.swift in Sources */,
 				1AD804E5296ABCA800836874 /* WithdrawalPresenter.swift in Sources */,
+				1AD80522296C154000836874 /* RealmService.swift in Sources */,
 				1A8D67DE29657FDD00B45E63 /* MainEntity.swift in Sources */,
 				1AD804DA296ABB0C00836874 /* TranslationEntity.swift in Sources */,
+				1ADCDD1C296D705A00F23219 /* RegistrationInteractor.swift in Sources */,
 				1A4877C8295C33520029A1BC /* SceneDelegate.swift in Sources */,
 				1A4877EA295C407D0029A1BC /* TabBarViewController.swift in Sources */,
 				1AD804E4296ABCA800836874 /* WithdrawalAssambly.swift in Sources */,
@@ -561,11 +585,11 @@
 				1AD804D6296ABB0C00836874 /* TranslationPresenter.swift in Sources */,
 				1A4F399E2962DFA9002E5563 /* CustomTextField.swift in Sources */,
 				1AD804E3296ABCA800836874 /* WithdrawalContentView.swift in Sources */,
-				1A8D681A2966CF8D00B45E63 /* RealmeService.swift in Sources */,
+				1A8D681A2966CF8D00B45E63 /* RealmeModel.swift in Sources */,
 				1AD804E6296ABCA800836874 /* WithdrawalRouter.swift in Sources */,
-				1A8D680F2966CEB000B45E63 /* RegistrationInteractor.swift in Sources */,
 				1AD804F4296ABD5600836874 /* HistoryPresenter.swift in Sources */,
 				1A43CFE82961B40F00716EFE /* Card.swift in Sources */,
+				1ADCDD1F296D705A00F23219 /* RegistrationPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
