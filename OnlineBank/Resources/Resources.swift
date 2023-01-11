@@ -40,6 +40,7 @@ enum R {
             static let placeholderName = NSLocalizedString("name", comment: "")
             static let placeholderSurName = NSLocalizedString("surname", comment: "")
             static let placeholderNumberCard = NSLocalizedString("numberCard", comment: "")
+            static let placeholderNumberPhone = NSLocalizedString("numberPhone", comment: "")
         }
 
         enum MainScreen {

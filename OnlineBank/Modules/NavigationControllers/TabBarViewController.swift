@@ -16,14 +16,12 @@ enum Tabs: Int, CaseIterable {
 
 final class TabBarViewController: UITabBarController {
 
-    private let registerView = RegistrarionView()
+//    private let registerView = RegistrationContentView()
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         setTabBar()
         configureAppearance()
-        view.addSubview(registerView)
-        registerView.frame = view.bounds
     }
 
     required init?(coder: NSCoder) {
@@ -32,6 +30,7 @@ final class TabBarViewController: UITabBarController {
 
     private func setTabBar() {
         tabBar.backgroundColor = .green
+
         tabBar.layer.borderColor = R.Colors.separator.cgColor
         tabBar.layer.borderWidth = 0.6
         tabBar.layer.masksToBounds = true
