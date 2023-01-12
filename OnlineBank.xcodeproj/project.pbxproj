@@ -69,6 +69,14 @@
 		1ADCDD20296D705A00F23219 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADCDD19296D705A00F23219 /* RegistrationViewController.swift */; };
 		1ADCDD21296D705A00F23219 /* RegistrationContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADCDD1A296D705A00F23219 /* RegistrationContentView.swift */; };
 		1ADCDD22296D705A00F23219 /* RegistrationAssambly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADCDD1B296D705A00F23219 /* RegistrationAssambly.swift */; };
+		1ADCDD26296EACEB00F23219 /* ExchangeRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADCDD25296EACEB00F23219 /* ExchangeRateView.swift */; };
+		1ADCDD2B296EAF7D00F23219 /* CurrencyCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADCDD2A296EAF7D00F23219 /* CurrencyCollectionCell.swift */; };
+		1ADCDD2E296EAFAB00F23219 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADCDD2D296EAFAB00F23219 /* DataSource.swift */; };
+		1ADCDD30296EB4ED00F23219 /* CurrencyCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADCDD2F296EB4ED00F23219 /* CurrencyCollection.swift */; };
+		1ADCDD32296EB54D00F23219 /* CollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADCDD31296EB54D00F23219 /* CollectionLayout.swift */; };
+		1ADCDD37296EC92200F23219 /* SaveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADCDD34296EC92200F23219 /* SaveData.swift */; };
+		1ADCDD38296EC92200F23219 /* CurrentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADCDD35296EC92200F23219 /* CurrentData.swift */; };
+		1ADCDD39296EC92200F23219 /* CurrencyEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADCDD36296EC92200F23219 /* CurrencyEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -139,6 +147,14 @@
 		1ADCDD19296D705A00F23219 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		1ADCDD1A296D705A00F23219 /* RegistrationContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationContentView.swift; sourceTree = "<group>"; };
 		1ADCDD1B296D705A00F23219 /* RegistrationAssambly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationAssambly.swift; sourceTree = "<group>"; };
+		1ADCDD25296EACEB00F23219 /* ExchangeRateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateView.swift; sourceTree = "<group>"; };
+		1ADCDD2A296EAF7D00F23219 /* CurrencyCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCollectionCell.swift; sourceTree = "<group>"; };
+		1ADCDD2D296EAFAB00F23219 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		1ADCDD2F296EB4ED00F23219 /* CurrencyCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCollection.swift; sourceTree = "<group>"; };
+		1ADCDD31296EB54D00F23219 /* CollectionLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionLayout.swift; sourceTree = "<group>"; };
+		1ADCDD34296EC92200F23219 /* SaveData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveData.swift; sourceTree = "<group>"; };
+		1ADCDD35296EC92200F23219 /* CurrentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentData.swift; sourceTree = "<group>"; };
+		1ADCDD36296EC92200F23219 /* CurrencyEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -339,6 +355,7 @@
 		1A8D681B2968152A00B45E63 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1ADCDD24296EAC8C00F23219 /* ExchangeRateView */,
 				1A4877E5295C36BF0029A1BC /* MainContentView.swift */,
 				1A4877C9295C33520029A1BC /* MainViewController.swift */,
 				1A35CF3229696F25003C0C47 /* NewProduct.swift */,
@@ -367,20 +384,20 @@
 		1AD804F9296ABD5B00836874 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1AD804FA296AC80900836874 /* TableView */,
+				1AD804FA296AC80900836874 /* HistoryTableView */,
 				1AD804EB296ABD5600836874 /* HistoryContentView.swift */,
 				1AD804EF296ABD5600836874 /* HistoryViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		1AD804FA296AC80900836874 /* TableView */ = {
+		1AD804FA296AC80900836874 /* HistoryTableView */ = {
 			isa = PBXGroup;
 			children = (
 				1A4F39932962BF01002E5563 /* Delegates */,
 				1AD804FB296AC81100836874 /* CustomCell */,
 			);
-			path = TableView;
+			path = HistoryTableView;
 			sourceTree = "<group>";
 		};
 		1AD804FB296AC81100836874 /* CustomCell */ = {
@@ -403,6 +420,7 @@
 		1AD8050E296C0C6000836874 /* NetworkService */ = {
 			isa = PBXGroup;
 			children = (
+				1ADCDD33296EC92200F23219 /* Model */,
 				1AD8050F296C0CFE00836874 /* Network.swift */,
 			);
 			path = NetworkService;
@@ -428,6 +446,44 @@
 				1ADCDD19296D705A00F23219 /* RegistrationViewController.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		1ADCDD24296EAC8C00F23219 /* ExchangeRateView */ = {
+			isa = PBXGroup;
+			children = (
+				1ADCDD29296EAF3A00F23219 /* CurrencyCollection */,
+				1ADCDD25296EACEB00F23219 /* ExchangeRateView.swift */,
+			);
+			path = ExchangeRateView;
+			sourceTree = "<group>";
+		};
+		1ADCDD29296EAF3A00F23219 /* CurrencyCollection */ = {
+			isa = PBXGroup;
+			children = (
+				1ADCDD2C296EAF8700F23219 /* Delegates */,
+				1ADCDD2F296EB4ED00F23219 /* CurrencyCollection.swift */,
+				1ADCDD2A296EAF7D00F23219 /* CurrencyCollectionCell.swift */,
+			);
+			path = CurrencyCollection;
+			sourceTree = "<group>";
+		};
+		1ADCDD2C296EAF8700F23219 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				1ADCDD2D296EAFAB00F23219 /* DataSource.swift */,
+				1ADCDD31296EB54D00F23219 /* CollectionLayout.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		1ADCDD33296EC92200F23219 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1ADCDD34296EC92200F23219 /* SaveData.swift */,
+				1ADCDD35296EC92200F23219 /* CurrentData.swift */,
+				1ADCDD36296EC92200F23219 /* CurrencyEntity.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -548,6 +604,7 @@
 				1AD804D7296ABB0C00836874 /* TranslationRouter.swift in Sources */,
 				1A4877C6295C33520029A1BC /* AppDelegate.swift in Sources */,
 				1AD804E9296ABCA800836874 /* WithdrawalEntity.swift in Sources */,
+				1ADCDD2B296EAF7D00F23219 /* CurrencyCollectionCell.swift in Sources */,
 				1ADCDD20296D705A00F23219 /* RegistrationViewController.swift in Sources */,
 				1AD80524296C1B0300836874 /* UITextField+SaveText.swift in Sources */,
 				1AD804E8296ABCA800836874 /* WithdrawalInteractor.swift in Sources */,
@@ -555,6 +612,8 @@
 				1A4F39952962BF75002E5563 /* TableViewDataSource.swift in Sources */,
 				1A8D67DA29657F6200B45E63 /* MainInteractor.swift in Sources */,
 				1A4F39972962BF84002E5563 /* TableViewDelegate.swift in Sources */,
+				1ADCDD38296EC92200F23219 /* CurrentData.swift in Sources */,
+				1ADCDD26296EACEB00F23219 /* ExchangeRateView.swift in Sources */,
 				1A4F398F296209A3002E5563 /* StackView.swift in Sources */,
 				1AD804F8296ABD5600836874 /* HistoryEntity.swift in Sources */,
 				1A4877F7295C4E450029A1BC /* Resources.swift in Sources */,
@@ -574,8 +633,11 @@
 				1A4877C8295C33520029A1BC /* SceneDelegate.swift in Sources */,
 				1A4877EA295C407D0029A1BC /* TabBarViewController.swift in Sources */,
 				1AD804E4296ABCA800836874 /* WithdrawalAssambly.swift in Sources */,
+				1ADCDD30296EB4ED00F23219 /* CurrencyCollection.swift in Sources */,
 				1AD804F5296ABD5600836874 /* HistoryRouter.swift in Sources */,
+				1ADCDD2E296EAFAB00F23219 /* DataSource.swift in Sources */,
 				1AD804F6296ABD5600836874 /* HistoryViewController.swift in Sources */,
+				1ADCDD32296EB54D00F23219 /* CollectionLayout.swift in Sources */,
 				1A8D67DC29657FC500B45E63 /* MainPresenter.swift in Sources */,
 				1AD804F2296ABD5600836874 /* HistoryContentView.swift in Sources */,
 				1AD804D4296ABB0C00836874 /* TranslationContentView.swift in Sources */,
@@ -583,6 +645,8 @@
 				1A43CFDD295EF31600716EFE /* UIView+Border.swift in Sources */,
 				1A4877E6295C36BF0029A1BC /* MainContentView.swift in Sources */,
 				1AD804D6296ABB0C00836874 /* TranslationPresenter.swift in Sources */,
+				1ADCDD39296EC92200F23219 /* CurrencyEntity.swift in Sources */,
+				1ADCDD37296EC92200F23219 /* SaveData.swift in Sources */,
 				1A4F399E2962DFA9002E5563 /* CustomTextField.swift in Sources */,
 				1AD804E3296ABCA800836874 /* WithdrawalContentView.swift in Sources */,
 				1A8D681A2966CF8D00B45E63 /* RealmeModel.swift in Sources */,

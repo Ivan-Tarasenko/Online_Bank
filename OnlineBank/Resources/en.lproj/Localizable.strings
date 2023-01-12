@@ -21,6 +21,7 @@
 "History" = "History";
 
 // Main screen
+"currencyTitle" = "Exchange rates";
 "addProductButton" = "Add a product";
 "titleBalance" = "Your balance:";
 

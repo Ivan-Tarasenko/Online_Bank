@@ -44,6 +44,7 @@ enum R {
         }
 
         enum MainScreen {
+            static let currencyTitle = NSLocalizedString("currencyTitle", comment: "")
             static let addProductTitle = NSLocalizedString("addProductButton", comment: "")
             static let titileBalance = NSLocalizedString("titleBalance", comment: "")
         }

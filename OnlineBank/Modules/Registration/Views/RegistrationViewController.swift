@@ -16,6 +16,9 @@ final class RegistrationViewController: UIViewController {
     var contentView: RegistrationContentViewProtocol?
     private let assambly: RegistrationAssamblyProtocol = RegistrationAssambly()
 
+
+    var network = NetworkManager()
+
     // MARK: - Inition View
     init(contentView: RegistrationContentView) {
         self.contentView = contentView
@@ -35,6 +38,10 @@ final class RegistrationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         transitionBar()
+        network.fetchData { _ in
+            print(self.network.currencies)
+        }
+
     }
 }
 
