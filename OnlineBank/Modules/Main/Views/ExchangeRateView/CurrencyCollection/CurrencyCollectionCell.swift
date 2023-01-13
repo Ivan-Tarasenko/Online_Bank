@@ -13,17 +13,42 @@ final class CurrencyCollectionCell: UICollectionViewCell {
         return String(describing: self)
     }
 
+    let currencyLabel: UILabel = {
+        var label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 20, weight: .medium)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "currency rate"
+        return label
+    }()
+
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setShadow(for: self)
-//        backgroundColor = .systemBlue
-        contentView.backgroundColor = .systemBlue
-            contentView.layer.cornerRadius = 15
-        contentView.layer.masksToBounds = true
-        contentView.clipsToBounds = true
+        setupCell()
+        makeConstraints()
+
     }
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+}
+
+private extension CurrencyCollectionCell {
+
+    func setupCell() {
+addSubview(currencyLabel)
+        backgroundColor = .white
+        layer.cornerRadius = 15
+        layer.masksToBounds = false
+    }
+
+    func makeConstraints() {
+        NSLayoutConstraint.activate([
+            currencyLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 5),
+            currencyLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 5),
+            currencyLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+            currencyLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor)
+        ])
     }
 }

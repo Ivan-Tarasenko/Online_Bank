@@ -10,37 +10,17 @@ import UIKit
 final class CollectionLayout: UICollectionViewFlowLayout {
 
     override init() {
-
         super.init()
-
         setup()
-
     }
 
-    required init?(coder aDecoder: NSCoder) {
-
-        super.init(coder: aDecoder)
-
-        setup()
-
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 
     func setup() {
-
-        // setting up some inherited values
-
-        let width = 170
-
-        let height = 70
-
-        self.itemSize = CGSize(width: width, height: width)
-
-        self.sectionInset = UIEdgeInsets(top: 10, left: 20, bottom: 10, right: 20)
-
-        self.minimumInteritemSpacing = 15
-
-        self.minimumLineSpacing = 15
-
+        self.itemSize = CGSize(width: 170, height: 50)
+        self.sectionInset = UIEdgeInsets(top: 5, left: 10, bottom: 5, right: 10)
         self.scrollDirection = .horizontal
 
     }

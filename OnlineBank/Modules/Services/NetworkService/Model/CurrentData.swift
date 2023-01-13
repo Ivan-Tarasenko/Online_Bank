@@ -8,11 +8,9 @@ import Foundation
 
 // MARK: - CurrentData
 struct CurrentData: Codable {
-    let date: String
     let valute: [String: Currency]
 
     enum CodingKeys: String, CodingKey {
-        case date = "Date"
         case valute = "Valute"
     }
 }

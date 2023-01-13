@@ -12,6 +12,7 @@ final class CurrencyCollection: UICollectionView {
     override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
         super.init(frame: frame, collectionViewLayout: CollectionLayout())
         registerCell()
+        backgroundColor = .clear
         translatesAutoresizingMaskIntoConstraints = false
     }
 

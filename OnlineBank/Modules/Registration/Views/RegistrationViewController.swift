@@ -16,7 +16,6 @@ final class RegistrationViewController: UIViewController {
     var contentView: RegistrationContentViewProtocol?
     private let assambly: RegistrationAssamblyProtocol = RegistrationAssambly()
 
-
     var network = NetworkManager()
 
     // MARK: - Inition View
@@ -38,9 +37,12 @@ final class RegistrationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         transitionBar()
-        network.fetchData { _ in
-            print(self.network.currencies)
-        }
+//        network.fetchData { isFetch in
+//            if let currency = self.network.currencies {
+//                let sortCurrency = currency.sorted(by: {$0.key < $1.key})
+////                print(sortCurrency)
+//            }
+//        }
 
     }
 }

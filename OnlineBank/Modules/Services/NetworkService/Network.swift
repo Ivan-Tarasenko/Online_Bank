@@ -13,23 +13,15 @@ final class NetworkManager {
 
     var urlString = "https://www.cbr-xml-daily.ru/daily_json.js"
 
-    var onUpDataCurrency: (([String: Currency]) -> Void)?
+//    var onUpDataCurrency: (([String: Currency]) -> Void)?
 
-    var currencies: [String: Currency]? {
-        didSet {
-            if let currency = currencies {
-                onUpDataCurrency?(currency)
-            }
-        }
-    }
-
-    var sortCurrency: [Dictionary<String, Currency>.Element] {
-        var sort = [Dictionary<String, Currency>.Element]()
-        if let currencies = currencies {
-            sort = currencies.sorted(by: {$0.key < $1.key})
-        }
-        return sort
-    }
+    var currencies: [String: Currency]? //{
+//        didSet {
+//            if let currency = currencies {
+//                onUpDataCurrency?(currency)
+//            }
+//        }
+//    }
 
     // MARK: - Fetch data
     func fetchData(completion: @escaping (Bool) -> Void) {
@@ -66,21 +58,5 @@ final class NetworkManager {
             print(error.localizedDescription)
         }
         return nil
-    }
-
-    func currencyKeys() -> [String] {
-        var keys = [String]()
-            for (key, _) in sortCurrency {
-                keys.append(key)
-            }
-        return keys
-    }
-
-    func currencyName() -> [String] {
-        var names = [String]()
-            for (_, value) in sortCurrency {
-                names.append(value.name)
-            }
-        return names
     }
 }
