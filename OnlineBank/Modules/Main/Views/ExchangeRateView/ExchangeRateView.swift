@@ -12,6 +12,8 @@ class ExchangeRateView: UIView {
     private let currencyCollection = CurrencyCollection()
     private let currencyCollectionDataSource = CurrencyCollectionDataSource()
 
+    var network = NetworkManager()
+
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.text = R.Titles.MainScreen.currencyTitle
@@ -23,7 +25,9 @@ class ExchangeRateView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         translatesAutoresizingMaskIntoConstraints = false
-        setup()
+        network.fetchData()
+        network.delegate = self
+        setupExchangeRateView()
         bind()
     }
     
@@ -35,7 +39,7 @@ class ExchangeRateView: UIView {
 
 private extension ExchangeRateView {
 
-    func setup() {
+    func setupExchangeRateView() {
         addSubview(currencyCollection)
         addSubview(titleLabel)
         makeConstraint()
@@ -50,10 +54,16 @@ private extension ExchangeRateView {
             currencyCollection.leadingAnchor.constraint(equalTo: self.leadingAnchor),
             currencyCollection.trailingAnchor.constraint(equalTo: self.trailingAnchor),
             currencyCollection.bottomAnchor.constraint(equalTo: self.bottomAnchor)
-    ])
+        ])
     }
 
     func bind() {
-        currencyCollection.dataSource = currencyCollectionDataSource
+        self.currencyCollection.dataSource = currencyCollectionDataSource
+    }
+}
+
+extension ExchangeRateView: NetworkManagerDelegate {
+    func upDateCurrency(_: NetworkManager, with currentCurrency: CurrencyEntity) {
+        currencyCollectionDataSource.currensies = currentCurrency.currency
     }
 }

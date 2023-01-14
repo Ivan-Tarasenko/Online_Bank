@@ -13,7 +13,7 @@ final class CurrencyCollectionCell: UICollectionViewCell {
         return String(describing: self)
     }
 
-    let currencyLabel: UILabel = {
+    var currencyLabel: UILabel = {
         var label = UILabel()
         label.font = UIFont.systemFont(ofSize: 20, weight: .medium)
         label.translatesAutoresizingMaskIntoConstraints = false

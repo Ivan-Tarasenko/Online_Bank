@@ -7,24 +7,30 @@
 
 import Foundation
 
+protocol NetworkManagerDelegate: AnyObject {
+    func upDateCurrency(_: NetworkManager, with currentCurrency: CurrencyEntity)
+}
+
 final class NetworkManager {
+
+    weak var delegate: NetworkManagerDelegate?
 
     let saveData = SaveData()
 
     var urlString = "https://www.cbr-xml-daily.ru/daily_json.js"
 
-//    var onUpDataCurrency: (([String: Currency]) -> Void)?
+//    var currencies: [String: Currency]?
 
-    var currencies: [String: Currency]? //{
-//        didSet {
-//            if let currency = currencies {
-//                onUpDataCurrency?(currency)
-//            }
+//    var sortCurrency: [Dictionary<String, Currency>.Element] {
+//        var sort = [Dictionary<String, Currency>.Element]()
+//        if let currencies = currencies {
+//            sort = currencies.sorted(by: {$0.key < $1.key})
 //        }
+//        return sort
 //    }
 
     // MARK: - Fetch data
-    func fetchData(completion: @escaping (Bool) -> Void) {
+    func fetchData() {
         guard let URL = URL(string: urlString) else { return }
         let session = URLSession(configuration: .default)
 
@@ -36,12 +42,7 @@ final class NetworkManager {
             if let data = data {
                 self.saveData.data = data
                 if let currencyEntity =  self.parseJSON(withData: data) {
-                    DispatchQueue.main.async {
-
-                        self.currencies = currencyEntity.currency
-
-                        completion(true)
-                    }
+                    self.delegate?.upDateCurrency(self, with: currencyEntity)
                 }
             }
         }
@@ -59,4 +60,12 @@ final class NetworkManager {
         }
         return nil
     }
+
+//    func currencyKeys() -> [String] {
+//        var keys = [String]()
+//        for (key, _) in sortCurrency {
+//            keys.append(key)
+//        }
+//        return keys
+//    }
 }

@@ -128,7 +128,6 @@ private extension RegistrationContentView {
 extension RegistrationContentView: RegistrationContentViewProtocol {
 
     @objc func registerButtonPressed() {
-        print("register")
 
 
 //        client.name = nameTextField.txt
