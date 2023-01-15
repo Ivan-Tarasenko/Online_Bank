@@ -11,7 +11,12 @@ protocol NetworkManagerDelegate: AnyObject {
     func upDateCurrency(_: NetworkManager, with currentCurrency: CurrencyEntity)
 }
 
-final class NetworkManager {
+protocol NetworkManagerProtocol: AnyObject {
+    var delegate: (NetworkManagerDelegate)? { get set }
+    func fetchData()
+}
+
+final class NetworkManager: NetworkManagerProtocol {
 
     weak var delegate: NetworkManagerDelegate?
 

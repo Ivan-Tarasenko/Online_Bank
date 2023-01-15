@@ -8,8 +8,11 @@
 import Foundation
 
 protocol MainPresenterProtocol: AnyObject {
-    func configureView()
+
+    func configereCard()
     func pressedAddProduct()
+
+    func getTitle(from array: [String])
 
     init(_ view: MainContentViewProtocol)
     init(_ controller: MainViewControllerProtocol)
@@ -30,17 +33,20 @@ final class MainPresenter {
     required init(_ controller: MainViewControllerProtocol) {
         self.viewController = controller
     }
-
-    func configureView() {
-//        viewController?.configer(view: contentView!)
-    }
-
 }
 
 // MARK: - MainPresenterProtocol
 extension MainPresenter: MainPresenterProtocol {
 
+    func configereCard() {
+        view?.installingCardData(number: "0000", name: "Ivan", image: interactor.imageCard)
+    }
+
     func pressedAddProduct() {
         router.transitionOnNewProduct()
+    }
+
+    func getTitle(from array: [String]) {
+        view?.setCurrencyRate(from: array)
     }
 }

@@ -9,11 +9,11 @@ import UIKit
 
 protocol MainContentViewProtocol: AnyObject {
     var addProductAction: (() -> Void)? { get set }
-
-    var exchangeRateView: ExchangeRateView { get set }
+    func installingCardData(number: String, name: String, image: UIImage)
+    func setCurrencyRate(from array: [String])
 }
 
-final class MainContentView: UIView, MainContentViewProtocol {
+final class MainContentView: UIView {
     
     var addProductAction: (() -> Void)?
 
@@ -54,6 +54,7 @@ final class MainContentView: UIView, MainContentViewProtocol {
         assambly.initialView(view: self)
         setContent()
         addTargets()
+        presenter.configereCard()
     }
 
     required init?(coder: NSCoder) {
@@ -108,5 +109,19 @@ private extension MainContentView {
             addProductButton.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             addProductButton.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -120)
         ])
+    }
+}
+
+// MARK: - MainContentViewProtocol
+extension MainContentView: MainContentViewProtocol {
+    
+    func installingCardData(number: String, name: String, image: UIImage) {
+        cardView.numderOnCardLabel.txt = number
+        cardView.nameOnCardLabel.txt = name
+        cardView.imageView.image = image
+    }
+
+    func setCurrencyRate(from array: [String]) {
+        exchangeRateView.currencyCollectionDataSource.currencyRates = array
     }
 }

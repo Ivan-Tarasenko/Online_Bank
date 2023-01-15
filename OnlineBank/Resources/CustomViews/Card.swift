@@ -14,7 +14,6 @@ final class Card: UIView {
         label.font = R.Fonts.ocrARegular(with: 20)
         label.textColor = .systemGray6
         label.textAlignment = .center
-        label.text = "1234 3445 4654 5656"
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -23,14 +22,12 @@ final class Card: UIView {
         let label = UILabel()
         label.font = R.Fonts.ocrBRegular(with: 16)
         label.textColor = .systemGray6
-        label.text = "IVAN TARASENKO"
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     let imageView: UIImageView = {
         let view = UIImageView()
-        view.image = UIImage(named: "card")
         view.layer.cornerRadius = 15
         view.clipsToBounds = true
         view.translatesAutoresizingMaskIntoConstraints = false

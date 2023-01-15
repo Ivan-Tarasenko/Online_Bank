@@ -10,9 +10,7 @@ import UIKit
 class ExchangeRateView: UIView {
 
     private let currencyCollection = CurrencyCollection()
-    private let currencyCollectionDataSource = CurrencyCollectionDataSource()
-
-    var network = NetworkManager()
+    var currencyCollectionDataSource = CurrencyCollectionDataSource()
 
     private let titleLabel: UILabel = {
         let label = UILabel()
@@ -25,8 +23,6 @@ class ExchangeRateView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         translatesAutoresizingMaskIntoConstraints = false
-        network.fetchData()
-        network.delegate = self
         setupExchangeRateView()
         bind()
     }
@@ -59,11 +55,5 @@ private extension ExchangeRateView {
 
     func bind() {
         self.currencyCollection.dataSource = currencyCollectionDataSource
-    }
-}
-
-extension ExchangeRateView: NetworkManagerDelegate {
-    func upDateCurrency(_: NetworkManager, with currentCurrency: CurrencyEntity) {
-        currencyCollectionDataSource.currensies = currentCurrency.currency
     }
 }

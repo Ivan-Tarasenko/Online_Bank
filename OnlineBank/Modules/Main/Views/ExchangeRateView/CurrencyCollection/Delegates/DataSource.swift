@@ -9,37 +9,20 @@ import UIKit
 
 final class CurrencyCollectionDataSource: NSObject, UICollectionViewDataSource {
 
-    var currensies: [String: Currency]?
-    var title: [String]?
+    var currencyRates: [String]?
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        guard let currencies = currensies else { return 5}
-        return currencies.count
+        guard let currencyRates = currencyRates else {return 0}
+        return currencyRates.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CurrencyCollectionCell.identifier, for: indexPath)
                 as? CurrencyCollectionCell else { fatalError("No cell") }
 
-        guard let currensies = currensies else { return cell}
-//        guard let title = title else { return cell }
+        guard let currencyRates = currencyRates else { return cell}
 
-
-
-
-
-        var keys = [String]()
-        for (key, _) in currensies {
-            keys.append(key)
-        }
-
-        print(keys)
-        
-        if var valueCurrency = currensies[keys[indexPath.row]]?.value {
-            var roandedCurrencyValue = Double(round(100 * valueCurrency)/100)
-
-            cell.currencyLabel.text = "\(keys[indexPath.row]): \(roandedCurrencyValue)"
-        }
+        cell.currencyLabel.txt = "\(currencyRates[indexPath.row])"
 
         return cell
     }

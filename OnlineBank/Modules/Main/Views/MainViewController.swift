@@ -16,7 +16,7 @@ final class MainViewController: UIViewController {
     var contentView: MainContentViewProtocol?
     private let assambly: MainAssamblyProtocol = MainAssambly()
 
-    init(contentView: MainContentView) {
+    init(contentView: MainContentViewProtocol) {
         self.contentView = contentView
         super .init(nibName: nil, bundle: nil)
     }
