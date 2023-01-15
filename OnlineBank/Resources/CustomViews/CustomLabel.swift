@@ -13,7 +13,7 @@ final class CustomLabel: UILabel {
         super.init(frame: frame)
         numberOfLines = 0
         tintColor = .darkText
-        font = UIFont.systemFont(ofSize: 33, weight: .bold)
+        font = R.Fonts.sfProDisplayMedium(with: 33)
         translatesAutoresizingMaskIntoConstraints = false
         
     }

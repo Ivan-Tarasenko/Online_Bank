@@ -33,7 +33,7 @@ final class MainInteractor {
             let valueCurrency = value.value
             let pricePerUnit = valueCurrency / value.nominal
             let roandeValue = Double(round(100 * pricePerUnit)/100)
-            let title = "\(key): \(roandeValue)"
+            let title = "\(key):  \(roandeValue)"
             titles.append(title)
         }
 

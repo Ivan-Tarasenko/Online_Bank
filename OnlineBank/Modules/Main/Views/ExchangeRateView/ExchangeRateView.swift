@@ -15,7 +15,7 @@ class ExchangeRateView: UIView {
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.text = R.Titles.MainScreen.currencyTitle
-        label.font = UIFont.systemFont(ofSize: 22, weight: .medium)
+        label.font = R.Fonts.sfProDisplayRegular(with: 22)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()

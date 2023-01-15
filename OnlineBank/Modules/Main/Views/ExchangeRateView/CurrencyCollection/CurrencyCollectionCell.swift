@@ -15,9 +15,9 @@ final class CurrencyCollectionCell: UICollectionViewCell {
 
     var currencyLabel: UILabel = {
         var label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 20, weight: .medium)
+        label.textAlignment = .center
+        label.font = R.Fonts.sfProDisplayBolt(with: 20)
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "currency rate"
         return label
     }()
 
