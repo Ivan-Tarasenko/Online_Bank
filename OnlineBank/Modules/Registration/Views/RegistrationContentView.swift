@@ -128,22 +128,20 @@ private extension RegistrationContentView {
 extension RegistrationContentView: RegistrationContentViewProtocol {
 
     @objc func registerButtonPressed() {
-        print("register")
-        self.isHidden = true
 
-        client.name = nameTextField.txt
-        client.surname = surnameTextField.txt
-        client.numberPhone = numberPhoneTextField.txt
-
-        card.numberCard = numberCardTextField.txt
-
-        realm.create(client)
-        realm.create(card)
-
-        let realm = RealmService.shared.realm
-            usefulConnections = realm.objects(Client.self)
-
-          print(Realm.Configuration.defaultConfiguration.fileURL)
+//        client.name = nameTextField.txt
+//        client.surname = surnameTextField.txt
+//        client.numberPhone = numberPhoneTextField.txt
+//
+//        card.numberCard = numberCardTextField.txt
+//
+//        realm.create(client)
+//        realm.create(card)
+//
+//        let realm = RealmService.shared.realm
+//            usefulConnections = realm.objects(Client.self)
+//
+//          print(Realm.Configuration.defaultConfiguration.fileURL)
 
         registrationAction?()
     }

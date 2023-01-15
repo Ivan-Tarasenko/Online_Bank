@@ -34,7 +34,7 @@ final class RegistrationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        transitionBar()
+        transitionOnMain()
     }
 }
 
@@ -45,7 +45,7 @@ private extension RegistrationViewController {
 // MARK: - RegistrationViewControllerProtocol
 extension RegistrationViewController: RegistrationViewControllerProtocol {
 
-    func transitionBar() {
+    func transitionOnMain() {
         contentView?.registrationAction = { [self] in
             presenter?.pressedRegistration()
         }

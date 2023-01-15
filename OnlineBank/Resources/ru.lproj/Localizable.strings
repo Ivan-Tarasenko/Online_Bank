@@ -22,6 +22,7 @@
 "History" = "История";
 
 // Main screen
+"currencyTitle" = "Курсы валют";
 "addProductButton" = "Добавить продукт";
 "titleBalance" = "Ваш баланс:";
 

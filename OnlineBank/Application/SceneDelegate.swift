@@ -13,8 +13,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Creating a Navigation Controller and connecting to a ViewController
-
-//        let tabBarViewController = TabBarViewController()
         let initialViewController = RegistrationViewController(contentView: RegistrationContentView())
 
         guard let windowScene  = (scene as? UIWindowScene) else { return }
@@ -32,6 +30,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func sceneDidBecomeActive(_ scene: UIScene) {
+        let network: NetworkManagerProtocol = NetworkManager()
+        network.fetchData()
         // Called when the scene has moved from an inactive state to an active state.
         // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
     }

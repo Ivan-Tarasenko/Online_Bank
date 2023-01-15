@@ -8,16 +8,13 @@
 import UIKit
 
 protocol MainEntityProtocol {
-    var imageCard: UIImage { get }
+    var image: UIImage { get }
 }
 
 struct MainEntity {
-
-    var imageCard: UIImage { return UIImage(imageLiteralResourceName: "card")}
-
+    var image: UIImage { return UIImage(imageLiteralResourceName: "card")}
 }
 
 // MARK: - MainEntityProtocol
 extension MainEntity: MainEntityProtocol {
-
 }
