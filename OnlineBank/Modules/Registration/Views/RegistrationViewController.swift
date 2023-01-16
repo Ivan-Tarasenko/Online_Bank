@@ -8,18 +8,24 @@
 import UIKit
 
 protocol RegistrationViewControllerProtocol: AnyObject {
+    func checkRegistration(client isEmpty: Bool, completion: @escaping () -> Void)
 }
 
 final class RegistrationViewController: UIViewController {
     
     var presenter: RegistrationPresenterProtocol?
-    var contentView: RegistrationContentViewProtocol?
+    var registrationView: RegistrationContentViewProtocol?
+    var welcomeView: WelcomeViewProtocol?
+    var entity: RegistrationEntityProtocol = RegistrationEntity()
     private let assambly: RegistrationAssamblyProtocol = RegistrationAssambly()
+    private let alert = AlertService()
 
     // MARK: - Inition View
     init(contentView: RegistrationContentView) {
-        self.contentView = contentView
+        self.registrationView = contentView
         super .init(nibName: nil, bundle: nil)
+
+        welcomeView = WelcomeView()
     }
 
     required init?(coder: NSCoder) {
@@ -29,25 +35,51 @@ final class RegistrationViewController: UIViewController {
     // MARK: - Loading View
     override func loadView() {
         assambly.initialController(controller: self)
-        view = contentView as? UIView
+        presenter?.checkRegistration()
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        transitionOnMain()
+//        transitionOnMain()
     }
 }
 
 // MARK: - Private functions
 private extension RegistrationViewController {
+
+    func checkingFillingOfFields(complietion: @escaping () -> Void) {
+        if let contentView = registrationView {
+            if contentView.checkTextField() {
+                alert.showAlert(in: self)
+            } else {
+                complietion()
+            }
+        }
+    }
 }
 
 // MARK: - RegistrationViewControllerProtocol
 extension RegistrationViewController: RegistrationViewControllerProtocol {
 
-    func transitionOnMain() {
-        contentView?.registrationAction = { [self] in
-            presenter?.pressedRegistration()
+    func checkRegistration(client isEmpty: Bool, completion: @escaping () -> Void) {
+        if isEmpty {
+            view = registrationView as? UIView
+
+            registrationView?.registrationAction = { [weak self] in
+                guard let self else { return }
+                self.checkingFillingOfFields {
+                    self.presenter?.transition()
+                }
+            }
+
+        } else {
+            view = welcomeView as? UIView
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+                completion()
+            }
         }
     }
+
+//    func transitionOnMain() {
+//    }
 }

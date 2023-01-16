@@ -62,6 +62,15 @@ enum R {
             static let cash = NSLocalizedString("cash", comment: "")
             static let request = NSLocalizedString("request", comment: "")
         }
+
+        enum Alert {
+            static let title = NSLocalizedString("title", comment: "")
+            static let massage = NSLocalizedString("massage", comment: "")
+        }
+
+        enum Welcome {
+            static let welcome = NSLocalizedString("welcome", comment: "")
+        }
     }
 
     enum Fonts {

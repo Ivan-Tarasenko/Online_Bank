@@ -6,6 +6,9 @@
 
 */
 
+// Welcome screen
+"welcome" = "Welcome";
+
 // Register screen
 "title" = "Please register";
 "registerButton" = "Register";
@@ -37,3 +40,6 @@
 "cash" = "Withdraw cash";
 "request" = "Request money";
 
+// Alert
+"title" = "Attention";
+"massage" = "It is necessary to fill in all fields";

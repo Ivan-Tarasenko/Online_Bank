@@ -6,6 +6,10 @@
   
 */
 
+// Welcome screen
+"welcome" = "Bienvenue";
+
+
 // Register screen
 "title" = "Veuillez vous inscrire";
 "registerButton" = "Inscrire";
@@ -37,3 +41,7 @@
 "titleWithdrawal" = "Méthodes de retrait d'argent";
 "cash" = "Retirer de l'argent";
 "request" = "Demander de l'argent";
+
+// Alert
+"title" = "Attention";
+"massage" = "Vous devez remplir tous les champs";
