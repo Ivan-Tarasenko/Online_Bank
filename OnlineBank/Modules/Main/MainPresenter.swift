@@ -39,7 +39,9 @@ final class MainPresenter {
 extension MainPresenter: MainPresenterProtocol {
 
     func configereCard() {
-        view?.installingCardData(number: "0000", name: "Ivan", image: interactor.imageCard)
+        let numberCard = interactor.clientCard.first?.numberCard ?? ""
+        let name = interactor.client.first?.clientName ?? ""
+        view?.installingCardData(number: numberCard, name: name, image: interactor.imageCard)
     }
 
     func pressedAddProduct() {

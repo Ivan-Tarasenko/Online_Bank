@@ -6,10 +6,15 @@
 //
 
 import UIKit
+import RealmSwift
 
 protocol MainInteractorProtocol: AnyObject {
 
     var imageCard: UIImage { get }
+
+    var client: Results<Client>! { get }
+    var clientCard: Results<ClientCard>! { get }
+    
     init(_ presenter: MainPresenterProtocol)
 }
 
@@ -45,14 +50,20 @@ final class MainInteractor {
 // MARK: - MainInteractorProtocol
 extension MainInteractor: MainInteractorProtocol {
     var imageCard: UIImage {return entity.image}
+
+    var client: Results<Client>! {
+        entity.clientObject
+    }
+
+    var clientCard: Results<ClientCard>! {
+        entity.clientCardObject
+    }
 }
 
 // MARK: - NetworkManagerDelegate
 extension MainInteractor: NetworkManagerDelegate {
     func upDateCurrency(_: NetworkManager, with currentCurrency: CurrencyEntity) {
-
         let titles = getTitle(from: currentCurrency.currency)
-
         presenter?.getTitle(from: titles)
     }
 }

@@ -16,6 +16,7 @@
 		1A07F23D29744A27007AD687 /* SFPRODISPLAYBOLD.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 1A07F23429744A27007AD687 /* SFPRODISPLAYBOLD.OTF */; };
 		1A07F23E29744A27007AD687 /* SFPRODISPLAYMEDIUM.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 1A07F23529744A27007AD687 /* SFPRODISPLAYMEDIUM.OTF */; };
 		1A07F23F29744A27007AD687 /* SFPRODISPLAYSEMIBOLDITALIC.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 1A07F23629744A27007AD687 /* SFPRODISPLAYSEMIBOLDITALIC.OTF */; };
+		1A07F24129744FDE007AD687 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A07F24029744FDE007AD687 /* WelcomeView.swift */; };
 		1A35CF3329696F25003C0C47 /* NewProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35CF3229696F25003C0C47 /* NewProduct.swift */; };
 		1A35EF8A2974132E0084CB7D /* UILabel+SaveText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35EF892974132E0084CB7D /* UILabel+SaveText.swift */; };
 		1A35EF8D297431C80084CB7D /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1A35EF8C297431C80084CB7D /* RealmSwift */; };
@@ -42,6 +43,7 @@
 		1A4F39972962BF84002E5563 /* TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4F39962962BF84002E5563 /* TableViewDelegate.swift */; };
 		1A4F39992962BFA1002E5563 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4F39982962BFA1002E5563 /* CustomTableViewCell.swift */; };
 		1A4F399E2962DFA9002E5563 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4F399D2962DFA9002E5563 /* CustomTextField.swift */; };
+		1A88FEAF29746A5B009A7AAF /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A88FEAE29746A5B009A7AAF /* AlertService.swift */; };
 		1A8D67DA29657F6200B45E63 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D67D929657F6200B45E63 /* MainInteractor.swift */; };
 		1A8D67DC29657FC500B45E63 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D67DB29657FC500B45E63 /* MainPresenter.swift */; };
 		1A8D67DE29657FDD00B45E63 /* MainEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D67DD29657FDD00B45E63 /* MainEntity.swift */; };
@@ -99,6 +101,7 @@
 		1A07F23429744A27007AD687 /* SFPRODISPLAYBOLD.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYBOLD.OTF; sourceTree = "<group>"; };
 		1A07F23529744A27007AD687 /* SFPRODISPLAYMEDIUM.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYMEDIUM.OTF; sourceTree = "<group>"; };
 		1A07F23629744A27007AD687 /* SFPRODISPLAYSEMIBOLDITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYSEMIBOLDITALIC.OTF; sourceTree = "<group>"; };
+		1A07F24029744FDE007AD687 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		1A35CF3229696F25003C0C47 /* NewProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProduct.swift; sourceTree = "<group>"; };
 		1A35EF892974132E0084CB7D /* UILabel+SaveText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+SaveText.swift"; sourceTree = "<group>"; };
 		1A43CFD1295EE9F100716EFE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -130,6 +133,7 @@
 		1A4F39962962BF84002E5563 /* TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDelegate.swift; sourceTree = "<group>"; };
 		1A4F39982962BFA1002E5563 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		1A4F399D2962DFA9002E5563 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		1A88FEAE29746A5B009A7AAF /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 		1A8D67D929657F6200B45E63 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
 		1A8D67DB29657FC500B45E63 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		1A8D67DD29657FDD00B45E63 /* MainEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainEntity.swift; sourceTree = "<group>"; };
@@ -381,9 +385,18 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
+		1A88FEAD29746A3B009A7AAF /* AlertService */ = {
+			isa = PBXGroup;
+			children = (
+				1A88FEAE29746A5B009A7AAF /* AlertService.swift */,
+			);
+			path = AlertService;
+			sourceTree = "<group>";
+		};
 		1A8D68182966CF4D00B45E63 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				1A88FEAD29746A3B009A7AAF /* AlertService */,
 				1AD8050E296C0C6000836874 /* NetworkService */,
 				1AD8050D296C0C4500836874 /* RealmService */,
 			);
@@ -469,9 +482,9 @@
 			children = (
 				1ADCDD23296D713500F23219 /* Views */,
 				1ADCDD15296D705A00F23219 /* RegistrationInteractor.swift */,
-				1ADCDD16296D705A00F23219 /* RegistrationRouter.swift */,
-				1ADCDD17296D705A00F23219 /* RegistrationEntity.swift */,
 				1ADCDD18296D705A00F23219 /* RegistrationPresenter.swift */,
+				1ADCDD17296D705A00F23219 /* RegistrationEntity.swift */,
+				1ADCDD16296D705A00F23219 /* RegistrationRouter.swift */,
 				1ADCDD1B296D705A00F23219 /* RegistrationAssambly.swift */,
 			);
 			path = Registration;
@@ -481,6 +494,7 @@
 			isa = PBXGroup;
 			children = (
 				1ADCDD1A296D705A00F23219 /* RegistrationContentView.swift */,
+				1A07F24029744FDE007AD687 /* WelcomeView.swift */,
 				1ADCDD19296D705A00F23219 /* RegistrationViewController.swift */,
 			);
 			path = Views;
@@ -655,6 +669,7 @@
 				1ADCDD20296D705A00F23219 /* RegistrationViewController.swift in Sources */,
 				1AD80524296C1B0300836874 /* UITextField+SaveText.swift in Sources */,
 				1AD804E8296ABCA800836874 /* WithdrawalInteractor.swift in Sources */,
+				1A07F24129744FDE007AD687 /* WelcomeView.swift in Sources */,
 				1AD804D5296ABB0C00836874 /* TranslationAssambly.swift in Sources */,
 				1A4F39952962BF75002E5563 /* TableViewDataSource.swift in Sources */,
 				1A8D67DA29657F6200B45E63 /* MainInteractor.swift in Sources */,
@@ -670,6 +685,7 @@
 				1AD804F3296ABD5600836874 /* HistoryAssambly.swift in Sources */,
 				1A4877E8295C379E0029A1BC /* NavigationController.swift in Sources */,
 				1A43CFE429602EB000716EFE /* UIColor+Hex.swift in Sources */,
+				1A88FEAF29746A5B009A7AAF /* AlertService.swift in Sources */,
 				1ADCDD1E296D705A00F23219 /* RegistrationEntity.swift in Sources */,
 				1AD804E7296ABCA800836874 /* WithdrawalViewController.swift in Sources */,
 				1AD804E5296ABCA800836874 /* WithdrawalPresenter.swift in Sources */,
