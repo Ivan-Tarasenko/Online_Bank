@@ -16,7 +16,6 @@ final class RegistrationViewController: UIViewController {
     var presenter: RegistrationPresenterProtocol?
     var registrationView: RegistrationContentViewProtocol?
     var welcomeView: WelcomeViewProtocol?
-    var entity: RegistrationEntityProtocol = RegistrationEntity()
     private let assambly: RegistrationAssamblyProtocol = RegistrationAssambly()
     private let alert = AlertService()
 
@@ -36,11 +35,6 @@ final class RegistrationViewController: UIViewController {
     override func loadView() {
         assambly.initialController(controller: self)
         presenter?.checkRegistration()
-    }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-//        transitionOnMain()
     }
 }
 
@@ -79,7 +73,4 @@ extension RegistrationViewController: RegistrationViewControllerProtocol {
             }
         }
     }
-
-//    func transitionOnMain() {
-//    }
 }

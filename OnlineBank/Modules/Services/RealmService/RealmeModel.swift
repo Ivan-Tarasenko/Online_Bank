@@ -10,7 +10,8 @@ import RealmSwift
 
 class Client: Object {
     @objc dynamic var clientID = UUID().uuidString
-    @objc dynamic var clientName = ""
+    @objc dynamic var name = ""
+    @objc dynamic var surname = ""
     @objc dynamic var deposit = 0.0
     @objc dynamic var numberPhone = ""
     let cards = List<ClientCard>()

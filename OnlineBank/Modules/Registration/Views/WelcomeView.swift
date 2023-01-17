@@ -50,8 +50,8 @@ private extension WelcomeView {
     func makeConstraints() {
         NSLayoutConstraint.activate([
             welcomeLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 150),
-            welcomeLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
-            welcomeLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
+            welcomeLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 30),
+            welcomeLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -30),
             welcomeLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor)
         ])
     }

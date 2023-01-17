@@ -11,6 +11,10 @@ import RealmSwift
 protocol RegistrationInteractorProtocol: AnyObject {
 
     var client: Results<Client>! { get }
+    var clientModel: Client { get }
+    var cardModel: ClientCard { get }
+
+    var generingData: (Double, Int, String) { get }
     
     init(_ presenter: RegistrationPresenterProtocol)
 
@@ -32,8 +36,19 @@ final class RegistrationInteractor {
 // MARK: - RegistrationInteractorProtocol
 extension RegistrationInteractor: RegistrationInteractorProtocol {
 
+    var generingData: (Double, Int, String) {
+        (generatingDipasit(), generatingCVV(), generatingEndDate())
+    }
+
     var client: Results<Client>! {
         entity.clientObject
+    }
+
+    var clientModel: Client {
+        entity.clientModel
+    }
+    var cardModel: ClientCard {
+        entity.cardModel
     }
 
     func generatingDipasit() -> Double {

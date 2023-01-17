@@ -40,8 +40,12 @@ extension MainPresenter: MainPresenterProtocol {
 
     func configereCard() {
         let numberCard = interactor.clientCard.first?.numberCard ?? ""
-        let name = interactor.client.first?.clientName ?? ""
-        view?.installingCardData(number: numberCard, name: name, image: interactor.imageCard)
+        let fullName = interactor.clientCard.first?.nameClient ?? ""
+        view?.installingCardData(
+            number: numberCard,
+            name: fullName,
+            image: interactor.imageCard
+        )
     }
 
     func pressedAddProduct() {
