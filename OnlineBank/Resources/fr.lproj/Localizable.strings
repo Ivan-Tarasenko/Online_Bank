@@ -30,6 +30,8 @@
 "addProductButton" = "Ajouter un produit";
 "titleBalance" = "Votre équilibre:";
 
+"massageNewProduct" = "Bientôt, il sera possible d'ajouter de nouveaux produits, tels que de nouvelles cartes de crédit ou de dépôts";
+
 // Translations screen
 "titleMethodOfReplenishment" = "Sélectionnez les méthodes de traduction";
 "fromCardToCard" = "De Carte en Carte";

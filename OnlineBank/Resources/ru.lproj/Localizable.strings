@@ -30,6 +30,8 @@
 "addProductButton" = "Добавить продукт";
 "titleBalance" = "Ваш баланс:";
 
+"massageNewProduct" = "Скоро здесь можно будет добавить новые продукты, такие как новые карты кредиты или вклады";
+
 // Translations screen
 "titleMethodOfReplenishment" = "Выберите способы перевода";
 "fromCardToCard" = "С карты на карту";

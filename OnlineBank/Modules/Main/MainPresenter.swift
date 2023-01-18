@@ -9,14 +9,14 @@ import Foundation
 
 protocol MainPresenterProtocol: AnyObject {
 
-    func configereCard()
-    func pressedAddProduct()
-
-    func getTitle(from array: [String])
-
     init(_ view: MainContentViewProtocol)
     init(_ controller: MainViewControllerProtocol)
 
+    func configereCard()
+    func pressedAddProduct()
+    func getBalance()
+
+    func getTitle(from array: [String])
 }
 
 final class MainPresenter {
@@ -41,9 +41,10 @@ extension MainPresenter: MainPresenterProtocol {
     func configereCard() {
         let numberCard = interactor.clientCard.first?.numberCard ?? ""
         let fullName = interactor.clientCard.first?.nameClient ?? ""
+        
         view?.installingCardData(
             number: numberCard,
-            name: fullName,
+            name: fullName.uppercased(),
             image: interactor.imageCard
         )
     }
@@ -54,5 +55,13 @@ extension MainPresenter: MainPresenterProtocol {
 
     func getTitle(from array: [String]) {
         view?.setCurrencyRate(from: array)
+    }
+
+    func getBalance() {
+        guard let balanceDeposit = interactor.client.first?.deposit else { return }
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currencyAccounting
+        let balance = formatter.string(from: balanceDeposit as NSNumber)
+        view?.setBalanceDeposit(balance: balance!)
     }
 }

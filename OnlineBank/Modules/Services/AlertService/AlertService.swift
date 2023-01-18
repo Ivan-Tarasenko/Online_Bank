@@ -14,7 +14,7 @@ final class AlertService {
     init() {}
 
     func showAlert( in controller: UIViewController) {
-        var alert = UIAlertController(
+        let alert = UIAlertController(
             title: R.Titles.Alert.title,
             message: R.Titles.Alert.massage,
             preferredStyle: .alert

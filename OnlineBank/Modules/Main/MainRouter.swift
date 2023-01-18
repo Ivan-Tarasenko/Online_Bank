@@ -27,7 +27,7 @@ final class MainRouter {
 // MARK: - MainRouterProtocol
 extension MainRouter: MainRouterProtocol {
     func transitionOnNewProduct() {
-        viewController?.present(NewProduct(), animated: true)
+        viewController?.present(NewProductViewController(contentView: NewProductContentView()), animated: true)
         print("Transition MewProduct")
     }
 

@@ -28,6 +28,8 @@
 "addProductButton" = "Add a product";
 "titleBalance" = "Your balance:";
 
+"massageNewProduct" = "Soon it will be possible to add new products here, such as new credit cards or deposits";
+
 // Translations screen
 "titleMethodOfReplenishment" = "Select the transfer methods";
 "fromCardToCard" = "From card to card";

@@ -29,7 +29,7 @@ final class TabBarViewController: UITabBarController {
     }
 
     private func setTabBar() {
-        tabBar.backgroundColor = .green
+        tabBar.backgroundColor = .white
 
         tabBar.layer.borderColor = R.Colors.separator.cgColor
         tabBar.layer.borderWidth = 0.6

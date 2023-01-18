@@ -11,6 +11,7 @@ protocol MainContentViewProtocol: AnyObject {
     var addProductAction: (() -> Void)? { get set }
     func installingCardData(number: String, name: String, image: UIImage)
     func setCurrencyRate(from array: [String])
+    func setBalanceDeposit(balance: String)
 }
 
 final class MainContentView: UIView {
@@ -54,6 +55,7 @@ final class MainContentView: UIView {
         setContent()
         addTargets()
         presenter.configereCard()
+        presenter.getBalance()
     }
 
     required init?(coder: NSCoder) {
@@ -122,5 +124,9 @@ extension MainContentView: MainContentViewProtocol {
 
     func setCurrencyRate(from array: [String]) {
         exchangeRateView.currencyCollectionDataSource.currencyRates = array
+    }
+
+    func setBalanceDeposit(balance: String) {
+        depositBalanceLabel.txt = balance
     }
 }
