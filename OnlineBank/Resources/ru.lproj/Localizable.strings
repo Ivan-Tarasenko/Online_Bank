@@ -35,7 +35,7 @@
 // Translations screen
 "titleMethodOfReplenishment" = "Выберите способы перевода";
 "fromCardToCard" = "С карты на карту";
-"betweenAccounts" = "Mежду счетами";
+"depositReplenishment" = "Пополнить баланс депозита";
 "byPhoneNumber" = "По номеру телефона";
 "topUpPhoneNumder" = "Пополнить баланс телефона";
 

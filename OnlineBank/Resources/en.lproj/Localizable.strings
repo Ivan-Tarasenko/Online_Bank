@@ -33,7 +33,7 @@
 // Translations screen
 "titleMethodOfReplenishment" = "Select the transfer methods";
 "fromCardToCard" = "From card to card";
-"betweenAccounts" = "Between accounts";
+"depositReplenishment" = "Between accounts";
 "byPhoneNumber" = "By phone number";
 "topUpPhoneNumder" = "Top up your phone balance";
 

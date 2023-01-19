@@ -35,7 +35,7 @@
 // Translations screen
 "titleMethodOfReplenishment" = "Sélectionnez les méthodes de traduction";
 "fromCardToCard" = "De Carte en Carte";
-"betweenAccounts" = "Between accounts";
+"depositReplenishment" = "Réapprovisionner le solde du dépôt";
 "byPhoneNumber" = "Par numéro de téléphone";
 "topUpPhoneNumder" = "Recharger le solde du téléphone";
 
