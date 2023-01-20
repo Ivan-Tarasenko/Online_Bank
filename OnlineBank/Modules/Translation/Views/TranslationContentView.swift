@@ -12,7 +12,6 @@ protocol TranslationContentViewProtocol: AnyObject {}
 final class TranslationContentView: UIView {
 
     var presenter: TranslationPresenterProtocol!
-    var entity: TranslationEntityProtocol = TranslationEntity()
     var assambly: TranslationAssamblyProtocol = TranslationAssambly()
 
     let titleMethodOfReplenishmentLabel: CustomLabel = {

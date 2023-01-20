@@ -12,7 +12,6 @@ protocol WithdrawalContentViewProtocol: AnyObject {}
 final class WithdrawalContentView: UIView {
 
     var presenter: WithdrawalPresenterProtocol!
-    var entity: WithdrawalEntityProtocol = WithdrawalEntity()
     var assambly: WithdrawalAssamblyProtocol = WithdrawalAssambly()
 
     let titleWithdrawalLabel: CustomLabel = {

@@ -12,7 +12,6 @@ protocol HistoryContentViewProtocol: AnyObject {}
 final class HistoryContentView: UIView {
 
     var presenter: HistoryPresenterProtocol!
-    var entity: HistoryEntityProtocol = HistoryEntity()
     var assambly: HistoryAssamblyProtocol = HistoryAssambly()
 
     let tableView = UITableView()

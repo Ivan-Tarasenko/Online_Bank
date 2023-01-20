@@ -18,7 +18,6 @@ final class MainContentView: UIView {
     var addProductAction: (() -> Void)?
 
     var presenter: MainPresenterProtocol!
-    var entity: MainEntityProtocol = MainEntity()
     var assambly: MainAssamblyProtocol = MainAssambly()
 
     var exchangeRateView: ExchangeRateView = {

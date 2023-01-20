@@ -49,14 +49,14 @@ extension RegistrationPresenter: RegistrationPresenterProtocol {
 
     func generatingClient() {
         view?.registrationClient(
-            depasit: interactor.generatingDipasit(),
-            cvv: interactor.generatingCVV(),
-            endDate: interactor.generatingEndDate()
+            client: interactor.clientModel,
+            clientCard: interactor.cardModel,
+            generating: interactor.generingData
         )
     }
 
     func setWelcomeView() {
-        let title = interactor.client.first?.clientName ?? ""
+        let title = interactor.client.first?.name ?? ""
         welcomeView?.setWelcomeLabel(text: title)
     }
 

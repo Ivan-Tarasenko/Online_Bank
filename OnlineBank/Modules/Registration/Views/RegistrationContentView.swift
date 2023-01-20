@@ -10,7 +10,7 @@ import RealmSwift
 
 protocol RegistrationContentViewProtocol: AnyObject {
     var registrationAction: (() -> Void)? { get set }
-    func registrationClient(depasit: Double, cvv: Int, endDate: String)
+    func registrationClient(client: Client, clientCard: ClientCard, generating: (Double, Int, String))
     func checkTextField() -> Bool
 }
 
@@ -19,11 +19,7 @@ final class RegistrationContentView: UIView {
     var registrationAction: (() -> Void)?
 
     var presenter: RegistrationPresenterProtocol!
-    var entity: RegistrationEntityProtocol = RegistrationEntity()
     var assambly: RegistrationAssamblyProtocol = RegistrationAssambly()
-
-    private let realm = RealmService()
-    private var clientObject: Results<Client>!
 
     let title: CustomLabel = {
         let label = CustomLabel()
@@ -135,7 +131,7 @@ extension RegistrationContentView: RegistrationContentViewProtocol {
         return false
     }
 
-    func registrationClient(depasit: Double, cvv: Int, endDate: String) {
+    func registrationClient(client: Client, clientCard: ClientCard, generating: (Double, Int, String)) {
 
         guard !nameTextField.txt.isEmpty,
               !surnameTextField.txt.isEmpty,
@@ -143,24 +139,23 @@ extension RegistrationContentView: RegistrationContentViewProtocol {
               !numberPhoneTextField.txt.isEmpty
         else {return}
 
-        entity.client.clientName = "\(nameTextField.txt) \(surnameTextField.txt)"
-        entity.client.numberPhone = numberPhoneTextField.txt
-        entity.client.deposit = depasit
+        let realm = RealmService()
 
-        entity.card.cvv = cvv
-        entity.card.endDate = endDate
-        entity.card.numberCard = numberCardTextField.txt
-        entity.card.nameClient = entity.client.clientName
+        client.name = nameTextField.txt
+        client.surname = surnameTextField.txt
+        client.numberPhone = numberPhoneTextField.txt
+        client.deposit = generating.0
 
-        entity.client.cards.append(entity.card)
-        realm.create(entity.client)
+        clientCard.cvv = generating.1
+        clientCard.endDate = generating.2
+        clientCard.numberCard = numberCardTextField.txt
+        clientCard.nameClient = "\(nameTextField.txt) \(surnameTextField.txt)"
+
+        client.cards.append(clientCard)
+        realm.create(client)
     }
 
     @objc func registerButtonPressed() {
-
-        print(Realm.Configuration.defaultConfiguration.fileURL)
-
-
         presenter.generatingClient()
         registrationAction?()
     }

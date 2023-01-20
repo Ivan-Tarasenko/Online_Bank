@@ -10,16 +10,16 @@ import RealmSwift
 
 protocol RegistrationEntityProtocol {
 
-    var client: Client { get }
-    var card: ClientCard { get }
+    var clientModel: Client { get }
+    var cardModel: ClientCard { get }
 
     var clientObject: Results<Client>! { get }
 }
 
 struct RegistrationEntity {
     let realm = RealmService.shared.realm
-    var client: Client = Client()
-    var card: ClientCard = ClientCard()
+    var clientModel: Client = Client()
+    var cardModel: ClientCard = ClientCard()
 }
 
 // MARK: - RegistrationEntityProtocol
