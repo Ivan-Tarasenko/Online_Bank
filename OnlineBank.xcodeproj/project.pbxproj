@@ -83,6 +83,8 @@
 		1A4F39972962BF84002E5563 /* TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4F39962962BF84002E5563 /* TableViewDelegate.swift */; };
 		1A4F39992962BFA1002E5563 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4F39982962BFA1002E5563 /* CustomTableViewCell.swift */; };
 		1A4F399E2962DFA9002E5563 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4F399D2962DFA9002E5563 /* CustomTextField.swift */; };
+		1A53DA64297C40D2005090B1 /* Date+Formater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A53DA63297C40D2005090B1 /* Date+Formater.swift */; };
+		1A53DA66297C69CF005090B1 /* GlobalFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A53DA65297C69CF005090B1 /* GlobalFunc.swift */; };
 		1A58FACB2977EF0800C87FD0 /* NewProductContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A58FAC42977EF0800C87FD0 /* NewProductContentView.swift */; };
 		1A58FACC2977EF0800C87FD0 /* NewProductAssambly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A58FAC52977EF0800C87FD0 /* NewProductAssambly.swift */; };
 		1A58FACD2977EF0800C87FD0 /* NewProductPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A58FAC62977EF0800C87FD0 /* NewProductPresenter.swift */; };
@@ -222,6 +224,8 @@
 		1A4F39962962BF84002E5563 /* TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDelegate.swift; sourceTree = "<group>"; };
 		1A4F39982962BFA1002E5563 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		1A4F399D2962DFA9002E5563 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		1A53DA63297C40D2005090B1 /* Date+Formater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formater.swift"; sourceTree = "<group>"; };
+		1A53DA65297C69CF005090B1 /* GlobalFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFunc.swift; sourceTree = "<group>"; };
 		1A58FAC42977EF0800C87FD0 /* NewProductContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProductContentView.swift; sourceTree = "<group>"; };
 		1A58FAC52977EF0800C87FD0 /* NewProductAssambly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProductAssambly.swift; sourceTree = "<group>"; };
 		1A58FAC62977EF0800C87FD0 /* NewProductPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProductPresenter.swift; sourceTree = "<group>"; };
@@ -496,6 +500,7 @@
 				1A43CFE5296042C700716EFE /* UIView+Shadow.swift */,
 				1AD80523296C1B0300836874 /* UITextField+SaveText.swift */,
 				1A35EF892974132E0084CB7D /* UILabel+SaveText.swift */,
+				1A53DA63297C40D2005090B1 /* Date+Formater.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -569,6 +574,7 @@
 				1A43CFF52961F4FA00716EFE /* CustomButtom.swift */,
 				1A4F39912962193C002E5563 /* CustomLabel.swift */,
 				1A4F399D2962DFA9002E5563 /* CustomTextField.swift */,
+				1A53DA65297C69CF005090B1 /* GlobalFunc.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -1091,10 +1097,12 @@
 				1A401D112978041C008CB417 /* RequestManyAssambly.swift in Sources */,
 				1ADCDD37296EC92200F23219 /* SaveData.swift in Sources */,
 				1A401D102978041C008CB417 /* RequestManyContentView.swift in Sources */,
+				1A53DA66297C69CF005090B1 /* GlobalFunc.swift in Sources */,
 				1A401CEF29780306008CB417 /* TopUpPhoneNumderAssambly.swift in Sources */,
 				1A401CF329780306008CB417 /* TopUpPhoneNumderInteractor.swift in Sources */,
 				1A35EF8A2974132E0084CB7D /* UILabel+SaveText.swift in Sources */,
 				1A4F399E2962DFA9002E5563 /* CustomTextField.swift in Sources */,
+				1A53DA64297C40D2005090B1 /* Date+Formater.swift in Sources */,
 				1A401CD32978028B008CB417 /* DepositReplenishmentRouter.swift in Sources */,
 				1AD804E3296ABCA800836874 /* WithdrawalContentView.swift in Sources */,
 				1A8D681A2966CF8D00B45E63 /* RealmeModel.swift in Sources */,

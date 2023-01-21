@@ -11,7 +11,6 @@ protocol MainContentViewProtocol: AnyObject {
     var addProductAction: (() -> Void)? { get set }
     func installingCardData(number: String, name: String, image: UIImage)
     func setCurrencyRate(from array: [String])
-    func setBalanceDeposit(balance: String)
     
     var depositBalanceLabel: UILabel { get }
 }
@@ -56,22 +55,11 @@ final class MainContentView: UIView {
         setContent()
         addTargets()
         presenter.configereCard()
-        presenter.getBalance()
     }
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
-}
-
-// MARK: - Targets
-extension MainContentView {
-    
-    @objc func addProductPressed() {
-        addProductAction?()
-    }
-
 }
 
 // MARK: - Private functions
@@ -118,6 +106,11 @@ private extension MainContentView {
             addProductButton.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -120)
         ])
     }
+    
+    @objc func addProductPressed() {
+        addProductAction?()
+    }
+
 }
 
 // MARK: - MainContentViewProtocol
@@ -131,9 +124,5 @@ extension MainContentView: MainContentViewProtocol {
 
     func setCurrencyRate(from array: [String]) {
         exchangeRateView.currencyCollectionDataSource.currencyRates = array
-    }
-
-    func setBalanceDeposit(balance: String) {
-        depositBalanceLabel.txt = balance
     }
 }

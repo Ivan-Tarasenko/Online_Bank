@@ -10,7 +10,9 @@ import Foundation
 protocol TopUpPhoneNumderPresenterProtocol: AnyObject {
     init(_ view: TopUpPhoneNumderContentViewProtocol)
     init(_ controller: TopUpPhoneNumderViewControllerProtocol)
-
+    
+    func setTitleLabel()
+    func topUpSelfPhone(string: String)
 }
 
 final class TopUpPhoneNumderPresenter {
@@ -31,5 +33,13 @@ final class TopUpPhoneNumderPresenter {
 
 // MARK: - TopUpPhoneNumderPresenterProtocol
 extension TopUpPhoneNumderPresenter: TopUpPhoneNumderPresenterProtocol {
-
+    func setTitleLabel() {
+        guard let phoneNumber = interactor.client.first?.numberPhone else { return }
+        let title = "\(R.Titles.TranslationScreen.TopUpPhoneNumber.topUpLabel) \(phoneNumber)?"
+        view?.setTitle(string: title)
+    }
+    
+    func topUpSelfPhone(string: String) {
+        interactor.topUpSelfPhone(string: string)
+    }
 }

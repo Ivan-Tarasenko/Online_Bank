@@ -11,6 +11,7 @@ protocol CashPresenterProtocol: AnyObject {
     init(_ view: CashContentViewProtocol)
     init(_ controller: CashViewControllerProtocol)
 
+    func wihdrawalCash(string: String)
 }
 
 final class CashPresenter {
@@ -31,5 +32,8 @@ final class CashPresenter {
 
 // MARK: - CashPresenterProtocol
 extension CashPresenter: CashPresenterProtocol {
-
+    
+    func wihdrawalCash(string: String) {
+        interactor.getCash(string: string)
+    }
 }

@@ -31,17 +31,19 @@ final class WithdrawalViewController: UIViewController {
         assambly.initialController(controller: self)
         view = contentView as? UIView
         title = R.TabBar.title(for: Tabs.withdrawal)
+        didCashPressed()
+        didRequestPressed()
     }
 }
 
 // MARK: - Private functions
 private extension WithdrawalViewController {
-    func cashPressed() {
+    func didCashPressed() {
         contentView?.onCashAction = {
             self.presenter?.cashPressed()
         }
     }
-    func requestPressed() {
+    func didRequestPressed() {
         contentView?.onRequestAction = {
             self.presenter?.requestPressed()
         }

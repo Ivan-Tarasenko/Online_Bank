@@ -48,11 +48,31 @@
 "placeholderFieldSum" = "Enter the amount";
 "enterButton" = "Pay";
 
+// Top up phone number
+"topUpLabel" = "Do you want to top up your number:";
+"amountPlaceholder" = " Enter the amount";
+"yesButton" = "Yes";
+"noButton" = "No";
+
+"inputNumberLabel" = "Enter your phone number";
+"inputNumberPlaceholder" = " Enter your phone number";
+"inputAmountPlaceholder" = " Enter the amount";
+"replenishButton" = "Replenish";
+
+
 
 // Withdrawal screen
 "titleWithdrawal" = "Cash withdrawal methods";
 "cash" = "Withdraw cash";
 "request" = "Request money";
+
+// Cash
+"cashTitle" = "How much cash do you want to get?";
+"cashPlaceholder" = "Enter the amount";
+"withdrawalButton" = "Withdraw cash";
+
+// Request
+"requestTitle" = "Soon it will be possible to send a request for cash here";
 
 // Alert
 "titleAlert" = "Attention";

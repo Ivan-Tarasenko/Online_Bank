@@ -48,14 +48,33 @@
 // Deposit replenishment
 "depositReplinshmentTitle" = "Entrez le montant";
 "placeholderFieldSum" = "Entrez le montant";
+"numberPhonePlaceholder" = "Entrez le numéro de téléphone";
 "enterButton" = "Payer";
 
+// Top up phone number
+"topUpLabel" = "Voulez-vous recharger votre numéro:";
+"amountPlaceholder" = " Entrez le montant";
+"yesButton" = "Oui";
+"noButton" = "Pas";
+
+"inputNumberLabel" = "Entrez le numéro de téléphone";
+"inputNumberPlaceholder" = " Entrez le numéro";
+"inputAmountPlaceholder" = " Entrez le montant";
+"replenishButton" = "Reconstituer";
 
 
 // Withdrawal screen
 "titleWithdrawal" = "Méthodes de retrait d'argent";
 "cash" = "Retirer de l'argent";
 "request" = "Demander de l'argent";
+
+// Cash
+"cashTitle" = "Combien voulez-vous obtenir de l'argent?";
+"cashPlaceholder" = "Entrez le montant";
+"withdrawalButton" = "Retirer de l'argent";
+
+// Request
+"requestTitle" = "Bientôt, il sera possible d'envoyer une demande d'argent";
 
 // Alert
 "titleAlert" = "Attention";

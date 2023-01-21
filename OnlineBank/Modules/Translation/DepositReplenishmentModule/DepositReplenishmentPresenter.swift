@@ -10,8 +10,8 @@ import Foundation
 protocol DepositReplenishmentPresenterProtocol: AnyObject {
     init(_ view: DepositReplenishmentContentViewProtocol)
     init(_ controller: DepositReplenishmentViewControllerProtocol)
-
-    func inputOnlyDigit(for string: String) 
+    
+    func topUpBalanceDepasite(value: String)
 }
 
 final class DepositReplenishmentPresenter {
@@ -32,8 +32,8 @@ final class DepositReplenishmentPresenter {
 
 // MARK: - DepositReplenishmentPresenterProtocol
 extension DepositReplenishmentPresenter: DepositReplenishmentPresenterProtocol {
-
-    func inputOnlyDigit(for string: String) {
-        interactor.onlyDigit(for: string)
+    
+    func topUpBalanceDepasite(value: String) {
+        interactor.topUpDeposit(string: value)
     }
 }

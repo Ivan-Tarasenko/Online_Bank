@@ -58,20 +58,6 @@ extension MainPresenter: MainPresenterProtocol {
     }
 
     func getBalance() {
-//        guard let balanceDeposit = interactor.client.first?.deposit else { return }
-        print(interactor.client.first?.deposit)
-        
-        var tst = interactor.client.first?.deposit {
-            didSet {
-                print(tst)
-            }
-        }
-        
-        
-        
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .currencyAccounting
-        let balance = formatter.string(from: balanceDeposit as NSNumber)
-        view?.setBalanceDeposit(balance: balance!)
+        viewController?.setBalanceDeposit(balance: interactor.balanceDeposit())
     }
 }

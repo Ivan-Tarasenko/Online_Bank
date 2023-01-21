@@ -73,12 +73,35 @@ enum R {
                 static let placeholderFieldSum = NSLocalizedString("placeholderFieldSum", comment: "")
                 static let enterButton = NSLocalizedString("enterButton", comment: "")
             }
+            
+            enum TopUpPhoneNumber {
+                static let topUpLabel = NSLocalizedString("topUpLabel", comment: "")
+                static let amountPlaceholder = NSLocalizedString("amountPlaceholder", comment: "")
+                static let yesButton = NSLocalizedString("yesButton", comment: "")
+                static let noButton = NSLocalizedString("noButton", comment: "")
+                
+                static let inputNumberLabel = NSLocalizedString("inputNumberLabel", comment: "")
+                static let inputNumberPlaceholder = NSLocalizedString("inputNumberPlaceholder", comment: "")
+                static let inputAmountPlaceholder = NSLocalizedString("inputAmountPlaceholder", comment: "")
+                static let replenishButton = NSLocalizedString("replenishButton", comment: "")
+            }
         }
 
         enum WithdrawalScreen {
             static let titleWithdrawal = NSLocalizedString("titleWithdrawal", comment: "")
             static let cash = NSLocalizedString("cash", comment: "")
             static let request = NSLocalizedString("request", comment: "")
+            
+            enum Cash {
+                static let cashTitle = NSLocalizedString("cashTitle", comment: "")
+                static let cashPlaceholder = NSLocalizedString("cashPlaceholder", comment: "")
+                static let withdrawalButton = NSLocalizedString("withdrawalButton", comment: "")
+                
+            }
+            
+            enum Request {
+                static let requestTitle = NSLocalizedString("requestTitle", comment: "")
+            }
         }
 
         enum Alert {

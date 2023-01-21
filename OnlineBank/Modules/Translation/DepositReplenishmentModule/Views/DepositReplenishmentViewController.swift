@@ -31,29 +31,19 @@ final class DepositReplenishmentViewController: UIViewController {
     override func loadView() {
         assambly.initialController(controller: self)
         view = contentView as? UIView
-//        didEnterButtonPressed()
+        didEnterButtonPressed()
     }
 }
 
 // MARK: - Private functions
 private extension DepositReplenishmentViewController {
+    func didEnterButtonPressed() {
+        contentView?.onEnterButtonAction = {
+            self.dismiss(animated: true)
+        }
+    }
 }
 
 // MARK: - DepositReplenishmentViewControllerProtocol
 extension DepositReplenishmentViewController: DepositReplenishmentViewControllerProtocol {
-//    func didEnterButtonPressed() {
-//        contentView?.onEnterButtonAction = {
-//            let realmService = RealmService()
-//            let realm = RealmService.shared.realm
-//            var clientObject: Results<Client>
-//            clientObject = realm.objects(Client.self)
-//
-//            let dic = ["deposit": 33333]
-//
-//            realmService.update(clientObject.first!, dictionary: dic)
-//
-//
-//            print(clientObject)
-//        }
-//    }
 }

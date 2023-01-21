@@ -15,26 +15,32 @@ final class CashViewController: UIViewController {
     var presenter: CashPresenterProtocol?
     var contentView: CashContentViewProtocol?
     private let assambly: CashAssamblyProtocol = CashAssambly()
-
+    
     // MARK: - Inition View
     init(contentView: CashContentView) {
         self.contentView = contentView
         super .init(nibName: nil, bundle: nil)
     }
-
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    
     // MARK: - Loading View
     override func loadView() {
         assambly.initialController(controller: self)
         view = contentView as? UIView
+        didWithdrawalButtonPressed()
     }
 }
 
 // MARK: - Private functions
 private extension CashViewController {
+    func didWithdrawalButtonPressed() {
+        contentView?.onWithdrawalButtonAction = {
+            self.dismiss(animated: true)
+        }
+    }
 }
 
 // MARK: - CashViewControllerProtocol

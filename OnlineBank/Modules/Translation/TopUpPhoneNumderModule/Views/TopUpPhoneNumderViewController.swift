@@ -30,11 +30,25 @@ final class TopUpPhoneNumderViewController: UIViewController {
     override func loadView() {
         assambly.initialController(controller: self)
         view = contentView as? UIView
+        didYesButton()
+        didReplenishButton()
     }
 }
 
 // MARK: - Private functions
 private extension TopUpPhoneNumderViewController {
+    
+    func didYesButton() {
+        contentView?.onyYesButtonAction = {
+            self.dismiss(animated: true)
+        }
+    }
+    
+    func didReplenishButton() {
+        contentView?.onReplenishButtonAction = {
+            self.dismiss(animated: true)
+        }
+    }
 }
 
 // MARK: - TopUpPhoneNumderViewControllerProtocol

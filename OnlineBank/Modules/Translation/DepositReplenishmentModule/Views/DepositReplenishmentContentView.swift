@@ -9,7 +9,7 @@ import UIKit
 import RealmSwift
 
 protocol DepositReplenishmentContentViewProtocol: AnyObject {
-    var onEnterButtonAction: (() -> Void)? { get }
+    var onEnterButtonAction: (() -> Void)? { get set }
 }
 
 final class DepositReplenishmentContentView: UIView {
@@ -28,6 +28,7 @@ final class DepositReplenishmentContentView: UIView {
     
     private let inputSumTextField: UITextField = {
         let field = CustomTextField()
+        field.becomeFirstResponder()
         field.placeholder = R.Titles.TranslationScreen.DepositReplinshment.placeholderFieldSum
         return field
     }()
@@ -83,33 +84,14 @@ private extension DepositReplenishmentContentView {
     }
     
     @objc func enterButtonPressed() {
-
-//        onEnterButtonAction?()
-        let realmService = RealmService()
-        let realm = RealmService.shared.realm
-        let clientModel = Client()
-        var clientObject: Results<Client>
-        clientObject = realm.objects(Client.self)
+        presenter.topUpBalanceDepasite(value: inputSumTextField.txt)
+        onEnterButtonAction?()
         
-        let dic = ["deposit": inputSumTextField.txt]
-        
-        realmService.update(clientObject.first!, dictionary: dic)
-        
-        
-        var tst: MainContentViewProtocol = MainContentView()
-        
-        tst.depositBalanceLabel.txt = "\(clientObject.first?.deposit)"
-        
-        print("deposite change")
-//        print(Realm.Configuration.defaultConfiguration.fileURL)
     }
 }
 
 // MARK: - DepositReplenishmentContentViewProtocol
 extension DepositReplenishmentContentView: DepositReplenishmentContentViewProtocol {
-    func topUpDeposit() {
-        
-    }
 }
 
 // MARK: - Extension textField delegate
@@ -117,7 +99,7 @@ extension DepositReplenishmentContentView: UITextFieldDelegate {
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if textField == inputSumTextField {
-            presenter.inputOnlyDigit(for: string)
+            return GlobalFunc.onlyDigit(for: string)
         }
         return true
     }

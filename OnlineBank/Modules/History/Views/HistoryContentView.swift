@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 protocol HistoryContentViewProtocol: AnyObject {}
 
@@ -14,14 +15,13 @@ final class HistoryContentView: UIView {
     var presenter: HistoryPresenterProtocol!
     var assambly: HistoryAssamblyProtocol = HistoryAssambly()
 
-    let tableView = UITableView()
     weak var delegate: TableViewDelegate?
     private var dataSource = TableViewDataSource()
+    private let tableView = UITableView()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        assambly.initialView(view: self)
-        addSubview(tableView)
+        setView()
         bind()
         makeConstraints()
         registerCell()
@@ -34,6 +34,14 @@ final class HistoryContentView: UIView {
 
 // MARK: - Private functions
 private extension HistoryContentView {
+    
+    func setView() {
+        assambly.initialView(view: self)
+        addSubview(tableView)
+        
+        print(Realm.Configuration.defaultConfiguration.fileURL)
+    }
+    
     func bind() {
         tableView.dataSource = dataSource
         tableView.delegate = delegate

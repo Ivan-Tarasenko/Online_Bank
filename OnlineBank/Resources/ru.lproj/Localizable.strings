@@ -51,10 +51,29 @@
 "placeholderFieldSum" = "Введите сумму";
 "enterButton" = "Оплатить";
 
+// Top up phone number
+"topUpLabel" = "Хотите пополнить номер";
+"amountPlaceholder" = " Введите сумму";
+"yesButton" = "Да";
+"noButton" = "Нет";
+
+"inputNumberLabel" = "Введите номер телефона";
+"inputNumberPlaceholder" = " Введите номер телефона";
+"inputAmountPlaceholder" = " Введите сумму";
+"replenishButton" = "Пополнить";
+
 // Withdrawal screen
 "titleWithdrawal" = "Способы вывода наличных";
 "cash" = "Снять наличные";
 "request" = "Запросить деньги";
+
+// Cash
+"cashTitle" = "Сколько вы хотите получить наличных?";
+"cashPlaceholder" = "Введите сумму";
+"withdrawalButton" = "Снять наличные";
+
+// Request
+"requestTitle" = "Скоро здесь можно будет отправить запрос на получение наличных";
 
 // Alert
 "titleAlert" = "Внимание";

@@ -15,22 +15,16 @@ protocol DepositReplenishmentInteractorProtocol: AnyObject {
     var historyModel: History { get }
 
     init(_ presenter: DepositReplenishmentPresenterProtocol)
-    
-    func onlyDigit(for string: String) -> Bool
+    func topUpDeposit(string: String)
 }
 
 final class DepositReplenishmentInteractor {
-
-    weak var presenter: DepositReplenishmentPresenterProtocol?
+    
+    let realmService = RealmService()
+    let realm = RealmService.shared.realm
     let entity: DepositReplenishmentEntityProtocol = DepositReplenishmentEntity()
-
-    required init(_ presenter: DepositReplenishmentPresenterProtocol) {
-        self.presenter = presenter
-    }
-}
-
-// MARK: - DepositReplenishmentInteractorProtocol
-extension DepositReplenishmentInteractor: DepositReplenishmentInteractorProtocol {
+    weak var presenter: DepositReplenishmentPresenterProtocol?
+    
     var client: Results<Client>! {
         entity.clientObject
     }
@@ -41,17 +35,27 @@ extension DepositReplenishmentInteractor: DepositReplenishmentInteractorProtocol
     var historyModel: History {
         entity.historyModel
     }
-    
-    func onlyDigit(for string: String) -> Bool {
-        let forbiddenCharacters = CharacterSet.decimalDigits
-        let characterSet = CharacterSet(charactersIn: string)
-        return forbiddenCharacters.isSuperset(of: characterSet)
+
+    required init(_ presenter: DepositReplenishmentPresenterProtocol) {
+        self.presenter = presenter
     }
+}
+
+// MARK: - DepositReplenishmentInteractorProtocol
+extension DepositReplenishmentInteractor: DepositReplenishmentInteractorProtocol {
     
-    func topUpDeposit(sum: Double) {
-        let realm = RealmService()
-        let roundSum = round(100 * sum)/100
+    func topUpDeposit(string: String) {
+        guard let client = client.first else { return }
+        let value = Double(string)
+        let roundValue = round(100 * value!)/100
+        let sum = client.deposit + roundValue
+        let dic = ["deposit": sum]
         
-//        realm.update(client, dictionary: [client.first?.deposit: ])
+        historyModel.isSpent = true
+        historyModel.value = roundValue
+        historyModel.date = GlobalFunc.currentDate()
+    
+        realmService.create(historyModel)
+        realmService.update(client, dictionary: dic)
     }
 }

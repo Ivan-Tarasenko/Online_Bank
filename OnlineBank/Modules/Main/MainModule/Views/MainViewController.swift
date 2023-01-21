@@ -6,8 +6,10 @@
 //
 
 import UIKit
+import RealmSwift
 
 protocol MainViewControllerProtocol: AnyObject {
+    func setBalanceDeposit(balance: String)
 }
 
 final class MainViewController: UIViewController {
@@ -31,6 +33,12 @@ final class MainViewController: UIViewController {
         title = R.TabBar.title(for: Tabs.main)
         addProductPressed()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        presenter?.getBalance()
+        
+    }
 }
 
 // MARK: - Private extension func
@@ -39,6 +47,10 @@ extension MainViewController {
         contentView?.addProductAction = {
             self.presenter?.pressedAddProduct()
         }
+    }
+    
+    func setBalanceDeposit(balance: String) {
+        contentView?.depositBalanceLabel.txt = balance
     }
 }
 

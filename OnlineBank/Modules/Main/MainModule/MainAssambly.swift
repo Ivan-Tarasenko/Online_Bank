@@ -25,9 +25,11 @@ final class MainAssambly: MainAssamblyProtocol {
 
     func initialController(controller: MainViewController) {
         let presenter = MainPresenter(controller)
+        let interactor = MainInteractor(presenter)
         let router = MainRouter(controller)
 
         controller.presenter = presenter
+        presenter.interactor = interactor
         presenter.router = router
 
     }

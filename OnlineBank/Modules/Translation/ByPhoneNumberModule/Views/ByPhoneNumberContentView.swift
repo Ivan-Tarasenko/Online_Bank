@@ -10,7 +10,7 @@ import UIKit
 protocol ByPhoneNumberContentViewProtocol: AnyObject {}
 
 final class ByPhoneNumberContentView: UIView {
-
+    
     var presenter: ByPhoneNumberPresenterProtocol!
     var assambly: ByPhoneNumberAssamblyProtocol = ByPhoneNumberAssambly()
     
@@ -20,13 +20,13 @@ final class ByPhoneNumberContentView: UIView {
         label.textAlignment = .center
         return label
     }()
-
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
-       setView()
+        setView()
         makeConstraints()
     }
-
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

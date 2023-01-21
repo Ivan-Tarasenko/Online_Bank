@@ -16,6 +16,8 @@ protocol MainInteractorProtocol: AnyObject {
     var clientCard: Results<ClientCard>! { get }
     
     init(_ presenter: MainPresenterProtocol)
+    
+    func balanceDeposit() -> String
 }
 
 final class MainInteractor {
@@ -65,5 +67,15 @@ extension MainInteractor: NetworkManagerDelegate {
     func upDateCurrency(_: NetworkManager, with currentCurrency: CurrencyEntity) {
         let titles = getTitle(from: currentCurrency.currency)
         presenter?.getTitle(from: titles)
+    }
+    
+    func balanceDeposit() -> String {
+        if let balance = client.first?.deposit {
+            let formatter = NumberFormatter()
+            formatter.numberStyle = .currencyAccounting
+            let balance = formatter.string(from: balance as NSNumber)
+            return balance!
+        }
+        return ""
     }
 }

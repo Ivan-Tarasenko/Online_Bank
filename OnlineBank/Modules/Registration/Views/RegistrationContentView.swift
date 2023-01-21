@@ -10,7 +10,7 @@ import RealmSwift
 
 protocol RegistrationContentViewProtocol: AnyObject {
     var registrationAction: (() -> Void)? { get set }
-    func registrationClient(client: Client, clientCard: ClientCard, generating: (Double, Int, String))
+    func registrationClient(client: Client, clientCard: ClientCard, generating: (Int, String))
     func checkTextField() -> Bool
 }
 
@@ -21,7 +21,7 @@ final class RegistrationContentView: UIView {
     var presenter: RegistrationPresenterProtocol!
     var assambly: RegistrationAssamblyProtocol = RegistrationAssambly()
 
-    let title: CustomLabel = {
+    let title: UILabel = {
         let label = CustomLabel()
         label.text = R.Titles.RegisterScreen.title
         label.textColor = .white
@@ -29,31 +29,35 @@ final class RegistrationContentView: UIView {
         return label
     }()
 
-    let nameTextField: CustomTextField = {
+    let nameTextField: UITextField = {
         let field = CustomTextField()
+        field.tag = 0
         field.placeholder = R.Titles.RegisterScreen.placeholderName
         return field
     }()
 
-    let surnameTextField: CustomTextField = {
+    let surnameTextField: UITextField = {
         let field = CustomTextField()
+        field.tag = 1
         field.placeholder = R.Titles.RegisterScreen.placeholderSurName
         return field
     }()
 
-    let numberCardTextField: CustomTextField = {
+    let numberCardTextField: UITextField = {
         let field = CustomTextField()
+        field.tag = 2
         field.placeholder = R.Titles.RegisterScreen.placeholderNumberCard
         return field
     }()
 
-    let numberPhoneTextField: CustomTextField = {
+    let numberPhoneTextField: UITextField = {
         let field = CustomTextField()
+        field.tag = 3
         field.placeholder = R.Titles.RegisterScreen.placeholderNumberPhone
         return field
     }()
 
-    let registerButton: CustomButtom = {
+    let registerButton: UIButton = {
         let button = CustomButtom()
         button.backgroundColor = .white
         button.setTitle(R.Titles.RegisterScreen.registerButton, for: .normal)
@@ -70,6 +74,7 @@ final class RegistrationContentView: UIView {
         addTargets()
         setStackView()
         makeConstraints()
+        assignDelegate()
     }
 
     required init?(coder: NSCoder) {
@@ -79,6 +84,13 @@ final class RegistrationContentView: UIView {
 
 // MARK: - Private functions
 private extension RegistrationContentView {
+    
+    func assignDelegate() {
+        nameTextField.delegate = self
+        surnameTextField.delegate = self
+        numberCardTextField.delegate = self
+        numberPhoneTextField.delegate = self
+    }
 
     func setRegisterView() {
         backgroundColor = .systemBlue
@@ -130,7 +142,7 @@ extension RegistrationContentView: RegistrationContentViewProtocol {
         return false
     }
 
-    func registrationClient(client: Client, clientCard: ClientCard, generating: (Double, Int, String)) {
+    func registrationClient(client: Client, clientCard: ClientCard, generating: (Int, String)) {
 
         guard !nameTextField.txt.isEmpty,
               !surnameTextField.txt.isEmpty,
@@ -143,10 +155,10 @@ extension RegistrationContentView: RegistrationContentViewProtocol {
         client.name = nameTextField.txt
         client.surname = surnameTextField.txt
         client.numberPhone = numberPhoneTextField.txt
-        client.deposit = generating.0
+        client.deposit = 1_000_000.00
 
-        clientCard.cvv = generating.1
-        clientCard.endDate = generating.2
+        clientCard.cvv = generating.0
+        clientCard.endDate = generating.1
         clientCard.numberCard = numberCardTextField.txt
         clientCard.nameClient = "\(nameTextField.txt) \(surnameTextField.txt)"
 
@@ -157,5 +169,20 @@ extension RegistrationContentView: RegistrationContentViewProtocol {
     @objc func registerButtonPressed() {
         presenter.generatingClient()
         registrationAction?()
+    }
+}
+
+// MARK: - Extension textField delegate
+extension RegistrationContentView: UITextFieldDelegate {
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        switch textField.tag {
+        case 0, 1:
+            return GlobalFunc.noDigit(for: string)
+        case 2, 3:
+            return GlobalFunc.onlyDigit(for: string)
+        default: break
+        }
+        return true
     }
 }

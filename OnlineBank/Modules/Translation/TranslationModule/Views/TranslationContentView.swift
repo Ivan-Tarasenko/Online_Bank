@@ -81,22 +81,18 @@ final class TranslationContentView: UIView {
 extension TranslationContentView {
 
     @objc func cardToCardPressed() {
-        print("С карты на карту")
         onCardToCardAction?()
     }
 
     @objc func depositReplenishmentPressed() {
-        print("пополнить дипазит")
         onDepositReplenishmentAction?()
     }
 
     @objc func byPhoneNumberPressed() {
-        print("По номеру телефона")
         onByPhoneNumberAction?()
     }
 
     @objc func topUpPhoneNumderPressed() {
-        print("Пополнить номер телефона")
         onTopUpPhoneNumderAction?()
     }
 
