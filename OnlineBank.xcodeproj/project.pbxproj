@@ -17,7 +17,6 @@
 		1A07F23E29744A27007AD687 /* SFPRODISPLAYMEDIUM.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 1A07F23529744A27007AD687 /* SFPRODISPLAYMEDIUM.OTF */; };
 		1A07F23F29744A27007AD687 /* SFPRODISPLAYSEMIBOLDITALIC.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 1A07F23629744A27007AD687 /* SFPRODISPLAYSEMIBOLDITALIC.OTF */; };
 		1A07F24129744FDE007AD687 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A07F24029744FDE007AD687 /* WelcomeView.swift */; };
-		1A35CF3329696F25003C0C47 /* NewProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35CF3229696F25003C0C47 /* NewProduct.swift */; };
 		1A35EF8A2974132E0084CB7D /* UILabel+SaveText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35EF892974132E0084CB7D /* UILabel+SaveText.swift */; };
 		1A401CC129780254008CB417 /* FromCardToCardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401CBA29780254008CB417 /* FromCardToCardContentView.swift */; };
 		1A401CC229780254008CB417 /* FromCardToCardAssambly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401CBB29780254008CB417 /* FromCardToCardAssambly.swift */; };
@@ -137,6 +136,7 @@
 		1ADCDD37296EC92200F23219 /* SaveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADCDD34296EC92200F23219 /* SaveData.swift */; };
 		1ADCDD38296EC92200F23219 /* CurrentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADCDD35296EC92200F23219 /* CurrentData.swift */; };
 		1ADCDD39296EC92200F23219 /* CurrencyEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADCDD36296EC92200F23219 /* CurrencyEntity.swift */; };
+		F33C471CBFEF1F76DFAC9389 /* Pods_OnlineBank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 395282EC83BBAA5495578455 /* Pods_OnlineBank.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -150,7 +150,6 @@
 		1A07F23529744A27007AD687 /* SFPRODISPLAYMEDIUM.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYMEDIUM.OTF; sourceTree = "<group>"; };
 		1A07F23629744A27007AD687 /* SFPRODISPLAYSEMIBOLDITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYSEMIBOLDITALIC.OTF; sourceTree = "<group>"; };
 		1A07F24029744FDE007AD687 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
-		1A35CF3229696F25003C0C47 /* NewProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProduct.swift; sourceTree = "<group>"; };
 		1A35EF892974132E0084CB7D /* UILabel+SaveText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+SaveText.swift"; sourceTree = "<group>"; };
 		1A401CBA29780254008CB417 /* FromCardToCardContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FromCardToCardContentView.swift; sourceTree = "<group>"; };
 		1A401CBB29780254008CB417 /* FromCardToCardAssambly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FromCardToCardAssambly.swift; sourceTree = "<group>"; };
@@ -276,6 +275,9 @@
 		1ADCDD34296EC92200F23219 /* SaveData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveData.swift; sourceTree = "<group>"; };
 		1ADCDD35296EC92200F23219 /* CurrentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentData.swift; sourceTree = "<group>"; };
 		1ADCDD36296EC92200F23219 /* CurrencyEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyEntity.swift; sourceTree = "<group>"; };
+		395282EC83BBAA5495578455 /* Pods_OnlineBank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnlineBank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A400D370DA34C63260937478 /* Pods-OnlineBank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnlineBank.release.xcconfig"; path = "Target Support Files/Pods-OnlineBank/Pods-OnlineBank.release.xcconfig"; sourceTree = "<group>"; };
+		D189E6F18B7723C04F625A63 /* Pods-OnlineBank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnlineBank.debug.xcconfig"; path = "Target Support Files/Pods-OnlineBank/Pods-OnlineBank.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,6 +285,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F33C471CBFEF1F76DFAC9389 /* Pods_OnlineBank.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +515,8 @@
 			children = (
 				1A4877C4295C33520029A1BC /* OnlineBank */,
 				1A4877C3295C33520029A1BC /* Products */,
+				6C10921E2C2216A9183FD14A /* Pods */,
+				4D1C501933D7B07ED3872E9C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -690,7 +695,6 @@
 				1ADCDD24296EAC8C00F23219 /* ExchangeRateView */,
 				1A4877E5295C36BF0029A1BC /* MainContentView.swift */,
 				1A4877C9295C33520029A1BC /* MainViewController.swift */,
-				1A35CF3229696F25003C0C47 /* NewProduct.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -819,6 +823,23 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		4D1C501933D7B07ED3872E9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				395282EC83BBAA5495578455 /* Pods_OnlineBank.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C10921E2C2216A9183FD14A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D189E6F18B7723C04F625A63 /* Pods-OnlineBank.debug.xcconfig */,
+				A400D370DA34C63260937478 /* Pods-OnlineBank.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -826,18 +847,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A4877D6295C33530029A1BC /* Build configuration list for PBXNativeTarget "OnlineBank" */;
 			buildPhases = (
+				1617A2806DC3E76D30D69D10 /* [CP] Check Pods Manifest.lock */,
 				1A4877D9295C34300029A1BC /* Swift Lint */,
 				1A4877BE295C33520029A1BC /* Sources */,
 				1A4877BF295C33520029A1BC /* Frameworks */,
 				1A4877C0295C33520029A1BC /* Resources */,
+				E772CA9498902328A3933F4F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = OnlineBank;
-			packageProductDependencies = (
-			);
 			productName = OnlineBank;
 			productReference = 1A4877C2295C33520029A1BC /* OnlineBank.app */;
 			productType = "com.apple.product-type.application";
@@ -868,8 +889,6 @@
 				fr,
 			);
 			mainGroup = 1A4877B9295C33520029A1BC;
-			packageReferences = (
-			);
 			productRefGroup = 1A4877C3295C33520029A1BC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -904,6 +923,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1617A2806DC3E76D30D69D10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OnlineBank-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		1A4877D9295C34300029A1BC /* Swift Lint */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
@@ -923,6 +964,23 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"error: SwiftLint does not exist, download it from https://github.com/realm/SwiftLint\"\n  exit 1\nfi\n";
 		};
+		E772CA9498902328A3933F4F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OnlineBank/Pods-OnlineBank-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OnlineBank/Pods-OnlineBank-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OnlineBank/Pods-OnlineBank-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -930,7 +988,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A35CF3329696F25003C0C47 /* NewProduct.swift in Sources */,
 				1A401CC329780254008CB417 /* FromCardToCardPresenter.swift in Sources */,
 				1A8D67E029657FE800B45E63 /* MainRouter.swift in Sources */,
 				1ADCDD1D296D705A00F23219 /* RegistrationRouter.swift in Sources */,
@@ -1193,6 +1250,7 @@
 		};
 		1A4877D7295C33530029A1BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D189E6F18B7723C04F625A63 /* Pods-OnlineBank.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1219,6 +1277,7 @@
 		};
 		1A4877D8295C33530029A1BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A400D370DA34C63260937478 /* Pods-OnlineBank.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

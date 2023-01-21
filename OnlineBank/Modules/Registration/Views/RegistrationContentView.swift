@@ -97,7 +97,6 @@ private extension RegistrationContentView {
         stackView.addArrangedSubview(numberPhoneTextField)
         stackView.addArrangedSubview(registerButton)
 
-        stackView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             stackView.widthAnchor.constraint(equalToConstant: 290),
             stackView.heightAnchor.constraint(equalToConstant: 350),

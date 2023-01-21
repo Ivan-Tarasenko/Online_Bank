@@ -46,30 +46,26 @@ private extension TranslationViewController {
     }
 
     func cardToCardPressed() {
-        contentView?.onCardToCardAction = { [weak self] _ in
-            guard let self else { return }
-            self.router.transitionOnCardToCard()
+        contentView?.onCardToCardAction = {
+            self.presenter?.cardToCardPressed()
         }
     }
 
     func depositReplenishmentPressed() {
-        contentView?.onDepositReplenishmentAction = { [weak self] _ in
-            guard let self else { return }
-            self.router.transitionOnDepositReplenisshment()
+        contentView?.onDepositReplenishmentAction = {
+            self.presenter?.depositReplenishmentPressed()
         }
     }
 
     func byPhoneNumberPressed() {
-        contentView?.onByPhoneNumberAction = { [weak self] _ in
-            guard let self else { return }
-            self.router.transitionOnByPhoneNumber()
+        contentView?.onByPhoneNumberAction = {
+            self.presenter?.byPhoneNumberPressed()
         }
     }
 
     func topUpPhoneNumberPressed() {
-        contentView?.onTopUpPhoneNumderAction = { [weak self] _ in
-            guard let self else { return }
-            self.router.transitionTopUpPhoneNumber()
+        contentView?.onTopUpPhoneNumderAction = {
+            self.presenter?.topUpPhoneNumberPressed()
         }
     }
 }

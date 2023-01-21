@@ -30,6 +30,7 @@
 "addProductButton" = "Добавить продукт";
 "titleBalance" = "Ваш баланс:";
 
+// New Product
 "massageNewProduct" = "Скоро здесь можно будет добавить новые продукты, такие как новые карты кредиты или вклады";
 
 // Translations screen
@@ -39,11 +40,22 @@
 "byPhoneNumber" = "По номеру телефона";
 "topUpPhoneNumder" = "Пополнить баланс телефона";
 
+// From card to card
+"massageFromCardToCard" = "Скоро здесь можно будет осуществлять переводы с карты на карту";
+
+// By phone number
+"massageByPhoneNumber" = "Скоро здесь можно будет осуществлять переводы по номеру телефона";
+
+// Deposit replenishment
+"depositReplinshmentTitle" = "Введите сумму";
+"placeholderFieldSum" = "Введите сумму";
+"enterButton" = "Оплатить";
+
 // Withdrawal screen
 "titleWithdrawal" = "Способы вывода наличных";
 "cash" = "Снять наличные";
 "request" = "Запросить деньги";
 
 // Alert
-"title" = "Внимание";
+"titleAlert" = "Внимание";
 "massage" = "Необходимо заполнить все поля";

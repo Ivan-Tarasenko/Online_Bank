@@ -37,11 +37,23 @@
 "byPhoneNumber" = "By phone number";
 "topUpPhoneNumder" = "Top up your phone balance";
 
+// From card to card
+"massageFromCardToCard" = "Soon it will be possible to make transfers from card to card here";
+
+// By phone number
+"massageByPhoneNumber" = "Soon it will be possible to make transfers by phone number here";
+
+// Deposit replenishment
+"depositReplinshmentTitle" = "Enter the amount";
+"placeholderFieldSum" = "Enter the amount";
+"enterButton" = "Pay";
+
+
 // Withdrawal screen
 "titleWithdrawal" = "Cash withdrawal methods";
 "cash" = "Withdraw cash";
 "request" = "Request money";
 
 // Alert
-"title" = "Attention";
+"titleAlert" = "Attention";
 "massage" = "It is necessary to fill in all fields";

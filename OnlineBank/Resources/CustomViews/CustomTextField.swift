@@ -14,6 +14,7 @@ final class CustomTextField: UITextField {
         backgroundColor = .systemGray6
         borderStyle = .none
         layer.cornerRadius = 15
+        translatesAutoresizingMaskIntoConstraints = false
         setShadow(for: self)
     }
 

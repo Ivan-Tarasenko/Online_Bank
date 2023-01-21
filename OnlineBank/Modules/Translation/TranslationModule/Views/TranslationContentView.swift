@@ -8,10 +8,11 @@
 import UIKit
 
 protocol TranslationContentViewProtocol: AnyObject {
-    var onCardToCardAction: (() -> Void)? { get }
-    var onDepositReplenishmentAction: (() -> Void)? { get }
-    var onByPhoneNumberAction: (() -> Void)? { get }
-    var onTopUpPhoneNumderAction: (() -> Void)? { get }
+    
+    var onCardToCardAction: (() -> Void)? { get set }
+    var onDepositReplenishmentAction: (() -> Void)? { get set }
+    var onByPhoneNumberAction: (() -> Void)? { get set }
+    var onTopUpPhoneNumderAction: (() -> Void)? { get set }
 }
 
 final class TranslationContentView: UIView {

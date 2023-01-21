@@ -12,6 +12,8 @@ protocol MainContentViewProtocol: AnyObject {
     func installingCardData(number: String, name: String, image: UIImage)
     func setCurrencyRate(from array: [String])
     func setBalanceDeposit(balance: String)
+    
+    var depositBalanceLabel: UILabel { get }
 }
 
 final class MainContentView: UIView {
@@ -28,7 +30,7 @@ final class MainContentView: UIView {
 
     var cardView = Card()
 
-    let titleBalanceLabel: CustomLabel = {
+    let titleBalanceLabel: UILabel = {
         let label = CustomLabel()
         label.text = R.Titles.MainScreen.titileBalance
         return label
@@ -42,7 +44,7 @@ final class MainContentView: UIView {
         return label
     }()
     
-    let addProductButton: CustomButtom = {
+    let addProductButton: UIButton = {
         let button = CustomButtom()
         button.setTitle(R.Titles.MainScreen.addProductTitle, for: .normal)
         return button

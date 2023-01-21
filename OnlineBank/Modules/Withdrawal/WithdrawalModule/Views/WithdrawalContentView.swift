@@ -8,8 +8,8 @@
 import UIKit
 
 protocol WithdrawalContentViewProtocol: AnyObject {
-    var onCashAction: (() -> Void)? { get }
-    var onRequestAction: (() -> Void)? { get }
+    var onCashAction: (() -> Void)? { get set }
+    var onRequestAction: (() -> Void)? { get set }
 }
 
 final class WithdrawalContentView: UIView {

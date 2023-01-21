@@ -36,8 +36,7 @@ final class MainViewController: UIViewController {
 // MARK: - Private extension func
 extension MainViewController {
     func addProductPressed() {
-        contentView?.addProductAction = { [weak self] _ in
-            guard let self else { return }
+        contentView?.addProductAction = {
             self.presenter?.pressedAddProduct()
         }
     }

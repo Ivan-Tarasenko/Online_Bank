@@ -12,7 +12,7 @@ protocol TranslationRouterProtocol: AnyObject {
     init(_ viewController: TranslationViewController)
 
     func transitionOnCardToCard()
-    func transitionOnDepositReplenisshment()
+    func transitionOnDepositReplenishment()
     func transitionOnByPhoneNumber()
     func transitionTopUpPhoneNumber()
 }
@@ -28,7 +28,7 @@ final class TranslationRouter {
 
 // MARK: - TranslationRouterProtocol
 extension TranslationRouter: TranslationRouterProtocol {
-
+    
     func transitionOnCardToCard() {
         let cardToCardController = FromCardToCardViewController(contentView: FromCardToCardContentView())
         viewController?.present(cardToCardController, animated: true)

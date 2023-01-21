@@ -39,11 +39,24 @@
 "byPhoneNumber" = "Par numéro de téléphone";
 "topUpPhoneNumder" = "Recharger le solde du téléphone";
 
+// From card to card
+"massageFromCardToCard" = "Bientôt, il sera possible d'effectuer des transferts de carte en carte";
+
+// By phone number
+"massageByPhoneNumber" = "Bientôt ici, il sera possible d'effectuer des transferts par numéro de téléphone";
+
+// Deposit replenishment
+"depositReplinshmentTitle" = "Entrez le montant";
+"placeholderFieldSum" = "Entrez le montant";
+"enterButton" = "Payer";
+
+
+
 // Withdrawal screen
 "titleWithdrawal" = "Méthodes de retrait d'argent";
 "cash" = "Retirer de l'argent";
 "request" = "Demander de l'argent";
 
 // Alert
-"title" = "Attention";
+"titleAlert" = "Attention";
 "massage" = "Vous devez remplir tous les champs";

@@ -41,7 +41,7 @@ extension TranslationPresenter: TranslationPresenterProtocol {
     }
 
     func depositReplenishmentPressed() {
-        router.transitionOnDepositReplenisshment()
+        router.transitionOnDepositReplenishment()
     }
 
     func byPhoneNumberPressed() {

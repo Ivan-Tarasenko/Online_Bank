@@ -17,7 +17,6 @@ protocol RegistrationPresenterProtocol: AnyObject {
     func generatingClient()
     func setWelcomeView()
     func checkRegistration()
-//    func checkRegistration(not: RegistrationContentViewProtocol?, yes: WelcomeViewProtocol?, controllerVew: UIViewController?)
 }
 
 final class RegistrationPresenter {

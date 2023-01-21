@@ -59,6 +59,20 @@ enum R {
             static let betweenAccounts = NSLocalizedString("depositReplenishment", comment: "")
             static let byPhoneNumber = NSLocalizedString("byPhoneNumber", comment: "")
             static let topUpPhoneNumder = NSLocalizedString("topUpPhoneNumder", comment: "")
+            
+            enum FromCardToCard {
+                static let massage = NSLocalizedString("massageFromCardToCard", comment: "")
+            }
+            
+            enum ByPhoneNumber {
+                static let massage = NSLocalizedString("massageByPhoneNumber", comment: "")
+            }
+            
+            enum DepositReplinshment {
+                static let depositReplinshmentTitle = NSLocalizedString("depositReplinshmentTitle", comment: "")
+                static let placeholderFieldSum = NSLocalizedString("placeholderFieldSum", comment: "")
+                static let enterButton = NSLocalizedString("enterButton", comment: "")
+            }
         }
 
         enum WithdrawalScreen {
@@ -68,7 +82,7 @@ enum R {
         }
 
         enum Alert {
-            static let title = NSLocalizedString("title", comment: "")
+            static let title = NSLocalizedString("titleAlert", comment: "")
             static let massage = NSLocalizedString("massage", comment: "")
         }
 
