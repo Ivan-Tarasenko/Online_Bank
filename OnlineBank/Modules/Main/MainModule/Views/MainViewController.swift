@@ -17,6 +17,7 @@ final class MainViewController: UIViewController {
     var presenter: MainPresenterProtocol?
     var contentView: MainContentViewProtocol?
     private let assambly: MainAssamblyProtocol = MainAssambly()
+    private let scrollView = UIScrollView()
 
     init(contentView: MainContentViewProtocol) {
         self.contentView = contentView
@@ -42,18 +43,17 @@ final class MainViewController: UIViewController {
 }
 
 // MARK: - Private extension func
-extension MainViewController {
+private extension MainViewController {
     func addProductPressed() {
         contentView?.addProductAction = {
             self.presenter?.pressedAddProduct()
         }
     }
-    
-    func setBalanceDeposit(balance: String) {
-        contentView?.depositBalanceLabel.txt = balance
-    }
 }
 
 // MARK: - Extension MainViewControllerProtocol
 extension MainViewController: MainViewControllerProtocol {
+    func setBalanceDeposit(balance: String) {
+        contentView?.depositBalanceLabel.txt = balance
+    }
 }

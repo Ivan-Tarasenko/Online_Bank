@@ -25,17 +25,6 @@ final class TopUpPhoneNumderInteractor {
     let realm = RealmService.shared.realm
     let entity: TopUpPhoneNumderEntityProtocol = TopUpPhoneNumderEntity()
     weak var presenter: TopUpPhoneNumderPresenterProtocol?
-    
-    var client: Results<Client>! {
-        entity.clientObject
-    }
-
-    var clientModel: Client {
-        entity.clientModel
-    }
-    var historyModel: History {
-        entity.historyModel
-    }
 
     required init(_ presenter: TopUpPhoneNumderPresenterProtocol) {
         self.presenter = presenter
@@ -44,6 +33,17 @@ final class TopUpPhoneNumderInteractor {
 
 // MARK: - TopUpPhoneNumderInteractorProtocol
 extension TopUpPhoneNumderInteractor: TopUpPhoneNumderInteractorProtocol {
+    
+    var client: Results<Client>! {
+        entity.clientObject
+    }
+    
+    var clientModel: Client {
+        entity.clientModel
+    }
+    var historyModel: History {
+        entity.historyModel
+    }
 
     func topUpSelfPhone(string: String) {
         guard let client = client.first else { return }

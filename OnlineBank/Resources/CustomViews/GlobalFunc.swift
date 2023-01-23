@@ -11,7 +11,7 @@ class GlobalFunc {
     
     static func currentDate() -> String {
         let date = Date()
-        let format = date.getFormattedDate(format: "MM-dd-yyyy HH:mm")
+        let format = date.getFormattedDate(format: "dd. MMM yyyy HH:mm")
         return format
     }
     

@@ -8,7 +8,9 @@
 import UIKit
 import RealmSwift
 
-protocol HistoryContentViewProtocol: AnyObject {}
+protocol HistoryContentViewProtocol: AnyObject {
+    func sendHistory(data: Results<History>!)
+}
 
 final class HistoryContentView: UIView {
 
@@ -25,6 +27,7 @@ final class HistoryContentView: UIView {
         bind()
         makeConstraints()
         registerCell()
+        presenter.getHistory()
     }
 
     required init?(coder: NSCoder) {
@@ -39,7 +42,7 @@ private extension HistoryContentView {
         assambly.initialView(view: self)
         addSubview(tableView)
         
-        print(Realm.Configuration.defaultConfiguration.fileURL)
+//        print(Realm.Configuration.defaultConfiguration.fileURL)
     }
     
     func bind() {
@@ -64,4 +67,7 @@ private extension HistoryContentView {
 
 // MARK: - HistoryContentViewProtocol
 extension HistoryContentView: HistoryContentViewProtocol {
+    func sendHistory(data: Results<History>!) {
+        dataSource.historys = data
+    }
 }
