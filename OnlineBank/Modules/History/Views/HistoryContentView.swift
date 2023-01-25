@@ -6,25 +6,31 @@
 //
 
 import UIKit
+import RealmSwift
 
-protocol HistoryContentViewProtocol: AnyObject {}
+protocol HistoryContentViewProtocol: AnyObject {
+    
+    var tableView: UITableView { get }
+    
+    func sendHistory(data: Results<History>!)
+}
 
 final class HistoryContentView: UIView {
 
     var presenter: HistoryPresenterProtocol!
     var assambly: HistoryAssamblyProtocol = HistoryAssambly()
 
-    let tableView = UITableView()
     weak var delegate: TableViewDelegate?
     private var dataSource = TableViewDataSource()
+    var tableView = UITableView()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        assambly.initialView(view: self)
-        addSubview(tableView)
+        setView()
         bind()
         makeConstraints()
         registerCell()
+        presenter.getHistory()
     }
 
     required init?(coder: NSCoder) {
@@ -34,6 +40,12 @@ final class HistoryContentView: UIView {
 
 // MARK: - Private functions
 private extension HistoryContentView {
+    
+    func setView() {
+        assambly.initialView(view: self)
+        addSubview(tableView)
+    }
+    
     func bind() {
         tableView.dataSource = dataSource
         tableView.delegate = delegate
@@ -56,4 +68,7 @@ private extension HistoryContentView {
 
 // MARK: - HistoryContentViewProtocol
 extension HistoryContentView: HistoryContentViewProtocol {
+    func sendHistory(data: Results<History>!) {
+        dataSource.historys = data
+    }
 }

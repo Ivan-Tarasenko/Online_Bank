@@ -28,18 +28,59 @@
 "addProductButton" = "Add a product";
 "titleBalance" = "Your balance:";
 
+"massageNewProduct" = "Soon it will be possible to add new products here, such as new credit cards or deposits";
+
 // Translations screen
 "titleMethodOfReplenishment" = "Select the transfer methods";
 "fromCardToCard" = "From card to card";
-"betweenAccounts" = "Between accounts";
+"depositReplenishment" = "Between accounts";
 "byPhoneNumber" = "By phone number";
 "topUpPhoneNumder" = "Top up your phone balance";
+
+// From card to card
+"massageFromCardToCard" = "Soon it will be possible to make transfers from card to card here";
+
+// By phone number
+"massageByPhoneNumber" = "Soon it will be possible to make transfers by phone number here";
+
+// Deposit replenishment
+"depositReplinshmentTitle" = "Enter the amount";
+"placeholderFieldSum" = "Enter the amount";
+"enterButton" = "Pay";
+
+// Top up phone number
+"topUpLabel" = "Do you want to top up your number:";
+"amountPlaceholder" = " Enter the amount";
+"yesButton" = "Yes";
+"noButton" = "No";
+
+// Alert top up
+"topUpTitle" = "";
+"topUpMassage" = "";
+
+"inputNumberLabel" = "Enter your phone number";
+"inputNumberPlaceholder" = " Enter your phone number";
+"inputAmountPlaceholder" = " Enter the amount";
+"replenishButton" = "Replenish";
+
+
 
 // Withdrawal screen
 "titleWithdrawal" = "Cash withdrawal methods";
 "cash" = "Withdraw cash";
 "request" = "Request money";
 
-// Alert
-"title" = "Attention";
-"massage" = "It is necessary to fill in all fields";
+// Cash
+"cashTitle" = "How much cash do you want to get?";
+"cashPlaceholder" = "Enter the amount";
+"withdrawalButton" = "Withdraw cash";
+
+// Request
+"requestTitle" = "Soon it will be possible to send a request for cash here";
+
+// Alert title
+"titleAlert" = "Attention";
+// Registration massage
+"regMassage" = "It is necessary to fill in all fields";
+// Withdrawal error
+"withdrawalErrorMassage" = "There are not enough funds on deposit. Top up your account.";

@@ -18,7 +18,6 @@
 "numberCard" = " Entrez votre numéro de carte";
 "numberPhone" = " Entrez le numéro de téléphone";
 
-
 // Title Navigation Controller
 "Main" = "Principal";
 "Translations" = "Traduction";
@@ -30,18 +29,59 @@
 "addProductButton" = "Ajouter un produit";
 "titleBalance" = "Votre équilibre:";
 
+"massageNewProduct" = "Bientôt, il sera possible d'ajouter de nouveaux produits, tels que de nouvelles cartes de crédit ou de dépôts";
+
 // Translations screen
 "titleMethodOfReplenishment" = "Sélectionnez les méthodes de traduction";
 "fromCardToCard" = "De Carte en Carte";
-"betweenAccounts" = "Between accounts";
+"depositReplenishment" = "Réapprovisionner le solde du dépôt";
 "byPhoneNumber" = "Par numéro de téléphone";
 "topUpPhoneNumder" = "Recharger le solde du téléphone";
+
+// From card to card
+"massageFromCardToCard" = "Bientôt, il sera possible d'effectuer des transferts de carte en carte";
+
+// By phone number
+"massageByPhoneNumber" = "Bientôt ici, il sera possible d'effectuer des transferts par numéro de téléphone";
+
+// Deposit replenishment
+"depositReplinshmentTitle" = "Entrez le montant";
+"placeholderFieldSum" = "Entrez le montant";
+"numberPhonePlaceholder" = "Entrez le numéro de téléphone";
+"enterButton" = "Payer";
+
+// Top up phone number
+"topUpLabel" = "Voulez-vous recharger votre numéro:";
+"amountPlaceholder" = " Entrez le montant";
+"yesButton" = "Oui";
+"noButton" = "Pas";
+
+// Alert top up
+"topUpTitle" = "";
+"topUpMassage" = "";
+
+"inputNumberLabel" = "Entrez le numéro de téléphone";
+"inputNumberPlaceholder" = " Entrez le numéro";
+"inputAmountPlaceholder" = " Entrez le montant";
+"replenishButton" = "Reconstituer";
+
 
 // Withdrawal screen
 "titleWithdrawal" = "Méthodes de retrait d'argent";
 "cash" = "Retirer de l'argent";
 "request" = "Demander de l'argent";
 
-// Alert
-"title" = "Attention";
-"massage" = "Vous devez remplir tous les champs";
+// Cash
+"cashTitle" = "Combien voulez-vous obtenir de l'argent?";
+"cashPlaceholder" = "Entrez le montant";
+"withdrawalButton" = "Retirer de l'argent";
+
+// Request
+"requestTitle" = "Bientôt, il sera possible d'envoyer une demande d'argent";
+
+// Aler title
+"titleAlert" = "Attention";
+// Registration massage
+"regMassage" = "Vous devez remplir tous les champs";
+// Withdrawal error
+"withdrawalErrorMassage" = "Pas assez de fonds sur le dépôt. Rechargez votre compte.";

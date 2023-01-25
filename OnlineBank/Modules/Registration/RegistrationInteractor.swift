@@ -14,11 +14,10 @@ protocol RegistrationInteractorProtocol: AnyObject {
     var clientModel: Client { get }
     var cardModel: ClientCard { get }
 
-    var generingData: (Double, Int, String) { get }
+    var generingData: (Int, String) { get }
     
     init(_ presenter: RegistrationPresenterProtocol)
 
-    func generatingDipasit() -> Double
     func generatingCVV() -> Int
     func generatingEndDate() -> String
 }
@@ -36,8 +35,8 @@ final class RegistrationInteractor {
 // MARK: - RegistrationInteractorProtocol
 extension RegistrationInteractor: RegistrationInteractorProtocol {
 
-    var generingData: (Double, Int, String) {
-        (generatingDipasit(), generatingCVV(), generatingEndDate())
+    var generingData: (Int, String) {
+        (generatingCVV(), generatingEndDate())
     }
 
     var client: Results<Client>! {
@@ -49,12 +48,6 @@ extension RegistrationInteractor: RegistrationInteractorProtocol {
     }
     var cardModel: ClientCard {
         entity.cardModel
-    }
-
-    func generatingDipasit() -> Double {
-        let double = Double.random(in: 10_000...1_000_000)
-        let round = round(100 * double)/100
-        return round
     }
 
     func generatingCVV() -> Int {

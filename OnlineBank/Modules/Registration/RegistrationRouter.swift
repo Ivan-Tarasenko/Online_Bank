@@ -29,6 +29,6 @@ extension RegistrationRouter: RegistrationRouterProtocol {
 
         let bar = TabBarViewController()
         bar.modalPresentationStyle = .fullScreen
-        viewController?.present(bar, animated: true)
+        viewController?.present(bar, animated: false)
     }
 }

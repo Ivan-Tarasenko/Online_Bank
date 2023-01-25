@@ -28,7 +28,6 @@ class ClientCard: Object {
 
 class History: Object {
     @objc dynamic var isSpent = false
-    @objc dynamic var sum = 0
+    @objc dynamic var value = 0.0
     @objc dynamic var date = ""
-    let history = List<History>()
 }

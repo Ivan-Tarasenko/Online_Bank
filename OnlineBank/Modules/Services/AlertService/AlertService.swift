@@ -8,15 +8,17 @@
 import UIKit
 
 final class AlertService {
-
-    static let shared = AlertService()
-
-    init() {}
+    
+    var massage: String
+    
+    init(massage: String) {
+        self.massage = massage
+    }
 
     func showAlert( in controller: UIViewController) {
-        var alert = UIAlertController(
+        let alert = UIAlertController(
             title: R.Titles.Alert.title,
-            message: R.Titles.Alert.massage,
+            message: massage,
             preferredStyle: .alert
         )
 

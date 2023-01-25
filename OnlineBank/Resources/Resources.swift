@@ -41,35 +41,78 @@ enum R {
             static let placeholderSurName = NSLocalizedString("surname", comment: "")
             static let placeholderNumberCard = NSLocalizedString("numberCard", comment: "")
             static let placeholderNumberPhone = NSLocalizedString("numberPhone", comment: "")
+
+            enum Welcome {
+                static let welcome = NSLocalizedString("welcome", comment: "")
+            }
+            
         }
 
         enum MainScreen {
             static let currencyTitle = NSLocalizedString("currencyTitle", comment: "")
             static let addProductTitle = NSLocalizedString("addProductButton", comment: "")
             static let titileBalance = NSLocalizedString("titleBalance", comment: "")
+
+            enum NewProduct {
+                static let massage = NSLocalizedString("massageNewProduct", comment: "")
+            }
         }
 
         enum TranslationScreen {
             static let titleMethodOfReplenishment = NSLocalizedString("titleMethodOfReplenishment", comment: "")
             static let fromCardToCard = NSLocalizedString("fromCardToCard", comment: "")
-            static let betweenAccounts = NSLocalizedString("betweenAccounts", comment: "")
+            static let betweenAccounts = NSLocalizedString("depositReplenishment", comment: "")
             static let byPhoneNumber = NSLocalizedString("byPhoneNumber", comment: "")
             static let topUpPhoneNumder = NSLocalizedString("topUpPhoneNumder", comment: "")
+            
+            enum FromCardToCard {
+                static let massage = NSLocalizedString("massageFromCardToCard", comment: "")
+            }
+            
+            enum ByPhoneNumber {
+                static let massage = NSLocalizedString("massageByPhoneNumber", comment: "")
+            }
+            
+            enum DepositReplinshment {
+                static let depositReplinshmentTitle = NSLocalizedString("depositReplinshmentTitle", comment: "")
+                static let placeholderFieldSum = NSLocalizedString("placeholderFieldSum", comment: "")
+                static let enterButton = NSLocalizedString("enterButton", comment: "")
+            }
+            
+            enum TopUpPhoneNumber {
+                static let topUpLabel = NSLocalizedString("topUpLabel", comment: "")
+                static let amountPlaceholder = NSLocalizedString("amountPlaceholder", comment: "")
+                static let yesButton = NSLocalizedString("yesButton", comment: "")
+                static let noButton = NSLocalizedString("noButton", comment: "")
+                
+                static let inputNumberLabel = NSLocalizedString("inputNumberLabel", comment: "")
+                static let inputNumberPlaceholder = NSLocalizedString("inputNumberPlaceholder", comment: "")
+                static let inputAmountPlaceholder = NSLocalizedString("inputAmountPlaceholder", comment: "")
+                static let replenishButton = NSLocalizedString("replenishButton", comment: "")
+            }
         }
 
         enum WithdrawalScreen {
             static let titleWithdrawal = NSLocalizedString("titleWithdrawal", comment: "")
             static let cash = NSLocalizedString("cash", comment: "")
             static let request = NSLocalizedString("request", comment: "")
+            
+            enum Cash {
+                static let cashTitle = NSLocalizedString("cashTitle", comment: "")
+                static let cashPlaceholder = NSLocalizedString("cashPlaceholder", comment: "")
+                static let withdrawalButton = NSLocalizedString("withdrawalButton", comment: "")
+                
+            }
+            
+            enum Request {
+                static let requestTitle = NSLocalizedString("requestTitle", comment: "")
+            }
         }
-
+        
         enum Alert {
-            static let title = NSLocalizedString("title", comment: "")
-            static let massage = NSLocalizedString("massage", comment: "")
-        }
-
-        enum Welcome {
-            static let welcome = NSLocalizedString("welcome", comment: "")
+            static let title = NSLocalizedString("titleAlert", comment: "")
+            static let regMassage = NSLocalizedString("regMassage", comment: "")
+            static let withdrawalErrorMassage = NSLocalizedString("withdrawalErrorMassage", comment: "")
         }
     }
 

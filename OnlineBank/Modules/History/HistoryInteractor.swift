@@ -6,16 +6,23 @@
 //
 
 import Foundation
+import RealmSwift
 
 protocol HistoryInteractorProtocol: AnyObject {
-
+    
+    var history: Results<History>! { get }
+    
     init(_ presenter: HistoryPresenterProtocol)
 }
 
 final class HistoryInteractor {
-
-    weak var presenter: HistoryPresenterProtocol?
+    let realm = RealmService.shared.realm
     let entity: HistoryEntityProtocol = HistoryEntity()
+    weak var presenter: HistoryPresenterProtocol?
+    
+    var client: Results<Client>! {
+        entity.clientObject
+    }
 
     required init(_ presenter: HistoryPresenterProtocol) {
         self.presenter = presenter
@@ -24,5 +31,7 @@ final class HistoryInteractor {
 
 // MARK: - HistoryInteractorProtocol
 extension HistoryInteractor: HistoryInteractorProtocol {
-
+    var history: Results<History>! {
+        entity.history
+    }
 }

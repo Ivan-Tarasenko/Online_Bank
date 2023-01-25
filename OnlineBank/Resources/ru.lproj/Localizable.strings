@@ -10,14 +10,13 @@
 "welcome" = "Добро пожаловать,";
 
 
-// Register screen
+// Registration screen
 "title" = "Пожалуйста, зарегистрируйтесь";
 "registerButton" = "Зарегистрироваться";
 "name" = " Введите имя";
 "surname" = " Введите свою фамилию";
 "numberCard" = " Введите номер своей карты";
 "numberPhone" = " Введите номер телефона";
-
 
 // Title Navigation Controller
 "Main" = "Главная";
@@ -30,18 +29,58 @@
 "addProductButton" = "Добавить продукт";
 "titleBalance" = "Ваш баланс:";
 
+// New Product
+"massageNewProduct" = "Скоро здесь можно будет добавить новые продукты, такие как новые карты кредиты или вклады";
+
 // Translations screen
 "titleMethodOfReplenishment" = "Выберите способы перевода";
 "fromCardToCard" = "С карты на карту";
-"betweenAccounts" = "Mежду счетами";
+"depositReplenishment" = "Пополнить баланс депозита";
 "byPhoneNumber" = "По номеру телефона";
 "topUpPhoneNumder" = "Пополнить баланс телефона";
+
+// From card to card
+"massageFromCardToCard" = "Скоро здесь можно будет осуществлять переводы с карты на карту";
+
+// By phone number
+"massageByPhoneNumber" = "Скоро здесь можно будет осуществлять переводы по номеру телефона";
+
+// Deposit replenishment
+"depositReplinshmentTitle" = "Введите сумму";
+"placeholderFieldSum" = "Введите сумму";
+"enterButton" = "Оплатить";
+
+// Top up phone number
+"topUpLabel" = "Хотите пополнить номер";
+"amountPlaceholder" = " Введите сумму";
+"yesButton" = "Да";
+"noButton" = "Нет";
+
+// Alert top up
+"topUpTitle" = "";
+"topUpMassage" = "";
+
+"inputNumberLabel" = "Введите номер телефона";
+"inputNumberPlaceholder" = " Введите номер телефона";
+"inputAmountPlaceholder" = " Введите сумму";
+"replenishButton" = "Пополнить";
 
 // Withdrawal screen
 "titleWithdrawal" = "Способы вывода наличных";
 "cash" = "Снять наличные";
 "request" = "Запросить деньги";
 
-// Alert
-"title" = "Внимание";
-"massage" = "Необходимо заполнить все поля";
+// Cash
+"cashTitle" = "Сколько вы хотите получить наличных?";
+"cashPlaceholder" = "Введите сумму";
+"withdrawalButton" = "Снять наличные";
+
+// Request
+"requestTitle" = "Скоро здесь можно будет отправить запрос на получение наличных";
+
+// Alert title
+"titleAlert" = "Внимание";
+// Registration massage
+"regMassage" = "Необходимо заполнить все поля";
+// Withdrawal error
+"withdrawalErrorMassage" = "Не хватает средств на депозите. Пополните свой счет.";

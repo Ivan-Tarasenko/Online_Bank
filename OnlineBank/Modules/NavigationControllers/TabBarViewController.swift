@@ -15,8 +15,6 @@ enum Tabs: Int, CaseIterable {
 }
 
 final class TabBarViewController: UITabBarController {
-
-//    private let registerView = RegistrationContentView()
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -29,7 +27,7 @@ final class TabBarViewController: UITabBarController {
     }
 
     private func setTabBar() {
-        tabBar.backgroundColor = .green
+        tabBar.backgroundColor = .white
 
         tabBar.layer.borderColor = R.Colors.separator.cgColor
         tabBar.layer.borderWidth = 0.6

@@ -17,7 +17,7 @@ final class RegistrationViewController: UIViewController {
     var registrationView: RegistrationContentViewProtocol?
     var welcomeView: WelcomeViewProtocol?
     private let assambly: RegistrationAssamblyProtocol = RegistrationAssambly()
-    private let alert = AlertService()
+    private let alert = AlertService(massage: R.Titles.Alert.regMassage)
 
     // MARK: - Inition View
     init(contentView: RegistrationContentView) {
@@ -68,7 +68,7 @@ extension RegistrationViewController: RegistrationViewControllerProtocol {
 
         } else {
             view = welcomeView as? UIView
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
                 completion()
             }
         }

@@ -32,6 +32,11 @@ final class HistoryViewController: UIViewController {
         view = contentView as? UIView
         title = R.TabBar.title(for: Tabs.history)
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        contentView?.tableView.reloadData()
+    }
 }
 
 // MARK: - Private functions

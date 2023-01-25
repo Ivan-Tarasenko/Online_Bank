@@ -11,6 +11,7 @@ protocol HistoryPresenterProtocol: AnyObject {
     init(_ view: HistoryContentViewProtocol)
     init(_ controller: HistoryViewControllerProtocol)
 
+    func getHistory()
 }
 
 final class HistoryPresenter {
@@ -32,4 +33,7 @@ final class HistoryPresenter {
 // MARK: - HistoryPresenterProtocol
 extension HistoryPresenter: HistoryPresenterProtocol {
 
+    func getHistory() {
+        view?.sendHistory(data: interactor.history)
+    }
 }
