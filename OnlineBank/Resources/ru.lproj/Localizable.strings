@@ -10,14 +10,13 @@
 "welcome" = "Добро пожаловать,";
 
 
-// Register screen
+// Registration screen
 "title" = "Пожалуйста, зарегистрируйтесь";
 "registerButton" = "Зарегистрироваться";
 "name" = " Введите имя";
 "surname" = " Введите свою фамилию";
 "numberCard" = " Введите номер своей карты";
 "numberPhone" = " Введите номер телефона";
-
 
 // Title Navigation Controller
 "Main" = "Главная";
@@ -57,6 +56,10 @@
 "yesButton" = "Да";
 "noButton" = "Нет";
 
+// Alert top up
+"topUpTitle" = "";
+"topUpMassage" = "";
+
 "inputNumberLabel" = "Введите номер телефона";
 "inputNumberPlaceholder" = " Введите номер телефона";
 "inputAmountPlaceholder" = " Введите сумму";
@@ -75,6 +78,9 @@
 // Request
 "requestTitle" = "Скоро здесь можно будет отправить запрос на получение наличных";
 
-// Alert
+// Alert title
 "titleAlert" = "Внимание";
-"massage" = "Необходимо заполнить все поля";
+// Registration massage
+"regMassage" = "Необходимо заполнить все поля";
+// Withdrawal error
+"withdrawalErrorMassage" = "Не хватает средств на депозите. Пополните свой счет.";

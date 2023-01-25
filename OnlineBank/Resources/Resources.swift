@@ -41,6 +41,11 @@ enum R {
             static let placeholderSurName = NSLocalizedString("surname", comment: "")
             static let placeholderNumberCard = NSLocalizedString("numberCard", comment: "")
             static let placeholderNumberPhone = NSLocalizedString("numberPhone", comment: "")
+
+            enum Welcome {
+                static let welcome = NSLocalizedString("welcome", comment: "")
+            }
+            
         }
 
         enum MainScreen {
@@ -103,14 +108,11 @@ enum R {
                 static let requestTitle = NSLocalizedString("requestTitle", comment: "")
             }
         }
-
+        
         enum Alert {
             static let title = NSLocalizedString("titleAlert", comment: "")
-            static let massage = NSLocalizedString("massage", comment: "")
-        }
-
-        enum Welcome {
-            static let welcome = NSLocalizedString("welcome", comment: "")
+            static let regMassage = NSLocalizedString("regMassage", comment: "")
+            static let withdrawalErrorMassage = NSLocalizedString("withdrawalErrorMassage", comment: "")
         }
     }
 

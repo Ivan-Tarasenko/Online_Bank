@@ -25,9 +25,11 @@ final class CashAssambly: CashAssamblyProtocol {
 
     func initialController(controller: CashViewController) {
         let presenter = CashPresenter(controller)
+        let interactor = CashInteractor(presenter)
         let router = CashRouter(controller)
 
         controller.presenter = presenter
+        presenter.interactor = interactor
         presenter.router = router
 
     }

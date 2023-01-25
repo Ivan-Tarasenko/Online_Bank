@@ -36,6 +36,4 @@ extension HistoryPresenter: HistoryPresenterProtocol {
     func getHistory() {
         view?.sendHistory(data: interactor.history)
     }
-    
-    
 }

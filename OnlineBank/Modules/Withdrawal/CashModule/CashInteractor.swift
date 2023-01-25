@@ -17,6 +17,7 @@ protocol CashInteractorProtocol: AnyObject {
     init(_ presenter: CashPresenterProtocol)
     
     func getCash(string: String)
+    func checkBalance(string: String) -> Bool
 }
 
 final class CashInteractor {
@@ -58,5 +59,18 @@ extension CashInteractor: CashInteractorProtocol {
     
         realmService.create(historyModel)
         realmService.update(client, dictionary: dic)
+    }
+    
+    func checkBalance(string: String) -> Bool {
+        guard let client = client.first else { return false }
+        let value = Double(string)
+        let roundValue = round(100 * value!)/100
+        let sum = client.deposit - roundValue
+        
+        if sum <= 0 {
+            return false
+        }
+        
+        return true
     }
 }

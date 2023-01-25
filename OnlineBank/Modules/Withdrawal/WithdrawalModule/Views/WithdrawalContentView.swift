@@ -80,7 +80,7 @@ private extension WithdrawalContentView {
         NSLayoutConstraint.activate([
             titleWithdrawalLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 20),
             titleWithdrawalLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
-            titleWithdrawalLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 20)
+            titleWithdrawalLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20)
         ])
     }
 

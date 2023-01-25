@@ -54,6 +54,10 @@
 "yesButton" = "Yes";
 "noButton" = "No";
 
+// Alert top up
+"topUpTitle" = "";
+"topUpMassage" = "";
+
 "inputNumberLabel" = "Enter your phone number";
 "inputNumberPlaceholder" = " Enter your phone number";
 "inputAmountPlaceholder" = " Enter the amount";
@@ -74,6 +78,9 @@
 // Request
 "requestTitle" = "Soon it will be possible to send a request for cash here";
 
-// Alert
+// Alert title
 "titleAlert" = "Attention";
-"massage" = "It is necessary to fill in all fields";
+// Registration massage
+"regMassage" = "It is necessary to fill in all fields";
+// Withdrawal error
+"withdrawalErrorMassage" = "There are not enough funds on deposit. Top up your account.";

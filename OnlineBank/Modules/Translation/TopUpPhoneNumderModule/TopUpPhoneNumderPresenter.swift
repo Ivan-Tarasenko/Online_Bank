@@ -12,20 +12,21 @@ protocol TopUpPhoneNumderPresenterProtocol: AnyObject {
     init(_ controller: TopUpPhoneNumderViewControllerProtocol)
     
     func setTitleLabel()
-    func topUpSelfPhone(string: String)
+    func topUpPhone(string: String)
+    func checkBalance(string: String) -> Bool
 }
 
 final class TopUpPhoneNumderPresenter {
-
+    
     weak var viewController: TopUpPhoneNumderViewControllerProtocol?
     weak var view: TopUpPhoneNumderContentViewProtocol?
     var interactor: TopUpPhoneNumderInteractorProtocol!
     var router: TopUpPhoneNumderRouterProtocol!
-
+    
     required init(_ view: TopUpPhoneNumderContentViewProtocol) {
         self.view = view
     }
-
+    
     required init(_ controller: TopUpPhoneNumderViewControllerProtocol) {
         self.viewController = controller
     }
@@ -39,7 +40,11 @@ extension TopUpPhoneNumderPresenter: TopUpPhoneNumderPresenterProtocol {
         view?.setTitle(string: title)
     }
     
-    func topUpSelfPhone(string: String) {
-        interactor.topUpSelfPhone(string: string)
+    func topUpPhone(string: String) {
+        interactor.topUpPhone(string: string)
+    }
+    
+    func checkBalance(string: String) -> Bool {
+        interactor.checkBalance(string: string)
     }
 }

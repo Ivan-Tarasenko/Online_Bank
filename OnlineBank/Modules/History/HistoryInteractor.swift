@@ -13,14 +13,16 @@ protocol HistoryInteractorProtocol: AnyObject {
     var history: Results<History>! { get }
     
     init(_ presenter: HistoryPresenterProtocol)
-    
-    func getImage(if spent: Bool) -> UIImage
 }
 
 final class HistoryInteractor {
     let realm = RealmService.shared.realm
     let entity: HistoryEntityProtocol = HistoryEntity()
     weak var presenter: HistoryPresenterProtocol?
+    
+    var client: Results<Client>! {
+        entity.clientObject
+    }
 
     required init(_ presenter: HistoryPresenterProtocol) {
         self.presenter = presenter
@@ -31,12 +33,5 @@ final class HistoryInteractor {
 extension HistoryInteractor: HistoryInteractorProtocol {
     var history: Results<History>! {
         entity.history
-    }
-    
-    func getImage(if spent: Bool) -> UIImage {
-        if spent {
-            return entity.arrowUp
-        }
-        return entity.arrowDown
     }
 }

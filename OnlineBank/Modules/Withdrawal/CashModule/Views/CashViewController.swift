@@ -15,6 +15,7 @@ final class CashViewController: UIViewController {
     var presenter: CashPresenterProtocol?
     var contentView: CashContentViewProtocol?
     private let assambly: CashAssamblyProtocol = CashAssambly()
+    private let alert = AlertService(massage: R.Titles.Alert.withdrawalErrorMassage)
     
     // MARK: - Inition View
     init(contentView: CashContentView) {
@@ -37,8 +38,14 @@ final class CashViewController: UIViewController {
 // MARK: - Private functions
 private extension CashViewController {
     func didWithdrawalButtonPressed() {
-        contentView?.onWithdrawalButtonAction = {
-            self.dismiss(animated: true)
+        contentView?.onWithdrawalButtonAction = { [weak self] string in
+            guard let self else { return }
+            if self.presenter!.checkBalance(string: string) {
+                self.presenter?.wihdrawalCash(string: string)
+                self.dismiss(animated: true)
+            } else {
+                self.alert.showAlert(in: self)
+            }
         }
     }
 }

@@ -9,9 +9,8 @@ import UIKit
 import RealmSwift
 
 protocol HistoryEntityProtocol {
+    var clientObject: Results<Client>! { get }
     var history: Results<History>! { get }
-    var arrowUp: UIImage { get }
-    var arrowDown: UIImage { get }
 }
 
 struct HistoryEntity {
@@ -21,6 +20,6 @@ struct HistoryEntity {
 // MARK: - HistoryEntityProtocol
 extension HistoryEntity: HistoryEntityProtocol {
     var history: Results<History>! { return realm.objects(History.self) }
-    var arrowUp: UIImage { return UIImage(systemName: "arrow.up")! }
-    var arrowDown: UIImage { return UIImage(systemName: "arrow.up")! }
+    
+    var clientObject: Results<Client>! { return realm.objects(Client.self) }
 }

@@ -8,12 +8,12 @@
 import UIKit
 
 protocol CashContentViewProtocol: AnyObject {
-    var onWithdrawalButtonAction: (() -> Void)? { get set }
+    var onWithdrawalButtonAction: ((String) -> Void)? { get set }
 }
 
 final class CashContentView: UIView {
     
-    var onWithdrawalButtonAction: (() -> Void)?
+    var onWithdrawalButtonAction: ((String) -> Void)?
     
     var presenter: CashPresenterProtocol!
     var assambly: CashAssamblyProtocol = CashAssambly()
@@ -86,7 +86,7 @@ private extension CashContentView {
     
     @objc func withdrawalButtonPressed() {
         presenter.wihdrawalCash(string: amountTextField.txt)
-        onWithdrawalButtonAction?()
+        onWithdrawalButtonAction?(amountTextField.txt)
     }
 }
 

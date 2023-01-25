@@ -17,7 +17,7 @@ final class RegistrationViewController: UIViewController {
     var registrationView: RegistrationContentViewProtocol?
     var welcomeView: WelcomeViewProtocol?
     private let assambly: RegistrationAssamblyProtocol = RegistrationAssambly()
-    private let alert = AlertService()
+    private let alert = AlertService(massage: R.Titles.Alert.regMassage)
 
     // MARK: - Inition View
     init(contentView: RegistrationContentView) {

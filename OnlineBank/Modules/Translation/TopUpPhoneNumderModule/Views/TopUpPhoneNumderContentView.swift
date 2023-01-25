@@ -9,14 +9,14 @@ import UIKit
 
 protocol TopUpPhoneNumderContentViewProtocol: AnyObject {
     func setTitle(string: String)
-    var onyYesButtonAction: (() -> Void)? { get set }
-    var onReplenishButtonAction: (() -> Void)? { get set }
+    var onyYesButtonAction: ((String) -> Void)? { get set }
+    var onReplenishButtonAction: ((String) -> Void)? { get set }
 }
 
 final class TopUpPhoneNumderContentView: UIView {
     
-    var onyYesButtonAction: (() -> Void)?
-    var onReplenishButtonAction: (() -> Void)?
+    var onyYesButtonAction: ((String) -> Void)?
+    var onReplenishButtonAction: ((String) -> Void)?
     
     var presenter: TopUpPhoneNumderPresenterProtocol!
     var assambly: TopUpPhoneNumderAssamblyProtocol = TopUpPhoneNumderAssambly()
@@ -30,6 +30,7 @@ final class TopUpPhoneNumderContentView: UIView {
     
     private let amountTextField: UITextField = {
         let field = CustomTextField()
+        field.becomeFirstResponder()
         field.placeholder = R.Titles.TranslationScreen.TopUpPhoneNumber.amountPlaceholder
         return field
     }()
@@ -60,6 +61,7 @@ final class TopUpPhoneNumderContentView: UIView {
     
     private let numberPhoneTextField: UITextField = {
         let field = CustomTextField()
+        field.becomeFirstResponder()
         field.placeholder = R.Titles.TranslationScreen.TopUpPhoneNumber.inputNumberPlaceholder
         return field
     }()
@@ -152,8 +154,7 @@ private extension TopUpPhoneNumderContentView {
     }
     
     @objc func yesButtonPressed() {
-        presenter.topUpSelfPhone(string: amountTextField.txt)
-        onyYesButtonAction?()
+        onyYesButtonAction?(amountTextField.txt)
     }
     
     @objc func noButtonPressed() {
@@ -162,8 +163,7 @@ private extension TopUpPhoneNumderContentView {
     }
     
     @objc func replenishButtonPressed() {
-        presenter.topUpSelfPhone(string: inputAmountTextField.txt)
-        onReplenishButtonAction?()
+        onReplenishButtonAction?(inputAmountTextField.txt)
     }
 }
 

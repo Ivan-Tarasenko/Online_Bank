@@ -24,8 +24,9 @@ final class TableViewDataSource: NSObject, UITableViewDataSource {
                 as? CustomTableViewCell else { fatalError("No cell") }
 
         let history = historys[indexPath.row]
-        
-//        cell.textLabel?.txt = history.date
+        cell.getImage(isSpent: history.isSpent)
+        cell.amountLabel.txt = String(describing: history.value)
+        cell.dateLabel.txt = history.date
         return cell
     }
 }

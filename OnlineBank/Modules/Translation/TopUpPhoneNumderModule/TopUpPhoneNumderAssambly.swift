@@ -25,9 +25,11 @@ final class TopUpPhoneNumderAssambly: TopUpPhoneNumderAssamblyProtocol {
 
     func initialController(controller: TopUpPhoneNumderViewController) {
         let presenter = TopUpPhoneNumderPresenter(controller)
+        let interactor = TopUpPhoneNumderInteractor(presenter)
         let router = TopUpPhoneNumderRouter(controller)
 
         controller.presenter = presenter
+        presenter.interactor = interactor
         presenter.router = router
 
     }

@@ -60,6 +60,6 @@ private extension WelcomeView {
 // MARK: - WelcomeViewProtocol
 extension WelcomeView: WelcomeViewProtocol {
     func setWelcomeLabel(text: String) {
-        welcomeLabel.txt = "\(R.Titles.Welcome.welcome) \(text)"
+        welcomeLabel.txt = "\(R.Titles.RegisterScreen.Welcome.welcome) \(text)"
     }
 }
