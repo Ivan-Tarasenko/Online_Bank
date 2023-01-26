@@ -18,7 +18,7 @@
 
 ## Description
 The application is an imitation of an online bank, for working with a personal account.
-In it, you will be able to work with replenishing your deposit balance, withdrawing funds, replenishing your phone account, and you will be able to see the entire history of operations on the History screen.  
+In it, you will be able to work with replenishing your deposit balance, withdrawing funds, replenishing your phone account, and you will be able to see the entire history of operations on the History screen. On the main screen you can find out the current exchange rate.  
 First, the application will ask you to register. You must enter your first name, last name, card number and phone number. This data can be anything.  
 The icon for the application is provided by the Midjourney neural network.  
 The application is localized into 3 languages:
