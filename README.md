@@ -40,11 +40,11 @@ made by Ivan Tarasenko
 **telegram (@Ivan_iOS_Developer)**
 
 ## stack
-VIPER 
+VIPER  
 UIKit  
-Realm
-UserDefaults
-URLSession
+Realm  
+UserDefaults  
+URLSession  
 
 <p align="center">
 <a href="https://github.com/realm/SwiftLint" alt="SwiftLint badge">
