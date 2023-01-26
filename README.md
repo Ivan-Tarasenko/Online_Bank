@@ -28,6 +28,7 @@ The application is localized into 3 languages:
 
 ## Getting Started
 - Just download the project as a zip archive
+- To avoid downloading preview files, download the “main” branch
 - Install CocoaPods dependencies
 - Open it in Xcode
 - Run in the simulator
