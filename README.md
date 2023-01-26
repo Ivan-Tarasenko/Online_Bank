@@ -8,7 +8,7 @@
 </div>
 
 <p align="center">
-<img src="/Preview/loadscreen.png" width="149" height="300"/>
+<img src="/Preview/launchScreen.png" width="149" height="300"/>
 <img src="/Preview/registration.gif" width="149" height="300"/>
 <img src="/Preview/main.gif" width="149" height="300"/>
 <img src="/Preview/translations.gif" width="149" height="300"/>
