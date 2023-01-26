@@ -24,16 +24,6 @@ final class NetworkManager: NetworkManagerProtocol {
 
     var urlString = "https://www.cbr-xml-daily.ru/daily_json.js"
 
-//    var currencies: [String: Currency]?
-
-//    var sortCurrency: [Dictionary<String, Currency>.Element] {
-//        var sort = [Dictionary<String, Currency>.Element]()
-//        if let currencies = currencies {
-//            sort = currencies.sorted(by: {$0.key < $1.key})
-//        }
-//        return sort
-//    }
-
     // MARK: - Fetch data
     func fetchData() {
         guard let URL = URL(string: urlString) else { return }
@@ -65,12 +55,4 @@ final class NetworkManager: NetworkManagerProtocol {
         }
         return nil
     }
-
-//    func currencyKeys() -> [String] {
-//        var keys = [String]()
-//        for (key, _) in sortCurrency {
-//            keys.append(key)
-//        }
-//        return keys
-//    }
 }
