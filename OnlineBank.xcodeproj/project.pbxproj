@@ -19,42 +19,42 @@
 		1A07F24129744FDE007AD687 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A07F24029744FDE007AD687 /* WelcomeView.swift */; };
 		1A35EF8A2974132E0084CB7D /* UILabel+SaveText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A35EF892974132E0084CB7D /* UILabel+SaveText.swift */; };
 		1A401CC129780254008CB417 /* FromCardToCardContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401CBA29780254008CB417 /* FromCardToCardContentView.swift */; };
-		1A401CC229780254008CB417 /* FromCardToCardAssambly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401CBB29780254008CB417 /* FromCardToCardAssambly.swift */; };
+		1A401CC229780254008CB417 /* FromCardToCardAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401CBB29780254008CB417 /* FromCardToCardAssembly.swift */; };
 		1A401CC329780254008CB417 /* FromCardToCardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401CBC29780254008CB417 /* FromCardToCardPresenter.swift */; };
 		1A401CC429780254008CB417 /* FromCardToCardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401CBD29780254008CB417 /* FromCardToCardRouter.swift */; };
 		1A401CC529780254008CB417 /* FromCardToCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401CBE29780254008CB417 /* FromCardToCardViewController.swift */; };
 		1A401CC629780254008CB417 /* FromCardToCardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401CBF29780254008CB417 /* FromCardToCardInteractor.swift */; };
 		1A401CC729780254008CB417 /* FromCardToCardEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401CC029780254008CB417 /* FromCardToCardEntity.swift */; };
 		1A401CD02978028B008CB417 /* DepositReplenishmentContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401CC92978028B008CB417 /* DepositReplenishmentContentView.swift */; };
-		1A401CD12978028B008CB417 /* DepositReplenishmentAssambly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401CCA2978028B008CB417 /* DepositReplenishmentAssambly.swift */; };
+		1A401CD12978028B008CB417 /* DepositReplenishmentAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401CCA2978028B008CB417 /* DepositReplenishmentAssembly.swift */; };
 		1A401CD22978028B008CB417 /* DepositReplenishmentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401CCB2978028B008CB417 /* DepositReplenishmentPresenter.swift */; };
 		1A401CD32978028B008CB417 /* DepositReplenishmentRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401CCC2978028B008CB417 /* DepositReplenishmentRouter.swift */; };
 		1A401CD42978028B008CB417 /* DepositReplenishmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401CCD2978028B008CB417 /* DepositReplenishmentViewController.swift */; };
 		1A401CD52978028B008CB417 /* DepositReplenishmentInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401CCE2978028B008CB417 /* DepositReplenishmentInteractor.swift */; };
 		1A401CD62978028B008CB417 /* DepositReplenishmentEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401CCF2978028B008CB417 /* DepositReplenishmentEntity.swift */; };
 		1A401CDF297802C3008CB417 /* ByPhoneNumberContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401CD8297802C3008CB417 /* ByPhoneNumberContentView.swift */; };
-		1A401CE0297802C3008CB417 /* ByPhoneNumberAssambly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401CD9297802C3008CB417 /* ByPhoneNumberAssambly.swift */; };
+		1A401CE0297802C3008CB417 /* ByPhoneNumberAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401CD9297802C3008CB417 /* ByPhoneNumberAssembly.swift */; };
 		1A401CE1297802C3008CB417 /* ByPhoneNumberPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401CDA297802C3008CB417 /* ByPhoneNumberPresenter.swift */; };
 		1A401CE2297802C3008CB417 /* ByPhoneNumberRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401CDB297802C3008CB417 /* ByPhoneNumberRouter.swift */; };
 		1A401CE3297802C3008CB417 /* ByPhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401CDC297802C3008CB417 /* ByPhoneNumberViewController.swift */; };
 		1A401CE4297802C3008CB417 /* ByPhoneNumberInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401CDD297802C3008CB417 /* ByPhoneNumberInteractor.swift */; };
 		1A401CE5297802C3008CB417 /* ByPhoneNumberEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401CDE297802C3008CB417 /* ByPhoneNumberEntity.swift */; };
 		1A401CEE29780306008CB417 /* TopUpPhoneNumderContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401CE729780306008CB417 /* TopUpPhoneNumderContentView.swift */; };
-		1A401CEF29780306008CB417 /* TopUpPhoneNumderAssambly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401CE829780306008CB417 /* TopUpPhoneNumderAssambly.swift */; };
+		1A401CEF29780306008CB417 /* TopUpPhoneNumderAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401CE829780306008CB417 /* TopUpPhoneNumderAssembly.swift */; };
 		1A401CF029780306008CB417 /* TopUpPhoneNumderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401CE929780306008CB417 /* TopUpPhoneNumderPresenter.swift */; };
 		1A401CF129780306008CB417 /* TopUpPhoneNumderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401CEA29780306008CB417 /* TopUpPhoneNumderRouter.swift */; };
 		1A401CF229780306008CB417 /* TopUpPhoneNumderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401CEB29780306008CB417 /* TopUpPhoneNumderViewController.swift */; };
 		1A401CF329780306008CB417 /* TopUpPhoneNumderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401CEC29780306008CB417 /* TopUpPhoneNumderInteractor.swift */; };
 		1A401CF429780306008CB417 /* TopUpPhoneNumderEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401CED29780306008CB417 /* TopUpPhoneNumderEntity.swift */; };
 		1A401D102978041C008CB417 /* RequestManyContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401D092978041C008CB417 /* RequestManyContentView.swift */; };
-		1A401D112978041C008CB417 /* RequestManyAssambly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401D0A2978041C008CB417 /* RequestManyAssambly.swift */; };
+		1A401D112978041C008CB417 /* RequestManyAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401D0A2978041C008CB417 /* RequestManyAssembly.swift */; };
 		1A401D122978041C008CB417 /* RequestManyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401D0B2978041C008CB417 /* RequestManyPresenter.swift */; };
 		1A401D132978041C008CB417 /* RequestManyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401D0C2978041C008CB417 /* RequestManyRouter.swift */; };
 		1A401D142978041C008CB417 /* RequestManyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401D0D2978041C008CB417 /* RequestManyViewController.swift */; };
 		1A401D152978041C008CB417 /* RequestManyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401D0E2978041C008CB417 /* RequestManyInteractor.swift */; };
 		1A401D162978041C008CB417 /* RequestManyEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401D0F2978041C008CB417 /* RequestManyEntity.swift */; };
 		1A401D1F2978CD22008CB417 /* CashContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401D182978CD22008CB417 /* CashContentView.swift */; };
-		1A401D202978CD22008CB417 /* CashAssambly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401D192978CD22008CB417 /* CashAssambly.swift */; };
+		1A401D202978CD22008CB417 /* CashAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401D192978CD22008CB417 /* CashAssembly.swift */; };
 		1A401D212978CD22008CB417 /* CashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401D1A2978CD22008CB417 /* CashPresenter.swift */; };
 		1A401D222978CD22008CB417 /* CashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401D1B2978CD22008CB417 /* CashRouter.swift */; };
 		1A401D232978CD22008CB417 /* CashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A401D1C2978CD22008CB417 /* CashViewController.swift */; };
@@ -86,7 +86,7 @@
 		1A53DA64297C40D2005090B1 /* Date+Formater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A53DA63297C40D2005090B1 /* Date+Formater.swift */; };
 		1A53DA66297C69CF005090B1 /* GlobalFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A53DA65297C69CF005090B1 /* GlobalFunc.swift */; };
 		1A58FACB2977EF0800C87FD0 /* NewProductContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A58FAC42977EF0800C87FD0 /* NewProductContentView.swift */; };
-		1A58FACC2977EF0800C87FD0 /* NewProductAssambly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A58FAC52977EF0800C87FD0 /* NewProductAssambly.swift */; };
+		1A58FACC2977EF0800C87FD0 /* NewProductAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A58FAC52977EF0800C87FD0 /* NewProductAssembly.swift */; };
 		1A58FACD2977EF0800C87FD0 /* NewProductPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A58FAC62977EF0800C87FD0 /* NewProductPresenter.swift */; };
 		1A58FACE2977EF0800C87FD0 /* NewProductRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A58FAC72977EF0800C87FD0 /* NewProductRouter.swift */; };
 		1A58FACF2977EF0800C87FD0 /* NewProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A58FAC82977EF0800C87FD0 /* NewProductViewController.swift */; };
@@ -97,24 +97,24 @@
 		1A8D67DC29657FC500B45E63 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D67DB29657FC500B45E63 /* MainPresenter.swift */; };
 		1A8D67DE29657FDD00B45E63 /* MainEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D67DD29657FDD00B45E63 /* MainEntity.swift */; };
 		1A8D67E029657FE800B45E63 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D67DF29657FE800B45E63 /* MainRouter.swift */; };
-		1A8D67E22965800400B45E63 /* MainAssambly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D67E12965800400B45E63 /* MainAssambly.swift */; };
+		1A8D67E22965800400B45E63 /* MainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D67E12965800400B45E63 /* MainAssembly.swift */; };
 		1A8D681A2966CF8D00B45E63 /* RealmeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D68192966CF8D00B45E63 /* RealmeModel.swift */; };
 		1AD804D4296ABB0C00836874 /* TranslationContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD804CD296ABB0C00836874 /* TranslationContentView.swift */; };
-		1AD804D5296ABB0C00836874 /* TranslationAssambly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD804CE296ABB0C00836874 /* TranslationAssambly.swift */; };
+		1AD804D5296ABB0C00836874 /* TranslationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD804CE296ABB0C00836874 /* TranslationAssembly.swift */; };
 		1AD804D6296ABB0C00836874 /* TranslationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD804CF296ABB0C00836874 /* TranslationPresenter.swift */; };
 		1AD804D7296ABB0C00836874 /* TranslationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD804D0296ABB0C00836874 /* TranslationRouter.swift */; };
 		1AD804D8296ABB0C00836874 /* TranslationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD804D1296ABB0C00836874 /* TranslationViewController.swift */; };
 		1AD804D9296ABB0C00836874 /* TranslationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD804D2296ABB0C00836874 /* TranslationInteractor.swift */; };
 		1AD804DA296ABB0C00836874 /* TranslationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD804D3296ABB0C00836874 /* TranslationEntity.swift */; };
 		1AD804E3296ABCA800836874 /* WithdrawalContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD804DC296ABCA800836874 /* WithdrawalContentView.swift */; };
-		1AD804E4296ABCA800836874 /* WithdrawalAssambly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD804DD296ABCA800836874 /* WithdrawalAssambly.swift */; };
+		1AD804E4296ABCA800836874 /* WithdrawalAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD804DD296ABCA800836874 /* WithdrawalAssembly.swift */; };
 		1AD804E5296ABCA800836874 /* WithdrawalPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD804DE296ABCA800836874 /* WithdrawalPresenter.swift */; };
 		1AD804E6296ABCA800836874 /* WithdrawalRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD804DF296ABCA800836874 /* WithdrawalRouter.swift */; };
 		1AD804E7296ABCA800836874 /* WithdrawalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD804E0296ABCA800836874 /* WithdrawalViewController.swift */; };
 		1AD804E8296ABCA800836874 /* WithdrawalInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD804E1296ABCA800836874 /* WithdrawalInteractor.swift */; };
 		1AD804E9296ABCA800836874 /* WithdrawalEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD804E2296ABCA800836874 /* WithdrawalEntity.swift */; };
 		1AD804F2296ABD5600836874 /* HistoryContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD804EB296ABD5600836874 /* HistoryContentView.swift */; };
-		1AD804F3296ABD5600836874 /* HistoryAssambly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD804EC296ABD5600836874 /* HistoryAssambly.swift */; };
+		1AD804F3296ABD5600836874 /* HistoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD804EC296ABD5600836874 /* HistoryAssembly.swift */; };
 		1AD804F4296ABD5600836874 /* HistoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD804ED296ABD5600836874 /* HistoryPresenter.swift */; };
 		1AD804F5296ABD5600836874 /* HistoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD804EE296ABD5600836874 /* HistoryRouter.swift */; };
 		1AD804F6296ABD5600836874 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD804EF296ABD5600836874 /* HistoryViewController.swift */; };
@@ -129,7 +129,7 @@
 		1ADCDD1F296D705A00F23219 /* RegistrationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADCDD18296D705A00F23219 /* RegistrationPresenter.swift */; };
 		1ADCDD20296D705A00F23219 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADCDD19296D705A00F23219 /* RegistrationViewController.swift */; };
 		1ADCDD21296D705A00F23219 /* RegistrationContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADCDD1A296D705A00F23219 /* RegistrationContentView.swift */; };
-		1ADCDD22296D705A00F23219 /* RegistrationAssambly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADCDD1B296D705A00F23219 /* RegistrationAssambly.swift */; };
+		1ADCDD22296D705A00F23219 /* RegistrationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADCDD1B296D705A00F23219 /* RegistrationAssembly.swift */; };
 		1ADCDD26296EACEB00F23219 /* ExchangeRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADCDD25296EACEB00F23219 /* ExchangeRateView.swift */; };
 		1ADCDD2B296EAF7D00F23219 /* CurrencyCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADCDD2A296EAF7D00F23219 /* CurrencyCollectionCell.swift */; };
 		1ADCDD2E296EAFAB00F23219 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADCDD2D296EAFAB00F23219 /* DataSource.swift */; };
@@ -154,42 +154,42 @@
 		1A07F24029744FDE007AD687 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		1A35EF892974132E0084CB7D /* UILabel+SaveText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+SaveText.swift"; sourceTree = "<group>"; };
 		1A401CBA29780254008CB417 /* FromCardToCardContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FromCardToCardContentView.swift; sourceTree = "<group>"; };
-		1A401CBB29780254008CB417 /* FromCardToCardAssambly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FromCardToCardAssambly.swift; sourceTree = "<group>"; };
+		1A401CBB29780254008CB417 /* FromCardToCardAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FromCardToCardAssembly.swift; sourceTree = "<group>"; };
 		1A401CBC29780254008CB417 /* FromCardToCardPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FromCardToCardPresenter.swift; sourceTree = "<group>"; };
 		1A401CBD29780254008CB417 /* FromCardToCardRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FromCardToCardRouter.swift; sourceTree = "<group>"; };
 		1A401CBE29780254008CB417 /* FromCardToCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FromCardToCardViewController.swift; sourceTree = "<group>"; };
 		1A401CBF29780254008CB417 /* FromCardToCardInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FromCardToCardInteractor.swift; sourceTree = "<group>"; };
 		1A401CC029780254008CB417 /* FromCardToCardEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FromCardToCardEntity.swift; sourceTree = "<group>"; };
 		1A401CC92978028B008CB417 /* DepositReplenishmentContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositReplenishmentContentView.swift; sourceTree = "<group>"; };
-		1A401CCA2978028B008CB417 /* DepositReplenishmentAssambly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositReplenishmentAssambly.swift; sourceTree = "<group>"; };
+		1A401CCA2978028B008CB417 /* DepositReplenishmentAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositReplenishmentAssembly.swift; sourceTree = "<group>"; };
 		1A401CCB2978028B008CB417 /* DepositReplenishmentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositReplenishmentPresenter.swift; sourceTree = "<group>"; };
 		1A401CCC2978028B008CB417 /* DepositReplenishmentRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositReplenishmentRouter.swift; sourceTree = "<group>"; };
 		1A401CCD2978028B008CB417 /* DepositReplenishmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositReplenishmentViewController.swift; sourceTree = "<group>"; };
 		1A401CCE2978028B008CB417 /* DepositReplenishmentInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositReplenishmentInteractor.swift; sourceTree = "<group>"; };
 		1A401CCF2978028B008CB417 /* DepositReplenishmentEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositReplenishmentEntity.swift; sourceTree = "<group>"; };
 		1A401CD8297802C3008CB417 /* ByPhoneNumberContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByPhoneNumberContentView.swift; sourceTree = "<group>"; };
-		1A401CD9297802C3008CB417 /* ByPhoneNumberAssambly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByPhoneNumberAssambly.swift; sourceTree = "<group>"; };
+		1A401CD9297802C3008CB417 /* ByPhoneNumberAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByPhoneNumberAssembly.swift; sourceTree = "<group>"; };
 		1A401CDA297802C3008CB417 /* ByPhoneNumberPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByPhoneNumberPresenter.swift; sourceTree = "<group>"; };
 		1A401CDB297802C3008CB417 /* ByPhoneNumberRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByPhoneNumberRouter.swift; sourceTree = "<group>"; };
 		1A401CDC297802C3008CB417 /* ByPhoneNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByPhoneNumberViewController.swift; sourceTree = "<group>"; };
 		1A401CDD297802C3008CB417 /* ByPhoneNumberInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByPhoneNumberInteractor.swift; sourceTree = "<group>"; };
 		1A401CDE297802C3008CB417 /* ByPhoneNumberEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByPhoneNumberEntity.swift; sourceTree = "<group>"; };
 		1A401CE729780306008CB417 /* TopUpPhoneNumderContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopUpPhoneNumderContentView.swift; sourceTree = "<group>"; };
-		1A401CE829780306008CB417 /* TopUpPhoneNumderAssambly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopUpPhoneNumderAssambly.swift; sourceTree = "<group>"; };
+		1A401CE829780306008CB417 /* TopUpPhoneNumderAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopUpPhoneNumderAssembly.swift; sourceTree = "<group>"; };
 		1A401CE929780306008CB417 /* TopUpPhoneNumderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopUpPhoneNumderPresenter.swift; sourceTree = "<group>"; };
 		1A401CEA29780306008CB417 /* TopUpPhoneNumderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopUpPhoneNumderRouter.swift; sourceTree = "<group>"; };
 		1A401CEB29780306008CB417 /* TopUpPhoneNumderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopUpPhoneNumderViewController.swift; sourceTree = "<group>"; };
 		1A401CEC29780306008CB417 /* TopUpPhoneNumderInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopUpPhoneNumderInteractor.swift; sourceTree = "<group>"; };
 		1A401CED29780306008CB417 /* TopUpPhoneNumderEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopUpPhoneNumderEntity.swift; sourceTree = "<group>"; };
 		1A401D092978041C008CB417 /* RequestManyContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManyContentView.swift; sourceTree = "<group>"; };
-		1A401D0A2978041C008CB417 /* RequestManyAssambly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManyAssambly.swift; sourceTree = "<group>"; };
+		1A401D0A2978041C008CB417 /* RequestManyAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManyAssembly.swift; sourceTree = "<group>"; };
 		1A401D0B2978041C008CB417 /* RequestManyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManyPresenter.swift; sourceTree = "<group>"; };
 		1A401D0C2978041C008CB417 /* RequestManyRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManyRouter.swift; sourceTree = "<group>"; };
 		1A401D0D2978041C008CB417 /* RequestManyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManyViewController.swift; sourceTree = "<group>"; };
 		1A401D0E2978041C008CB417 /* RequestManyInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManyInteractor.swift; sourceTree = "<group>"; };
 		1A401D0F2978041C008CB417 /* RequestManyEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManyEntity.swift; sourceTree = "<group>"; };
 		1A401D182978CD22008CB417 /* CashContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashContentView.swift; sourceTree = "<group>"; };
-		1A401D192978CD22008CB417 /* CashAssambly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashAssambly.swift; sourceTree = "<group>"; };
+		1A401D192978CD22008CB417 /* CashAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashAssembly.swift; sourceTree = "<group>"; };
 		1A401D1A2978CD22008CB417 /* CashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashPresenter.swift; sourceTree = "<group>"; };
 		1A401D1B2978CD22008CB417 /* CashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashRouter.swift; sourceTree = "<group>"; };
 		1A401D1C2978CD22008CB417 /* CashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashViewController.swift; sourceTree = "<group>"; };
@@ -227,7 +227,7 @@
 		1A53DA63297C40D2005090B1 /* Date+Formater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formater.swift"; sourceTree = "<group>"; };
 		1A53DA65297C69CF005090B1 /* GlobalFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFunc.swift; sourceTree = "<group>"; };
 		1A58FAC42977EF0800C87FD0 /* NewProductContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProductContentView.swift; sourceTree = "<group>"; };
-		1A58FAC52977EF0800C87FD0 /* NewProductAssambly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProductAssambly.swift; sourceTree = "<group>"; };
+		1A58FAC52977EF0800C87FD0 /* NewProductAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProductAssembly.swift; sourceTree = "<group>"; };
 		1A58FAC62977EF0800C87FD0 /* NewProductPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProductPresenter.swift; sourceTree = "<group>"; };
 		1A58FAC72977EF0800C87FD0 /* NewProductRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProductRouter.swift; sourceTree = "<group>"; };
 		1A58FAC82977EF0800C87FD0 /* NewProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProductViewController.swift; sourceTree = "<group>"; };
@@ -238,24 +238,24 @@
 		1A8D67DB29657FC500B45E63 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		1A8D67DD29657FDD00B45E63 /* MainEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainEntity.swift; sourceTree = "<group>"; };
 		1A8D67DF29657FE800B45E63 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
-		1A8D67E12965800400B45E63 /* MainAssambly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssambly.swift; sourceTree = "<group>"; };
+		1A8D67E12965800400B45E63 /* MainAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembly.swift; sourceTree = "<group>"; };
 		1A8D68192966CF8D00B45E63 /* RealmeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmeModel.swift; sourceTree = "<group>"; };
 		1AD804CD296ABB0C00836874 /* TranslationContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationContentView.swift; sourceTree = "<group>"; };
-		1AD804CE296ABB0C00836874 /* TranslationAssambly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationAssambly.swift; sourceTree = "<group>"; };
+		1AD804CE296ABB0C00836874 /* TranslationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationAssembly.swift; sourceTree = "<group>"; };
 		1AD804CF296ABB0C00836874 /* TranslationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationPresenter.swift; sourceTree = "<group>"; };
 		1AD804D0296ABB0C00836874 /* TranslationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationRouter.swift; sourceTree = "<group>"; };
 		1AD804D1296ABB0C00836874 /* TranslationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationViewController.swift; sourceTree = "<group>"; };
 		1AD804D2296ABB0C00836874 /* TranslationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationInteractor.swift; sourceTree = "<group>"; };
 		1AD804D3296ABB0C00836874 /* TranslationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationEntity.swift; sourceTree = "<group>"; };
 		1AD804DC296ABCA800836874 /* WithdrawalContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawalContentView.swift; sourceTree = "<group>"; };
-		1AD804DD296ABCA800836874 /* WithdrawalAssambly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawalAssambly.swift; sourceTree = "<group>"; };
+		1AD804DD296ABCA800836874 /* WithdrawalAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawalAssembly.swift; sourceTree = "<group>"; };
 		1AD804DE296ABCA800836874 /* WithdrawalPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawalPresenter.swift; sourceTree = "<group>"; };
 		1AD804DF296ABCA800836874 /* WithdrawalRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawalRouter.swift; sourceTree = "<group>"; };
 		1AD804E0296ABCA800836874 /* WithdrawalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawalViewController.swift; sourceTree = "<group>"; };
 		1AD804E1296ABCA800836874 /* WithdrawalInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawalInteractor.swift; sourceTree = "<group>"; };
 		1AD804E2296ABCA800836874 /* WithdrawalEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawalEntity.swift; sourceTree = "<group>"; };
 		1AD804EB296ABD5600836874 /* HistoryContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryContentView.swift; sourceTree = "<group>"; };
-		1AD804EC296ABD5600836874 /* HistoryAssambly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryAssambly.swift; sourceTree = "<group>"; };
+		1AD804EC296ABD5600836874 /* HistoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryAssembly.swift; sourceTree = "<group>"; };
 		1AD804ED296ABD5600836874 /* HistoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPresenter.swift; sourceTree = "<group>"; };
 		1AD804EE296ABD5600836874 /* HistoryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRouter.swift; sourceTree = "<group>"; };
 		1AD804EF296ABD5600836874 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
@@ -270,7 +270,7 @@
 		1ADCDD18296D705A00F23219 /* RegistrationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationPresenter.swift; sourceTree = "<group>"; };
 		1ADCDD19296D705A00F23219 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		1ADCDD1A296D705A00F23219 /* RegistrationContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationContentView.swift; sourceTree = "<group>"; };
-		1ADCDD1B296D705A00F23219 /* RegistrationAssambly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationAssambly.swift; sourceTree = "<group>"; };
+		1ADCDD1B296D705A00F23219 /* RegistrationAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationAssembly.swift; sourceTree = "<group>"; };
 		1ADCDD25296EACEB00F23219 /* ExchangeRateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateView.swift; sourceTree = "<group>"; };
 		1ADCDD2A296EAF7D00F23219 /* CurrencyCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCollectionCell.swift; sourceTree = "<group>"; };
 		1ADCDD2D296EAFAB00F23219 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
@@ -320,7 +320,7 @@
 				1A401CBC29780254008CB417 /* FromCardToCardPresenter.swift */,
 				1A401CC029780254008CB417 /* FromCardToCardEntity.swift */,
 				1A401CBD29780254008CB417 /* FromCardToCardRouter.swift */,
-				1A401CBB29780254008CB417 /* FromCardToCardAssambly.swift */,
+				1A401CBB29780254008CB417 /* FromCardToCardAssembly.swift */,
 			);
 			path = FromCardToCardModule;
 			sourceTree = "<group>";
@@ -333,7 +333,7 @@
 				1A401CE929780306008CB417 /* TopUpPhoneNumderPresenter.swift */,
 				1A401CED29780306008CB417 /* TopUpPhoneNumderEntity.swift */,
 				1A401CEA29780306008CB417 /* TopUpPhoneNumderRouter.swift */,
-				1A401CE829780306008CB417 /* TopUpPhoneNumderAssambly.swift */,
+				1A401CE829780306008CB417 /* TopUpPhoneNumderAssembly.swift */,
 			);
 			path = TopUpPhoneNumderModule;
 			sourceTree = "<group>";
@@ -346,7 +346,7 @@
 				1A401CDA297802C3008CB417 /* ByPhoneNumberPresenter.swift */,
 				1A401CDE297802C3008CB417 /* ByPhoneNumberEntity.swift */,
 				1A401CDB297802C3008CB417 /* ByPhoneNumberRouter.swift */,
-				1A401CD9297802C3008CB417 /* ByPhoneNumberAssambly.swift */,
+				1A401CD9297802C3008CB417 /* ByPhoneNumberAssembly.swift */,
 			);
 			path = ByPhoneNumberModule;
 			sourceTree = "<group>";
@@ -359,7 +359,7 @@
 				1A401CCB2978028B008CB417 /* DepositReplenishmentPresenter.swift */,
 				1A401CCF2978028B008CB417 /* DepositReplenishmentEntity.swift */,
 				1A401CCC2978028B008CB417 /* DepositReplenishmentRouter.swift */,
-				1A401CCA2978028B008CB417 /* DepositReplenishmentAssambly.swift */,
+				1A401CCA2978028B008CB417 /* DepositReplenishmentAssembly.swift */,
 			);
 			path = DepositReplenishmentModule;
 			sourceTree = "<group>";
@@ -372,7 +372,7 @@
 				1AD804CF296ABB0C00836874 /* TranslationPresenter.swift */,
 				1AD804D3296ABB0C00836874 /* TranslationEntity.swift */,
 				1AD804D0296ABB0C00836874 /* TranslationRouter.swift */,
-				1AD804CE296ABB0C00836874 /* TranslationAssambly.swift */,
+				1AD804CE296ABB0C00836874 /* TranslationAssembly.swift */,
 			);
 			path = TranslationModule;
 			sourceTree = "<group>";
@@ -421,7 +421,7 @@
 				1A8D67DB29657FC500B45E63 /* MainPresenter.swift */,
 				1A8D67DD29657FDD00B45E63 /* MainEntity.swift */,
 				1A8D67DF29657FE800B45E63 /* MainRouter.swift */,
-				1A8D67E12965800400B45E63 /* MainAssambly.swift */,
+				1A8D67E12965800400B45E63 /* MainAssembly.swift */,
 			);
 			path = MainModule;
 			sourceTree = "<group>";
@@ -434,7 +434,7 @@
 				1AD804DE296ABCA800836874 /* WithdrawalPresenter.swift */,
 				1AD804E2296ABCA800836874 /* WithdrawalEntity.swift */,
 				1AD804DF296ABCA800836874 /* WithdrawalRouter.swift */,
-				1AD804DD296ABCA800836874 /* WithdrawalAssambly.swift */,
+				1AD804DD296ABCA800836874 /* WithdrawalAssembly.swift */,
 			);
 			path = WithdrawalModule;
 			sourceTree = "<group>";
@@ -447,7 +447,7 @@
 				1A401D1A2978CD22008CB417 /* CashPresenter.swift */,
 				1A401D1E2978CD22008CB417 /* CashEntity.swift */,
 				1A401D1B2978CD22008CB417 /* CashRouter.swift */,
-				1A401D192978CD22008CB417 /* CashAssambly.swift */,
+				1A401D192978CD22008CB417 /* CashAssembly.swift */,
 			);
 			path = CashModule;
 			sourceTree = "<group>";
@@ -460,7 +460,7 @@
 				1A401D0B2978041C008CB417 /* RequestManyPresenter.swift */,
 				1A401D0F2978041C008CB417 /* RequestManyEntity.swift */,
 				1A401D0C2978041C008CB417 /* RequestManyRouter.swift */,
-				1A401D0A2978041C008CB417 /* RequestManyAssambly.swift */,
+				1A401D0A2978041C008CB417 /* RequestManyAssembly.swift */,
 			);
 			path = RequestManyModule;
 			sourceTree = "<group>";
@@ -641,7 +641,7 @@
 				1AD804ED296ABD5600836874 /* HistoryPresenter.swift */,
 				1AD804F1296ABD5600836874 /* HistoryEntity.swift */,
 				1AD804EE296ABD5600836874 /* HistoryRouter.swift */,
-				1AD804EC296ABD5600836874 /* HistoryAssambly.swift */,
+				1AD804EC296ABD5600836874 /* HistoryAssembly.swift */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -663,7 +663,7 @@
 				1A58FAC62977EF0800C87FD0 /* NewProductPresenter.swift */,
 				1A58FACA2977EF0800C87FD0 /* NewProductEntity.swift */,
 				1A58FAC72977EF0800C87FD0 /* NewProductRouter.swift */,
-				1A58FAC52977EF0800C87FD0 /* NewProductAssambly.swift */,
+				1A58FAC52977EF0800C87FD0 /* NewProductAssembly.swift */,
 			);
 			path = NewProductModule;
 			sourceTree = "<group>";
@@ -776,7 +776,7 @@
 				1ADCDD18296D705A00F23219 /* RegistrationPresenter.swift */,
 				1ADCDD17296D705A00F23219 /* RegistrationEntity.swift */,
 				1ADCDD16296D705A00F23219 /* RegistrationRouter.swift */,
-				1ADCDD1B296D705A00F23219 /* RegistrationAssambly.swift */,
+				1ADCDD1B296D705A00F23219 /* RegistrationAssembly.swift */,
 			);
 			path = Registration;
 			sourceTree = "<group>";
@@ -1001,15 +1001,15 @@
 				1A401CE4297802C3008CB417 /* ByPhoneNumberInteractor.swift in Sources */,
 				1AD80510296C0CFE00836874 /* Network.swift in Sources */,
 				1A401CF229780306008CB417 /* TopUpPhoneNumderViewController.swift in Sources */,
-				1ADCDD22296D705A00F23219 /* RegistrationAssambly.swift in Sources */,
+				1ADCDD22296D705A00F23219 /* RegistrationAssembly.swift in Sources */,
 				1A43CFE6296042C700716EFE /* UIView+Shadow.swift in Sources */,
-				1A401D202978CD22008CB417 /* CashAssambly.swift in Sources */,
+				1A401D202978CD22008CB417 /* CashAssembly.swift in Sources */,
 				1AD804D8296ABB0C00836874 /* TranslationViewController.swift in Sources */,
 				1A401CC429780254008CB417 /* FromCardToCardRouter.swift in Sources */,
 				1A58FACD2977EF0800C87FD0 /* NewProductPresenter.swift in Sources */,
 				1ADCDD21296D705A00F23219 /* RegistrationContentView.swift in Sources */,
 				1A58FACE2977EF0800C87FD0 /* NewProductRouter.swift in Sources */,
-				1A58FACC2977EF0800C87FD0 /* NewProductAssambly.swift in Sources */,
+				1A58FACC2977EF0800C87FD0 /* NewProductAssembly.swift in Sources */,
 				1A4F39992962BFA1002E5563 /* CustomTableViewCell.swift in Sources */,
 				1A401CF429780306008CB417 /* TopUpPhoneNumderEntity.swift in Sources */,
 				1A4F39922962193C002E5563 /* CustomLabel.swift in Sources */,
@@ -1028,7 +1028,7 @@
 				1AD804E8296ABCA800836874 /* WithdrawalInteractor.swift in Sources */,
 				1A401D242978CD22008CB417 /* CashInteractor.swift in Sources */,
 				1A07F24129744FDE007AD687 /* WelcomeView.swift in Sources */,
-				1AD804D5296ABB0C00836874 /* TranslationAssambly.swift in Sources */,
+				1AD804D5296ABB0C00836874 /* TranslationAssembly.swift in Sources */,
 				1A4F39952962BF75002E5563 /* TableViewDataSource.swift in Sources */,
 				1A401CD62978028B008CB417 /* DepositReplenishmentEntity.swift in Sources */,
 				1A8D67DA29657F6200B45E63 /* MainInteractor.swift in Sources */,
@@ -1048,7 +1048,7 @@
 				1A401D162978041C008CB417 /* RequestManyEntity.swift in Sources */,
 				1A43CFF62961F4FA00716EFE /* CustomButtom.swift in Sources */,
 				1A58FACB2977EF0800C87FD0 /* NewProductContentView.swift in Sources */,
-				1AD804F3296ABD5600836874 /* HistoryAssambly.swift in Sources */,
+				1AD804F3296ABD5600836874 /* HistoryAssembly.swift in Sources */,
 				1A401D132978041C008CB417 /* RequestManyRouter.swift in Sources */,
 				1A401CEE29780306008CB417 /* TopUpPhoneNumderContentView.swift in Sources */,
 				1A4877E8295C379E0029A1BC /* NavigationController.swift in Sources */,
@@ -1067,13 +1067,13 @@
 				1ADCDD1C296D705A00F23219 /* RegistrationInteractor.swift in Sources */,
 				1A4877C8295C33520029A1BC /* SceneDelegate.swift in Sources */,
 				1A4877EA295C407D0029A1BC /* TabBarViewController.swift in Sources */,
-				1AD804E4296ABCA800836874 /* WithdrawalAssambly.swift in Sources */,
+				1AD804E4296ABCA800836874 /* WithdrawalAssembly.swift in Sources */,
 				1A401D222978CD22008CB417 /* CashRouter.swift in Sources */,
 				1ADCDD30296EB4ED00F23219 /* CurrencyCollection.swift in Sources */,
 				1AD804F5296ABD5600836874 /* HistoryRouter.swift in Sources */,
 				1ADCDD2E296EAFAB00F23219 /* DataSource.swift in Sources */,
 				1A401CD52978028B008CB417 /* DepositReplenishmentInteractor.swift in Sources */,
-				1A401CE0297802C3008CB417 /* ByPhoneNumberAssambly.swift in Sources */,
+				1A401CE0297802C3008CB417 /* ByPhoneNumberAssembly.swift in Sources */,
 				1A401D232978CD22008CB417 /* CashViewController.swift in Sources */,
 				1AD804F6296ABD5600836874 /* HistoryViewController.swift in Sources */,
 				1A401CD42978028B008CB417 /* DepositReplenishmentViewController.swift in Sources */,
@@ -1083,22 +1083,22 @@
 				1ADCDD32296EB54D00F23219 /* CollectionLayout.swift in Sources */,
 				1A8D67DC29657FC500B45E63 /* MainPresenter.swift in Sources */,
 				1A401CC729780254008CB417 /* FromCardToCardEntity.swift in Sources */,
-				1A401CC229780254008CB417 /* FromCardToCardAssambly.swift in Sources */,
+				1A401CC229780254008CB417 /* FromCardToCardAssembly.swift in Sources */,
 				1AD804F2296ABD5600836874 /* HistoryContentView.swift in Sources */,
 				1A401CC629780254008CB417 /* FromCardToCardInteractor.swift in Sources */,
 				1AD804D4296ABB0C00836874 /* TranslationContentView.swift in Sources */,
 				1A401CC129780254008CB417 /* FromCardToCardContentView.swift in Sources */,
-				1A401CD12978028B008CB417 /* DepositReplenishmentAssambly.swift in Sources */,
-				1A8D67E22965800400B45E63 /* MainAssambly.swift in Sources */,
+				1A401CD12978028B008CB417 /* DepositReplenishmentAssembly.swift in Sources */,
+				1A8D67E22965800400B45E63 /* MainAssembly.swift in Sources */,
 				1A43CFDD295EF31600716EFE /* UIView+Border.swift in Sources */,
 				1A4877E6295C36BF0029A1BC /* MainContentView.swift in Sources */,
 				1AD804D6296ABB0C00836874 /* TranslationPresenter.swift in Sources */,
 				1ADCDD39296EC92200F23219 /* CurrencyEntity.swift in Sources */,
-				1A401D112978041C008CB417 /* RequestManyAssambly.swift in Sources */,
+				1A401D112978041C008CB417 /* RequestManyAssembly.swift in Sources */,
 				1ADCDD37296EC92200F23219 /* SaveData.swift in Sources */,
 				1A401D102978041C008CB417 /* RequestManyContentView.swift in Sources */,
 				1A53DA66297C69CF005090B1 /* GlobalFunc.swift in Sources */,
-				1A401CEF29780306008CB417 /* TopUpPhoneNumderAssambly.swift in Sources */,
+				1A401CEF29780306008CB417 /* TopUpPhoneNumderAssembly.swift in Sources */,
 				1A401CF329780306008CB417 /* TopUpPhoneNumderInteractor.swift in Sources */,
 				1A35EF8A2974132E0084CB7D /* UILabel+SaveText.swift in Sources */,
 				1A4F399E2962DFA9002E5563 /* CustomTextField.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  RegistrationAssambly.swift
+//  RegistrationAssembly.swift
 //  Super easy dev
 //
 //  Created by Иван Тарасенко on 10.01.2023
@@ -7,13 +7,13 @@
 
 import Foundation
 
-protocol RegistrationAssamblyProtocol: AnyObject {
+protocol RegistrationAssemblyProtocol: AnyObject {
     func initialView(view: RegistrationContentView)
     func initialController(controller: RegistrationViewController)
     func initialWelcomeView(view: WelcomeView)
 }
 
-final class RegistrationAssambly: RegistrationAssamblyProtocol {
+final class RegistrationAssembly: RegistrationAssemblyProtocol {
 
     func initialView(view: RegistrationContentView) {
         let presenter = RegistrationPresenter(view)

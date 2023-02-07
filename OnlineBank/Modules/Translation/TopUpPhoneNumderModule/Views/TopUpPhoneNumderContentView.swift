@@ -19,7 +19,7 @@ final class TopUpPhoneNumderContentView: UIView {
     var onReplenishButtonAction: ((String) -> Void)?
     
     var presenter: TopUpPhoneNumderPresenterProtocol!
-    var assambly: TopUpPhoneNumderAssamblyProtocol = TopUpPhoneNumderAssambly()
+    var assembly: TopUpPhoneNumderAssemblyProtocol = TopUpPhoneNumderAssembly()
     
     // Top up your number
     private let titleLabel: UILabel = {
@@ -102,7 +102,7 @@ final class TopUpPhoneNumderContentView: UIView {
 private extension TopUpPhoneNumderContentView {
     
     func setView() {
-        assambly.initialView(view: self)
+        assembly.initialView(view: self)
         backgroundColor = .white
         addSubview(selfNumberStackView)
         addSubview(inputNumberStackView)

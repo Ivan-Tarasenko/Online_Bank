@@ -14,7 +14,7 @@ final class ByPhoneNumberViewController: UIViewController {
     
     var presenter: ByPhoneNumberPresenterProtocol?
     var contentView: ByPhoneNumberContentViewProtocol?
-    private let assambly: ByPhoneNumberAssamblyProtocol = ByPhoneNumberAssambly()
+    private let assembly: ByPhoneNumberAssemblyProtocol = ByPhoneNumberAssembly()
 
     // MARK: - Inition View
     init(contentView: ByPhoneNumberContentView) {
@@ -28,7 +28,7 @@ final class ByPhoneNumberViewController: UIViewController {
 
     // MARK: - Loading View
     override func loadView() {
-        assambly.initialController(controller: self)
+        assembly.initialController(controller: self)
         view = contentView as? UIView
     }
 }

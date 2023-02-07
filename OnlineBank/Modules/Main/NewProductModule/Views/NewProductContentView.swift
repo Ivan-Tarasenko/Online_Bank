@@ -12,7 +12,7 @@ protocol NewProductContentViewProtocol: AnyObject {}
 final class NewProductContentView: UIView {
     
     var presenter: NewProductPresenterProtocol!
-    var assambly: NewProductAssamblyProtocol = NewProductAssambly()
+    var assembly: NewProductAssemblyProtocol = NewProductAssembly()
     
     private let massageLabel: UILabel = {
         let label = CustomLabel()
@@ -23,7 +23,7 @@ final class NewProductContentView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        assambly.initialView(view: self)
+        assembly.initialView(view: self)
         setNewProductView()
         makeConstraints()
     }

@@ -12,7 +12,7 @@ protocol FromCardToCardContentViewProtocol: AnyObject {}
 final class FromCardToCardContentView: UIView {
 
     var presenter: FromCardToCardPresenterProtocol!
-    var assambly: FromCardToCardAssamblyProtocol = FromCardToCardAssambly()
+    var assembly: FromCardToCardAssemblyProtocol = FromCardToCardAssembly()
     
     private let massageLabel: UILabel = {
         let label = CustomLabel()
@@ -36,7 +36,7 @@ final class FromCardToCardContentView: UIView {
 private extension FromCardToCardContentView {
     
     func setView() {
-        assambly.initialView(view: self)
+        assembly.initialView(view: self)
         backgroundColor = .white
         addSubview(massageLabel)
     }

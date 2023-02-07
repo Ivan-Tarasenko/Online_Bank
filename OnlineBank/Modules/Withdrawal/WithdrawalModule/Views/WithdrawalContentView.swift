@@ -18,7 +18,7 @@ final class WithdrawalContentView: UIView {
     var onRequestAction: (() -> Void)?
 
     var presenter: WithdrawalPresenterProtocol!
-    var assambly: WithdrawalAssamblyProtocol = WithdrawalAssambly()
+    var assembly: WithdrawalAssemblyProtocol = WithdrawalAssembly()
 
     let titleWithdrawalLabel: CustomLabel = {
         let label = CustomLabel()
@@ -57,7 +57,7 @@ final class WithdrawalContentView: UIView {
 private extension WithdrawalContentView {
 
     func setView() {
-        assambly.initialView(view: self)
+        assembly.initialView(view: self)
         addSubview(titleWithdrawalLabel)
         addSubview(stackView)
         backgroundColor = R.Colors.background

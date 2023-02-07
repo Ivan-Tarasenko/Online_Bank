@@ -15,7 +15,7 @@ final class DepositReplenishmentViewController: UIViewController {
     
     var presenter: DepositReplenishmentPresenterProtocol?
     var contentView: DepositReplenishmentContentViewProtocol?
-    private let assambly: DepositReplenishmentAssamblyProtocol = DepositReplenishmentAssambly()
+    private let assembly: DepositReplenishmentAssemblyProtocol = DepositReplenishmentAssembly()
 
     // MARK: - Inition View
     init(contentView: DepositReplenishmentContentView) {
@@ -29,7 +29,7 @@ final class DepositReplenishmentViewController: UIViewController {
 
     // MARK: - Loading View
     override func loadView() {
-        assambly.initialController(controller: self)
+        assembly.initialController(controller: self)
         view = contentView as? UIView
         didEnterButtonPressed()
     }

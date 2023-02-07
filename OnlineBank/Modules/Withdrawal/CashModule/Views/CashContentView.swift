@@ -16,7 +16,7 @@ final class CashContentView: UIView {
     var onWithdrawalButtonAction: ((String) -> Void)?
     
     var presenter: CashPresenterProtocol!
-    var assambly: CashAssamblyProtocol = CashAssambly()
+    var assembly: CashAssemblyProtocol = CashAssembly()
     
     private let titleLabel: UILabel = {
         let label = CustomLabel()
@@ -57,7 +57,7 @@ final class CashContentView: UIView {
 // MARK: - Private functions
 private extension CashContentView {
     func setView() {
-        assambly.initialView(view: self)
+        assembly.initialView(view: self)
         backgroundColor = .white
         addSubview(stackView)
     }

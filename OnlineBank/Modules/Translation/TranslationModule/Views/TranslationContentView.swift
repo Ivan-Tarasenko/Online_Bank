@@ -23,7 +23,7 @@ final class TranslationContentView: UIView {
     var onTopUpPhoneNumderAction: (() -> Void)?
 
     var presenter: TranslationPresenterProtocol!
-    var assambly: TranslationAssamblyProtocol = TranslationAssambly()
+    var assembly: TranslationAssemblyProtocol = TranslationAssembly()
 
     let titleMethodOfReplenishmentLabel: CustomLabel = {
         let label = CustomLabel()
@@ -63,7 +63,7 @@ final class TranslationContentView: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        assambly.initialView(view: self)
+        assembly.initialView(view: self)
         addSubview(titleMethodOfReplenishmentLabel)
         addSubview(mainStackView)
         backgroundColor = R.Colors.background

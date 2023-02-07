@@ -1,5 +1,5 @@
 //
-//  WithdrawalAssambly.swift
+//  WithdrawalAssembly.swift
 //  Super easy dev
 //
 //  Created by Иван Тарасенко on 08.01.2023
@@ -7,12 +7,12 @@
 
 import Foundation
 
-protocol WithdrawalAssamblyProtocol: AnyObject {
+protocol WithdrawalAssemblyProtocol: AnyObject {
     func initialView(view: WithdrawalContentView)
     func initialController(controller: WithdrawalViewController)
 }
 
-final class WithdrawalAssambly: WithdrawalAssamblyProtocol {
+final class WithdrawalAssembly: WithdrawalAssemblyProtocol {
 
     func initialView(view: WithdrawalContentView) {
         let presenter = WithdrawalPresenter(view)

@@ -14,7 +14,7 @@ final class TranslationViewController: UIViewController {
     
     var presenter: TranslationPresenterProtocol?
     var contentView: TranslationContentViewProtocol?
-    private let assambly: TranslationAssamblyProtocol = TranslationAssambly()
+    private let assembly: TranslationAssemblyProtocol = TranslationAssembly()
 
     // MARK: - Inition View
     init(contentView: TranslationContentView) {
@@ -40,7 +40,7 @@ final class TranslationViewController: UIViewController {
 private extension TranslationViewController {
 
     func setController() {
-        assambly.initialController(controller: self)
+        assembly.initialController(controller: self)
         view = contentView as? UIView
         title = R.TabBar.title(for: Tabs.translations)
     }

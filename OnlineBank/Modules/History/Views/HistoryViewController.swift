@@ -14,7 +14,7 @@ final class HistoryViewController: UIViewController {
     
     var presenter: HistoryPresenterProtocol?
     var contentView: HistoryContentViewProtocol?
-    private let assambly: HistoryAssamblyProtocol = HistoryAssambly()
+    private let assembly: HistoryAssemblyProtocol = HistoryAssembly()
 
     // MARK: - Inition View
     init(contentView: HistoryContentView) {
@@ -28,7 +28,7 @@ final class HistoryViewController: UIViewController {
 
     // MARK: - Loading View
     override func loadView() {
-        assambly.initialController(controller: self)
+        assembly.initialController(controller: self)
         view = contentView as? UIView
         title = R.TabBar.title(for: Tabs.history)
     }

@@ -16,7 +16,7 @@ final class MainViewController: UIViewController {
 
     var presenter: MainPresenterProtocol?
     var contentView: MainContentViewProtocol?
-    private let assambly: MainAssamblyProtocol = MainAssambly()
+    private let assembly: MainAssemblyProtocol = MainAssembly()
     private let scrollView = UIScrollView()
 
     init(contentView: MainContentViewProtocol) {
@@ -29,7 +29,7 @@ final class MainViewController: UIViewController {
     }
 
     override func loadView() {
-        assambly.initialController(controller: self)
+        assembly.initialController(controller: self)
         view = contentView as? UIView
         title = R.TabBar.title(for: Tabs.main)
         addProductPressed()

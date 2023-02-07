@@ -14,7 +14,7 @@ final class NewProductViewController: UIViewController {
     
     var presenter: NewProductPresenterProtocol?
     var contentView: NewProductContentViewProtocol?
-    private let assambly: NewProductAssamblyProtocol = NewProductAssambly()
+    private let assembly: NewProductAssemblyProtocol = NewProductAssembly()
 
     // MARK: - Inition View
     init(contentView: NewProductContentView) {
@@ -28,7 +28,7 @@ final class NewProductViewController: UIViewController {
 
     // MARK: - Loading View
     override func loadView() {
-        assambly.initialController(controller: self)
+        assembly.initialController(controller: self)
         view = contentView as? UIView
     }
 }

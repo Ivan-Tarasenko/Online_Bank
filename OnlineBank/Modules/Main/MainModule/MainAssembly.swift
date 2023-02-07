@@ -1,5 +1,5 @@
 //
-//  MainAssambly.swift
+//  MainAssembly.swift
 //  OnlineBank
 //
 //  Created by Иван Тарасенко on 04.01.2023.
@@ -7,12 +7,12 @@
 
 import Foundation
 
-protocol MainAssamblyProtocol: AnyObject {
+protocol MainAssemblyProtocol: AnyObject {
     func initialView(view: MainContentView)
     func initialController(controller: MainViewController)
 }
 
-final class MainAssambly: MainAssamblyProtocol {
+final class MainAssembly: MainAssemblyProtocol {
 
     func initialView(view: MainContentView) {
         let presenter = MainPresenter(view)

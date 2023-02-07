@@ -1,5 +1,5 @@
 //
-//  HistoryAssambly.swift
+//  HistoryAssembly.swift
 //  Super easy dev
 //
 //  Created by Иван Тарасенко on 08.01.2023
@@ -7,12 +7,12 @@
 
 import Foundation
 
-protocol HistoryAssamblyProtocol: AnyObject {
+protocol HistoryAssemblyProtocol: AnyObject {
     func initialView(view: HistoryContentView)
     func initialController(controller: HistoryViewController)
 }
 
-final class HistoryAssambly: HistoryAssamblyProtocol {
+final class HistoryAssembly: HistoryAssemblyProtocol {
 
     func initialView(view: HistoryContentView) {
         let presenter = HistoryPresenter(view)

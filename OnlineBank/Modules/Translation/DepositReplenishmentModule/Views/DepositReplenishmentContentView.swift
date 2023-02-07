@@ -17,7 +17,7 @@ final class DepositReplenishmentContentView: UIView {
     var onEnterButtonAction: (() -> Void)?
 
     var presenter: DepositReplenishmentPresenterProtocol!
-    var assambly: DepositReplenishmentAssamblyProtocol = DepositReplenishmentAssambly()
+    var assembly: DepositReplenishmentAssemblyProtocol = DepositReplenishmentAssembly()
     
     private let titleLabel: UILabel = {
         let label = CustomLabel()
@@ -59,7 +59,7 @@ final class DepositReplenishmentContentView: UIView {
 private extension DepositReplenishmentContentView {
     
     func setView() {
-        assambly.initialView(view: self)
+        assembly.initialView(view: self)
         backgroundColor = .white
         addSubview(stackView)
     }

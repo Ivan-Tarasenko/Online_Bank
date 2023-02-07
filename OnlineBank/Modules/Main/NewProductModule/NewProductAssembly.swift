@@ -1,5 +1,5 @@
 //
-//  NewProductAssambly.swift
+//  NewProductAssembly.swift
 //  Super easy dev
 //
 //  Created by Иван Тарасенко on 18.01.2023
@@ -7,12 +7,12 @@
 
 import Foundation
 
-protocol NewProductAssamblyProtocol: AnyObject {
+protocol NewProductAssemblyProtocol: AnyObject {
     func initialView(view: NewProductContentView)
     func initialController(controller: NewProductViewController)
 }
 
-final class NewProductAssambly: NewProductAssamblyProtocol {
+final class NewProductAssembly: NewProductAssemblyProtocol {
 
     func initialView(view: NewProductContentView) {
         let presenter = NewProductPresenter(view)

@@ -14,7 +14,7 @@ final class WithdrawalViewController: UIViewController {
     
     var presenter: WithdrawalPresenterProtocol?
     var contentView: WithdrawalContentViewProtocol?
-    private let assambly: WithdrawalAssamblyProtocol = WithdrawalAssambly()
+    private let assembly: WithdrawalAssemblyProtocol = WithdrawalAssembly()
     
     // MARK: - Inition View
     init(contentView: WithdrawalContentView) {
@@ -28,7 +28,7 @@ final class WithdrawalViewController: UIViewController {
     
     // MARK: - Loading View
     override func loadView() {
-        assambly.initialController(controller: self)
+        assembly.initialController(controller: self)
         view = contentView as? UIView
         title = R.TabBar.title(for: Tabs.withdrawal)
         didCashPressed()

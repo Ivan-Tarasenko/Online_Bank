@@ -14,7 +14,7 @@ final class CashViewController: UIViewController {
     
     var presenter: CashPresenterProtocol?
     var contentView: CashContentViewProtocol?
-    private let assambly: CashAssamblyProtocol = CashAssambly()
+    private let assembly: CashAssemblyProtocol = CashAssembly()
     private let alert = AlertService(massage: R.Titles.Alert.withdrawalErrorMassage)
     
     // MARK: - Inition View
@@ -29,7 +29,7 @@ final class CashViewController: UIViewController {
     
     // MARK: - Loading View
     override func loadView() {
-        assambly.initialController(controller: self)
+        assembly.initialController(controller: self)
         view = contentView as? UIView
         didWithdrawalButtonPressed()
     }

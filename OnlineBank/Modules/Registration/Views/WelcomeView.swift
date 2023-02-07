@@ -14,7 +14,7 @@ protocol WelcomeViewProtocol: AnyObject {
 final class WelcomeView: UIView {
 
     var presenter: RegistrationPresenterProtocol!
-    var assambly: RegistrationAssamblyProtocol = RegistrationAssambly()
+    var assembly: RegistrationAssemblyProtocol = RegistrationAssembly()
 
     var welcomeLabel: UILabel = {
         let label = UILabel()
@@ -42,7 +42,7 @@ final class WelcomeView: UIView {
 private extension WelcomeView {
 
     func setWelcomeView() {
-        assambly.initialWelcomeView(view: self)
+        assembly.initialWelcomeView(view: self)
         backgroundColor = .systemBlue
         addSubview(welcomeLabel)
     }
