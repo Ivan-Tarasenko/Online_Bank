@@ -19,7 +19,7 @@ final class RegistrationContentView: UIView {
     var registrationAction: (() -> Void)?
     
     var presenter: RegistrationPresenterProtocol!
-    var assambly: RegistrationAssamblyProtocol = RegistrationAssambly()
+    var assembly: RegistrationAssemblyProtocol = RegistrationAssembly()
     
     let title: UILabel = {
         let label = CustomLabel()
@@ -69,7 +69,7 @@ final class RegistrationContentView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        assambly.initialView(view: self)
+        assembly.initialView(view: self)
         setRegisterView()
         addTargets()
         setStackView()

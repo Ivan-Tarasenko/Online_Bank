@@ -1,5 +1,5 @@
 //
-//  TranslationAssambly.swift
+//  TranslationAssembly.swift
 //  Super easy dev
 //
 //  Created by Иван Тарасенко on 08.01.2023
@@ -7,12 +7,12 @@
 
 import Foundation
 
-protocol TranslationAssamblyProtocol: AnyObject {
+protocol TranslationAssemblyProtocol: AnyObject {
     func initialView(view: TranslationContentView)
     func initialController(controller: TranslationViewController)
 }
 
-final class TranslationAssambly: TranslationAssamblyProtocol {
+final class TranslationAssembly: TranslationAssemblyProtocol {
 
     func initialView(view: TranslationContentView) {
         let presenter = TranslationPresenter(view)

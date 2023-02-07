@@ -1,5 +1,5 @@
 //
-//  ByPhoneNumberAssambly.swift
+//  ByPhoneNumberAssembly.swift
 //  Super easy dev
 //
 //  Created by Иван Тарасенко on 18.01.2023
@@ -7,12 +7,12 @@
 
 import Foundation
 
-protocol ByPhoneNumberAssamblyProtocol: AnyObject {
+protocol ByPhoneNumberAssemblyProtocol: AnyObject {
     func initialView(view: ByPhoneNumberContentView)
     func initialController(controller: ByPhoneNumberViewController)
 }
 
-final class ByPhoneNumberAssambly: ByPhoneNumberAssamblyProtocol {
+final class ByPhoneNumberAssembly: ByPhoneNumberAssemblyProtocol {
 
     func initialView(view: ByPhoneNumberContentView) {
         let presenter = ByPhoneNumberPresenter(view)

@@ -1,5 +1,5 @@
 //
-//  CashAssambly.swift
+//  CashAssembly.swift
 //  Super easy dev
 //
 //  Created by Иван Тарасенко on 19.01.2023
@@ -7,12 +7,12 @@
 
 import Foundation
 
-protocol CashAssamblyProtocol: AnyObject {
+protocol CashAssemblyProtocol: AnyObject {
     func initialView(view: CashContentView)
     func initialController(controller: CashViewController)
 }
 
-final class CashAssambly: CashAssamblyProtocol {
+final class CashAssembly: CashAssemblyProtocol {
 
     func initialView(view: CashContentView) {
         let presenter = CashPresenter(view)

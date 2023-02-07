@@ -1,5 +1,5 @@
 //
-//  FromCardToCardAssambly.swift
+//  FromCardToCardAssembly.swift
 //  Super easy dev
 //
 //  Created by Иван Тарасенко on 18.01.2023
@@ -7,12 +7,12 @@
 
 import Foundation
 
-protocol FromCardToCardAssamblyProtocol: AnyObject {
+protocol FromCardToCardAssemblyProtocol: AnyObject {
     func initialView(view: FromCardToCardContentView)
     func initialController(controller: FromCardToCardViewController)
 }
 
-final class FromCardToCardAssambly: FromCardToCardAssamblyProtocol {
+final class FromCardToCardAssembly: FromCardToCardAssemblyProtocol {
 
     func initialView(view: FromCardToCardContentView) {
         let presenter = FromCardToCardPresenter(view)

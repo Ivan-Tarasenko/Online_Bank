@@ -14,7 +14,7 @@ final class RequestManyViewController: UIViewController {
     
     var presenter: RequestManyPresenterProtocol?
     var contentView: RequestManyContentViewProtocol?
-    private let assambly: RequestManyAssamblyProtocol = RequestManyAssambly()
+    private let assembly: RequestManyAssemblyProtocol = RequestManyAssembly()
 
     // MARK: - Inition View
     init(contentView: RequestManyContentView) {
@@ -28,7 +28,7 @@ final class RequestManyViewController: UIViewController {
 
     // MARK: - Loading View
     override func loadView() {
-        assambly.initialController(controller: self)
+        assembly.initialController(controller: self)
         view = contentView as? UIView
     }
 }

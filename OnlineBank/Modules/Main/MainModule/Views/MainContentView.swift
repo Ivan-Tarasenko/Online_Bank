@@ -20,7 +20,7 @@ final class MainContentView: UIView {
     var addProductAction: (() -> Void)?
 
     var presenter: MainPresenterProtocol!
-    var assambly: MainAssamblyProtocol = MainAssambly()
+    var assembly: MainAssemblyProtocol = MainAssembly()
 
     var exchangeRateView: ExchangeRateView = {
         let view = ExchangeRateView(frame: CGRect(origin: .zero, size: CGSize(width: 400, height: 90)))
@@ -51,7 +51,7 @@ final class MainContentView: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        assambly.initialView(view: self)
+        assembly.initialView(view: self)
         setContent()
         addTargets()
         presenter.configereCard()

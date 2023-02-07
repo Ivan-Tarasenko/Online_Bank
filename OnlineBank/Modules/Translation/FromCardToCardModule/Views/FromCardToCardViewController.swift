@@ -14,7 +14,7 @@ final class FromCardToCardViewController: UIViewController {
     
     var presenter: FromCardToCardPresenterProtocol?
     var contentView: FromCardToCardContentViewProtocol?
-    private let assambly: FromCardToCardAssamblyProtocol = FromCardToCardAssambly()
+    private let assembly: FromCardToCardAssemblyProtocol = FromCardToCardAssembly()
 
     // MARK: - Inition View
     init(contentView: FromCardToCardContentView) {
@@ -28,7 +28,7 @@ final class FromCardToCardViewController: UIViewController {
 
     // MARK: - Loading View
     override func loadView() {
-        assambly.initialController(controller: self)
+        assembly.initialController(controller: self)
         view = contentView as? UIView
     }
 }

@@ -18,7 +18,7 @@ protocol HistoryContentViewProtocol: AnyObject {
 final class HistoryContentView: UIView {
 
     var presenter: HistoryPresenterProtocol!
-    var assambly: HistoryAssamblyProtocol = HistoryAssambly()
+    var assembly: HistoryAssemblyProtocol = HistoryAssembly()
 
     weak var delegate: TableViewDelegate?
     private var dataSource = TableViewDataSource()
@@ -42,7 +42,7 @@ final class HistoryContentView: UIView {
 private extension HistoryContentView {
     
     func setView() {
-        assambly.initialView(view: self)
+        assembly.initialView(view: self)
         addSubview(tableView)
     }
     

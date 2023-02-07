@@ -16,7 +16,7 @@ final class RegistrationViewController: UIViewController {
     var presenter: RegistrationPresenterProtocol?
     var registrationView: RegistrationContentViewProtocol?
     var welcomeView: WelcomeViewProtocol?
-    private let assambly: RegistrationAssamblyProtocol = RegistrationAssambly()
+    private let assembly: RegistrationAssemblyProtocol = RegistrationAssembly()
     private let alert = AlertService(massage: R.Titles.Alert.regMassage)
 
     // MARK: - Inition View
@@ -33,7 +33,7 @@ final class RegistrationViewController: UIViewController {
 
     // MARK: - Loading View
     override func loadView() {
-        assambly.initialController(controller: self)
+        assembly.initialController(controller: self)
         presenter?.checkRegistration()
     }
 }

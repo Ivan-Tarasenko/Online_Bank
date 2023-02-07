@@ -1,5 +1,5 @@
 //
-//  TopUpPhoneNumderAssambly.swift
+//  TopUpPhoneNumderAssembly.swift
 //  Super easy dev
 //
 //  Created by Иван Тарасенко on 18.01.2023
@@ -7,12 +7,12 @@
 
 import Foundation
 
-protocol TopUpPhoneNumderAssamblyProtocol: AnyObject {
+protocol TopUpPhoneNumderAssemblyProtocol: AnyObject {
     func initialView(view: TopUpPhoneNumderContentView)
     func initialController(controller: TopUpPhoneNumderViewController)
 }
 
-final class TopUpPhoneNumderAssambly: TopUpPhoneNumderAssamblyProtocol {
+final class TopUpPhoneNumderAssembly: TopUpPhoneNumderAssemblyProtocol {
 
     func initialView(view: TopUpPhoneNumderContentView) {
         let presenter = TopUpPhoneNumderPresenter(view)

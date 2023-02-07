@@ -1,5 +1,5 @@
 //
-//  RequestManyAssambly.swift
+//  RequestManyAssembly.swift
 //  Super easy dev
 //
 //  Created by Иван Тарасенко on 18.01.2023
@@ -7,12 +7,12 @@
 
 import Foundation
 
-protocol RequestManyAssamblyProtocol: AnyObject {
+protocol RequestManyAssemblyProtocol: AnyObject {
     func initialView(view: RequestManyContentView)
     func initialController(controller: RequestManyViewController)
 }
 
-final class RequestManyAssambly: RequestManyAssamblyProtocol {
+final class RequestManyAssembly: RequestManyAssemblyProtocol {
 
     func initialView(view: RequestManyContentView) {
         let presenter = RequestManyPresenter(view)

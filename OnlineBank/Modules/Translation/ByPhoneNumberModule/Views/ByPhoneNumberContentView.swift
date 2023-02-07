@@ -12,7 +12,7 @@ protocol ByPhoneNumberContentViewProtocol: AnyObject {}
 final class ByPhoneNumberContentView: UIView {
     
     var presenter: ByPhoneNumberPresenterProtocol!
-    var assambly: ByPhoneNumberAssamblyProtocol = ByPhoneNumberAssambly()
+    var assembly: ByPhoneNumberAssemblyProtocol = ByPhoneNumberAssembly()
     
     private let massageLabel: UILabel = {
         let label = CustomLabel()
@@ -36,7 +36,7 @@ final class ByPhoneNumberContentView: UIView {
 private extension ByPhoneNumberContentView {
     
     func setView() {
-        assambly.initialView(view: self)
+        assembly.initialView(view: self)
         backgroundColor = .white
         addSubview(massageLabel)
     }

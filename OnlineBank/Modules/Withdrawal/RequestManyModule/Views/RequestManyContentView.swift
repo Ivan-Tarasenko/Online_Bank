@@ -12,7 +12,7 @@ protocol RequestManyContentViewProtocol: AnyObject {}
 final class RequestManyContentView: UIView {
     
     var presenter: RequestManyPresenterProtocol!
-    var assambly: RequestManyAssamblyProtocol = RequestManyAssambly()
+    var assembly: RequestManyAssemblyProtocol = RequestManyAssembly()
     
     private let massageLabel: UILabel = {
         let label = CustomLabel()
@@ -35,7 +35,7 @@ final class RequestManyContentView: UIView {
 // MARK: - Private functions
 private extension RequestManyContentView {
     func setView() {
-        assambly.initialView(view: self)
+        assembly.initialView(view: self)
         backgroundColor = .white
         addSubview(massageLabel)
     }

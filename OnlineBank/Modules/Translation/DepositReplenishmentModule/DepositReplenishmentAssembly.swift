@@ -1,5 +1,5 @@
 //
-//  DepositReplenishmentAssambly.swift
+//  DepositReplenishmentAssembly.swift
 //  Super easy dev
 //
 //  Created by Иван Тарасенко on 18.01.2023
@@ -7,12 +7,12 @@
 
 import Foundation
 
-protocol DepositReplenishmentAssamblyProtocol: AnyObject {
+protocol DepositReplenishmentAssemblyProtocol: AnyObject {
     func initialView(view: DepositReplenishmentContentView)
     func initialController(controller: DepositReplenishmentViewController)
 }
 
-final class DepositReplenishmentAssambly: DepositReplenishmentAssamblyProtocol {
+final class DepositReplenishmentAssembly: DepositReplenishmentAssemblyProtocol {
 
     func initialView(view: DepositReplenishmentContentView) {
         let presenter = DepositReplenishmentPresenter(view)
